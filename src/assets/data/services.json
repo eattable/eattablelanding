@@ -1,0 +1,22 @@
+[
+    {
+      "id": "0",
+      "content": "More filters"
+    },
+    {
+      "id": "1",
+      "content": "Meals"
+    },
+    {
+      "id": "2",
+      "content": "Category"
+    },
+    {
+        "id": "3",
+        "content": "Seating Options"
+    },
+    {
+        "id": "4",
+        "content": "Area options"
+    }
+]

@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+$placeholder: $placeholder;
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none !important;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $placeholder;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $placeholder;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $placeholder;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+a{
+  text-decoration: none !important;
+}
+
+// h1,h2,h3,h4,h5,h6,p,a,li{
+//   overflow: hidden !important;
+// }
+
+.btn.focus, .btn:focus{
+  box-shadow: none !important;
+}
+
+a,a:hover{
+  text-decoration: none !important;
+}
+
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.table{
+  th,td{
+    border: none !important;
+  }
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.table{
+  margin-bottom: 0 !important;
+}
+
+// .btn:hover{
+//   color: $bg-color !important;
+// }
+
+// input{
+//   border: none !important;
+// }
+.nav-tabs{
+  border-bottom: none !important;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.accordion-item a{
+  border: none !important;
+}
+
+.accordion-item a.active, .accordion-item a:hover{
+  color: $bg-color !important;
+}
+
+.nav{
+  border: none !important;
+}
+
+// .btn{
+//   background: none !important;
+// }
+
+//react time picker
+
+.react-time-picker__button:enabled{
+  display: none !important;
+}
+
+
+.react-time-picker__clock{
+  display: none !important;
+}
+
+//react select
+
+.css-b62m3t-container{
+  .css-1pahdxg-control{
+    width: 100%;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 6px !important;
+    border-radius: 0 !important;
+    border: 1px solid $contact-input !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+  .css-1s2u09g-control{
+    width: 100%;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 6px !important;
+    border-radius: 0 !important;
+    border: 1px solid $contact-input !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+  width: 191px !important;
+  .css-1okebmr-indicatorSeparator{
+    display: none !important;
+  }
+  .css-tlfecz-indicatorContainer{
+    color: $font-color-2 !important;
+  }
+}
+
+.css-26l3qy-menu{
+  width: 191px !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin-top: 1px !important;
+  margin-bottom: 0 !important;
+  box-shadow: none !important;
+  background-color: $bg-color !important;
+  border-radius: 0 !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25) !important;
+  .css-4ljt47-MenuList{
+    width: 100% !important;
+    max-height: 100%;
+    height: 100% !important;
+    // padding-top: 15px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    // padding-bottom: 15px !important;
+    .css-yt9ioa-option,.css-1n7v3ny-option,.css-9gakcf-option{
+      outline: none !important;
+      background: none !important;
+      padding-left: 16px !important;
+      // padding-bottom: 5px !important;
+      @include font-weight-500 ;
+      @include font-size-15 ;
+      line-height: 18px !important;
+      color: $font-color-2 !important;
+      border-bottom: 1px solid $input-grey;
+      &:hover{
+        background: none !important;
+      }
+      &:active{
+        background: none !important;
+      }
+    }
+  }
+}
+
+input[type=text],input[type=number],input[type=email],textarea{
+  cursor: initial !important;
+}

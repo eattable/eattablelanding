@@ -1,0 +1,430 @@
+//default btn class
+.btn{
+    text-align: center;
+    @include border-0;
+}
+//default btn width class
+.btn-width{
+    width: 175px;
+    height: 58px;
+}
+
+//Apply btn red
+.apply-btn-red{
+    @include border-radius-5;
+    background-color: $red-color;
+    text-align: center;
+    color: $bg-color;
+    @include border-0;
+}
+//Apply btn green
+.apply-btn-green{
+    width: 88.97px;
+    height: 39px;
+    @include border-radius-5;
+    background-color: $green-color;
+    padding: 17px 60px;
+    text-align: center;
+    color: $bg-color;
+    @include border-0;
+}
+//Edit btn yellow
+.edit-btn-yellow{
+    width: 100.62px;
+    height: 35.16px;
+    background-color: $yellow-color;
+    @include border-radius-5;
+}
+//Edit btn red
+.edit-btn-red{
+    width: 56px;
+    height: 39px;
+    background-color: $red-color;
+}
+.edit-btn-red{
+    width: 56px;
+    height: 39px;
+    background-color: $red-color;
+    padding: 7px 13px !important;
+    @include font-size-18;
+    color: $bg-color;
+    border: none;
+    @include border-radius-5;
+    &:hover {
+        color: $bg-color;
+    }
+}
+
+//Edit btn icon
+.edit-btn-yellow-icon{
+    width: 30px;
+    height: 29.35px;
+    background-color: $yellow-color;
+}
+//Cancel btn 
+.cancel-btn{
+    background-color: $checkbox-grey;
+    @include border-radius-5;
+}
+//Back btn
+//Save btn green
+.save-btn-green{
+    width: 149px;
+    height: 46px;
+    background-color: $green-color;
+    @include border-radius-5;
+}
+//Save btn red
+.save-btn-red{
+    background-color: $red-color;
+    @include border-radius-5;
+}
+//Save btn yellow
+.save-btn-yellow{
+    width: 133px;
+    height: 48px;
+    background-color: $yellow-color;
+    @include border-radius-5;
+}
+//Save btn green little
+.save-btn-little{
+    width: 65px;
+    height: 27.86px;
+    background-color: $red-color;
+    @include border-radius-5;
+}
+//save btn grey
+.save-btn-grey{
+    width: 67px;
+    height: 23.41px;
+}
+.save-btn-bg-green {
+    background: $green-color;
+    width: 112px;
+    height: 29px;
+    color: $bg-color;
+    padding: 5px 31px;
+    @include font-size-16;
+    @include font-weight-500;
+    line-height: 19px;
+    &:hover {
+        color: $bg-color;
+    }
+}
+
+//Calendar btn
+//Calendar btn 2
+.calendar-btn-2{
+    width: 39px;
+    height: 39px;
+    border: 1px solid $yellow-color;
+    @include border-radius-6;
+}
+//Archive btn
+.archive-btn{
+    width: 106px;
+    height: 48px;
+    background: $checkbox-grey;
+    @include border-radius-5;
+}
+//Archive btn icon
+.archive-btn-icon{
+    width: 23.12px;
+    height: 23.12px;
+    padding: 5px;
+    background-color: $checkbox-grey;
+    color: $bg-color;
+    @include border-radius-4;
+    &:hover {
+        color: $bg-color;
+    }
+}
+//Archive btn icon 2
+.archive-btn-icon-2{
+    width: 47.66px;
+    height: 47.66px;
+}
+// Archive btn icon 3
+.archive-btn-icon-3 {
+    width: 56px;
+    height: 39px;
+    background: $checkbox-grey;
+    @include border-radius-4;
+    color: $bg-color;
+    padding: 9.99px 19.99px;
+    border: none;
+    @include border-radius-5;
+    svg {
+        width: 17px;
+        height: 17px;
+    }
+    &:hover {
+        color: $bg-color;
+    }
+}
+//UnArchive btn
+.unarchive-btn-icon{
+    width: 23px;
+    height: 23px;
+}
+//Add btn green
+.add-btn-green{
+    width: 73px;
+    height: 32px;
+    background: $green-color;
+    @include border-radius-38;
+}
+//Add btn 
+.add-btn-yellow{
+    width: 160px;
+    height: 44px;
+    background-color: $yellow-color;
+    @include border-radius-7;
+}
+// add new button background white
+.add-new-btn {
+    width: 157px;
+    height: 41px;
+    @include font-size-14;
+    border: 1px solid $checkbox-grey !important;
+    padding: 12px 5px;
+    line-height: 17px;
+    @include border-radius-4;
+    color: $font-color;
+    @include font-weight-500;
+    i {
+        margin-right: 5px;
+    }
+}
+
+// add new product btn{
+.add-new-product-btn{
+    width: 176px;
+    height: 48px;
+    background-color:  $yellow-color;
+    @include border-radius-5;
+}
+// add new category btn{
+.add-new-category-btn{
+    width: 184px;
+    height: 48px;
+    background-color:  $yellow-color;
+    @include border-radius-5;
+}
+//forward btn
+.forward-btn{
+    width: 110px;
+    height: 41px;
+    background-color: $green-color;
+    @include border-radius-6;
+}
+//cancel order btn
+.cancel-order-btn{
+    width: 147px;
+    height: 38px;
+    border: 1px solid $red-color;
+    @include border-radius-47;
+}
+//duplicate
+//delete btn
+.delete-btn{
+    width: 67px;
+    height: 23px;
+    background-color:  $red-color;
+    @include border-radius-3;
+}
+//delete btn icon red
+.delete-btn-icon-red{
+    width: 83.99px;
+    height: 84px;
+    background-color: $red-color;
+    @include border-radius-50
+}
+//delete btn icon grey
+.delete-btn-icon-grey{
+    width: 43.52px;
+    height: 43.52px;
+    background: $checkbox-grey;
+    @include border-radius-8;
+}
+.delete-btn-red {
+    background: $red-color;
+    width: 112px;
+    height: 29px;
+    color: $bg-color;
+    padding: 5px 31px;
+    @include font-size-16;
+    @include font-weight-500;
+    line-height: 19px;
+    &:hover {
+        color: $bg-color;
+    }
+}
+
+//click btn
+.click-btn{
+    width: 153.4px;
+    height: 139.86px;
+    background-color: $yellow-color;
+    @include border-radius-8;
+}
+//prev btn
+.prev-btn{
+    width: 308.78px;
+    height: 95.33px;
+    background: $red-color;
+    @include border-radius-10;
+}
+//duplicate btn
+.duplicate-btn {
+    background: $contact-input;
+    @include font-size-15;
+    @include font-weight-400;
+    color: $font-color;
+    line-height: 18px;
+    width: 137px;
+    height: 39px;
+    @include border-radius-4;
+    padding: 11px 13px;
+}
+
+//next btn
+.next-btn{
+    width: 308.78px;
+    height: 95.33px;
+    background: $red-color;
+    @include border-radius-10;
+}
+//pdf btn
+.pdf-download-btn{
+    width: 335.72px;
+    height: 103.62px;
+    background-color: $green-color;
+   @include border-radius-10;
+}
+//send btn
+.pdf-btn{
+    width: 162px;
+    height: 50px;
+    background: $green-color;
+    @include border-radius-5;
+}
+//reserv btn
+.reserv-btn{
+    width: 216px;
+    height: 52px;
+    border: 1.53125px solid $red-color;
+    @include border-radius-4;
+}
+//call-btn
+.call-btn{
+    width: 122.5px;
+    height: 35.88px;
+    background: $green-color;
+    @include border-radius-4;
+}
+//chat btn
+.chat-btn{
+    width: 52.52px;
+    height: 38.7px;
+    background-color: $yellow-color;
+    @include border-radius-6;
+}
+//login btn
+.login-btn{
+    background-color: $red-color;
+    @include border-radius-5;
+}
+//notify btn
+.notify-btn{
+    width: 22px;
+    height: 22px;
+}
+//mailbox btn
+.mailbox-btn{
+    width: 24px;
+    height: 24px;
+}
+//profile btn
+.profile-btn{
+    width: 40px;
+    height: 40px;
+}
+
+
+//Filter buttons
+//default filter btn classes
+.filter-btn{
+    width: 104px;
+    height: 41px;
+    @include border-radius-4;
+}
+//week btn
+.week-filter-btn{
+    border: 1px solid $green-color;
+}
+//month btn
+.month-filter-btn{
+    background-color: $green-color;
+}
+// disable button
+.disable-btn {
+    width: 50.48px;
+    height: 23.3px;
+    background: $red-color;
+    color: $bg-color;
+    @include font-size-10;
+    padding: 5px 7px;
+    @include font-weight-500;
+    &:hover {
+        color: $bg-color;
+    }
+}
+// reject button
+.reject-btn {
+    background: $red-color;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    @include border-radius-50;
+    color: $bg-color;
+    border: none;
+    svg {
+        width: 21px;
+        height: 16.5px;
+    }
+    &:hover {
+        color: $bg-color;
+    }
+}
+
+// accept button
+.accept-btn {
+    background: #4CAF50;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    @include border-radius-50;
+    color: $bg-color;
+    border: none;
+    svg {
+        width: 21px;
+        height: 16.5px;
+    }
+    &:hover {
+        color: $bg-color;
+    }
+}
+
+//check icon button
+.check-icon-btn {
+    width: 23.02px;
+    height: 23.02px;
+    padding: 6px 5px;
+    color: $bg-color;
+    background: $green-color;
+    @include border-radius-50;
+    &:hover {
+        color: $bg-color;
+    }
+}

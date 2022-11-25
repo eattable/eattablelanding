@@ -1,0 +1,180 @@
+section{
+    &.term-section{
+        margin-top: 100px;
+        .container-fluid{
+            width: 1300px!important;
+    
+                .row{
+                    word-break: break-all !important;
+                    p{
+                        @include font-size-16;
+                        @include font-weight-500;
+                        line-height: 30px;
+                        word-break: normal;
+                        color: $font-color-2;
+                    }
+                    .col-12{
+                        .sign-container{
+                            width: 500px;
+                            p{
+                                @include font-size-18;
+                                @include font-weight-500;
+                                line-height: 30px;
+                                color: $font-color-2;
+                            }
+                        }
+                        ul{
+                            li{
+                                position: relative;
+                                padding-left: 15px;
+                                p{
+                                    @include font-size-18;
+                                    @include font-weight-500;
+                                    line-height: 30px;
+                                    color: $font-color-2;
+                                }
+                                // &::before{
+                                //     content: "";
+                                //     position: absolute;
+                                //     left: 0;                      
+                                //     top: 10px;
+                                //     width: 10px;
+                                //     height: 10px;
+                                //     padding: 5px;
+                                //     background-color: $font-color-2;
+                                //     border-radius: 50%; 
+                                // }
+                            }
+                        }
+                    }
+                    h1{
+                        @include font-size-25;
+                        @include font-weight-500;
+                        line-height: 30px;
+                        color: $font-color-2;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        
+    }
+    &.privacy-section{
+        // margin-top: 100px;
+        margin-bottom: 100px;
+        padding-top: 20px;
+        .container-fluid{
+            .row{
+                word-break: break-all !important;
+                p{
+                    @include font-size-20;
+                    @include font-weight-500;
+                    line-height: 30px;
+                    color: $font-color-2;
+                }
+                .col-12{
+                    .tab-container{
+                        .nav{
+                            padding:20px 0 20px 0;
+                            .nav-item{
+                                padding:20px 0 20px 0;
+                                // padding-top: 24px;
+                                // padding-bottom: 24px;
+                                margin-left: 16px;
+                                margin-right: 16px;
+                                .nav-link{
+                                    text-align: center;
+                                    cursor: pointer;
+                                    width: 142.71px;
+                                    // height: 142.71px;
+                                    height: 120px;
+                                    border: 2px solid $contact-input;
+                                    border-radius: 15px;
+                                    @include flex-column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $font-color-2 !important;
+                                    p{
+                                        cursor: pointer;
+                                        @include font-weight-500;
+                                        @include font-size-16;
+                                        line-height: 21px;
+                                        color: $font-color-2;
+                                    }
+                                    i{
+                                        width: 50px;
+                                        height: 50px;
+                                        text-align: center;
+                                        img {
+                                            margin: auto;
+                                            width: 100% !important;
+                                            height: 100% !important;
+                                        }
+                                    }
+                                    &.active{
+                                        border: 2px solid $red-color;
+                                        p{
+                                            color: $red-color;
+                                        }
+                                        i{
+                                            img{
+                                                filter: invert(25%) sepia(41%) saturate(6272%) hue-rotate(343deg) brightness(92%) contrast(86%) !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.little-icon{
+                                    .nav-link{
+                                        padding-top: 0 !important;
+                                        i{
+                                            width: 90px !important;
+                                            height: 90px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sign-container{
+                        width: 600px;
+                        p{
+                            @include font-size-20;
+                            @include font-weight-500;
+                            line-height: 30px;
+                            color: $font-color-2;
+                        }
+                    }
+                    ul{
+                        li{
+                            position: relative;
+                            padding-left: 15px;
+                            p{
+                                @include font-size-20;
+                                @include font-weight-500;
+                                line-height: 30px;
+                                color: $font-color-2;
+                            }
+                            // &::before{
+                            //     content: "";
+                            //     position: absolute;
+                            //     left: 0;                      
+                            //     top: 10px;
+                            //     width: 10px;
+                            //     height: 10px;
+                            //     padding: 5px;
+                            //     background-color: $font-color-2;
+                            //     border-radius: 50%; 
+                            // }
+                        }
+                    }
+                }
+                h1{
+                    @include font-size-25;
+                    @include font-weight-500;
+                    line-height: 30px;
+                    color: $font-color-2;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

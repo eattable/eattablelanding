@@ -1,0 +1,38 @@
+//Register inputs
+@mixin register-input-1{
+    height: 60px;
+    width: 277px;
+    padding: 21px 20px 21px 22px;
+    @include border-radius-3;
+    background-color: $input-grey;
+    @include border-0;
+    @include font-size-15;
+    margin:15px;
+}
+@mixin register-input-2{
+    height: 60px;
+    width: 427px;
+    @include border-radius-3;
+    @include border-0;
+    margin:15px;
+    @include font-size-15;
+     @include border-radius-3;
+    padding: 21px 20px 21px 22px;
+    background-color: $input-grey;
+}
+//Checkboxes
+@mixin checkbox{
+    width: 27.92px;
+    height: 27.92px;
+    padding: 9px 7px 8px 6px;
+    background: #0AAB37;
+    border: 0.884248px solid $checkbox-grey;
+    border-radius: 5.16945px;
+}
+//radiobuttons
+
+//toggle
+
+//item::after
+
+//item::before

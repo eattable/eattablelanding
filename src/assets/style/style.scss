@@ -1,0 +1,90 @@
+//Fonts
+@import "./utilities/font";
+// Mixins
+@import "./utilities/mixin";
+// Colors 
+@import "./utilities/color";
+//Borders
+@import "./utilities/border";
+//Buttons
+@import "./utilities/button";
+//Tables
+@import "./utilities/table";
+//Inputs
+@import "./utilities/input";
+//Variables
+@import "./utilities/variables";
+//dark light btn
+@import "./layout/darkBtn";
+/*Base*/
+    //*Main CSS
+    @import "./base/main";
+    //*Reset CSS
+    @import "./base/reset";
+    //**Responsive
+    //Layout
+    //Header
+    @import "./base/Responsive/Layout/navbar";
+    //Footer
+    @import "./base/Responsive/Layout/footer";
+    //Scroll top
+    @import "./base/Responsive/Layout/scrolltop";
+    //Pages
+    //Home page
+    @import "./base/Responsive/Pages/Home/home";
+    //Help page
+    @import "./base/Responsive/Pages/Help/help";
+    //Benefits page
+    @import "./base/Responsive/Pages/Benefits/benefits";
+    //Career page
+    @import "./base/Responsive/Pages/Career/career";
+    //Dining page
+    @import "./base/Responsive/Pages/DiningRewards/dining";
+    //Faq page
+    @import "./base/Responsive/Pages/Faq/faq";
+    //Business page
+    @import "./base/Responsive/Pages/Business/business";
+    //Vacancy page
+    @import "./base/Responsive/Pages/Vacancy/vacancy";
+    //Vacancy page
+   
+
+
+//Layout
+//Navbar
+@import "./layout/navbar";
+//Footer
+@import "./layout/footer";
+//Scrolltop
+@import "./layout/scrolltop";
+//Hamburger Menu
+@import "./layout/hambMenu";
+//dark light btn
+@import "./layout/darkBtn";
+//checkbox
+@import "./layout/checkbox";
+//slider
+@import "./layout/slider";
+
+
+//Pages
+// Home page
+@import "./pages/home";
+// Business Page
+@import "./pages/business";
+// Help Page
+@import "./pages/help";
+// Career Page
+@import "./pages/career";
+// Faq Page
+@import "./pages/faq";
+// Dining rewards Page
+@import "./pages/dining";
+// Benefits page
+@import "./pages/benefits";
+// Vacancy page
+@import "./pages/vacancy";
+// Privacy polciy terms of use service pages
+@import "./pages/files";
+@import "./pages/contact";
+

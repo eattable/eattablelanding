@@ -1,0 +1,355 @@
+footer {
+    padding: 65px 0px 55px 0px;
+    background: $input-grey;
+
+    .container-fluid {
+        .footer-nav {
+            li.active a {
+
+                color: $red-color !important;
+
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px 0;
+            padding: 0 15px;
+            .grid-item-1 {
+                .logo {
+                    img {
+                        width: 180px;
+                        height: 50.6px;
+                    }
+                }
+
+                .download-apple {
+                    margin: 20px 0 10px 0;
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 170px;
+                      
+                        cursor: pointer;
+                    }
+                }
+
+                .download-android {
+
+                    img {
+                        width: 171px;
+                        height: 44px;
+                        cursor: pointer;
+                    }
+                }
+
+                .subscribe {
+                    width: 100%;
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        width: 200px;
+                        padding: 10px 12px;
+                        border: none;
+                        background: $guest-number;
+                        color: $checkbox-grey;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        @include border-radius-4;
+
+                        &::placeholder {
+                            color: $checkbox-grey;
+                        }
+                    }
+
+                    button {
+                        margin-left: 5px;
+                        // width: 81px;
+                        white-space: nowrap;
+                        background: $red-color;
+                        color: $bg-color;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 19px;
+                        @include border-radius-4;
+                        padding: 10px;
+                        padding-right: 18px;
+                    }
+                }
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $font-color;
+                    margin: 31px 0 11px 0;
+                }
+
+                .social-medias {
+                    li {
+                        background: $bg-color;
+                        @include border-radius-50;
+                        font-size: 24px;
+                        cursor: pointer;
+                        margin: 0 10px;
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        padding: 13px;
+
+                        &:first-child,
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        i {
+                            color: $placeholder;
+                        }
+                    }
+                }
+            }
+
+            .grid-item-1 {
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $font-color;
+                    margin-bottom: 29px;
+                    margin-top: 10px;
+                }
+
+                ul {
+                    li {
+                        margin: 18px 0;
+
+                        a {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 23px;
+                            color: $font-color;
+                            transition: 0.5s all;
+                            -webkit-transition: 0.5s all;
+                            -moz-transition: 0.5s all;
+                            -ms-transition: 0.5s all;
+                            -o-transition: 0.5s all;
+
+                            &:hover {
+                                margin-left: 5px;
+                            }
+                        }
+
+                        // &:last-child,
+                        // &:first-child {
+                        //     margin: 0;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+
+    .download-btns-copy {
+        display: none;
+        img{
+            width: 170px;
+        }
+    }
+
+    .download-btns {
+        display: block;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #ECECEC;
+        padding: 15px;
+        margin-top:76px;
+       
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #929292;
+            margin-bottom: 4px;
+
+        }
+        &-wrapper{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      
+         @media(max-width:776px){
+            flex-direction: column;
+            align-items: flex-start;
+            div{
+                margin-bottom: 15px;
+             }
+        }
+        }
+    }
+}
+
+
+.resp-footer {
+    .row {
+        .col-12 {
+            .logo {
+                a {
+                    display: block;
+                    width: 40%;
+                    height: 50px;
+                }
+            }
+        }
+
+        .col-sm-4 {
+            margin-top: 20px;
+
+            h6 {
+                @include font-weight-500;
+                @include font-size-20;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        @include font-weight-400;
+                        @include font-size-16;
+                        line-height: 22px;
+                        color: $font-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .foot-end {
+        .col-sm-3 {
+            img {
+                width: 100%;
+                display: block;
+                margin: 10px 0;
+                height: 50px;
+            }
+        }
+
+        .col-sm-4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+                width: 60%;
+                height: 40px;
+                padding: 4px 6px;
+                background: $guest-number;
+                color: $checkbox-grey;
+                border: none;
+                font-size: 12px;
+                border-radius: 5px;
+            }
+
+            button {
+                font-size: 12px;
+                color: $bg-color;
+                background: $red-color;
+                height: 40px;
+                padding: 4px 6px;
+            }
+        }
+
+        .col-sm-5 {
+            h6 {
+                @include font-weight-600;
+                font-size: 14px;
+                color: $font-color;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+
+            ul {
+                li {
+                    background: $bg-color;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-right: 5px;
+
+                    i {
+                        color: $placeholder;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    footer {
+        .resp-footer {
+            .foot-end {
+                .col-sm-3 {
+                    img {
+                        height: 40px;
+                    }
+                }
+
+                .col-sm-4 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    input {
+                        width: 45%;
+                    }
+
+                    button {
+                        margin-left: 10px;
+                    }
+                }
+
+                .col-sm-5 {
+                    width: 100% !important;
+
+                    h6 {
+                        text-align: center;
+                    }
+
+                    .social-medias {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    footer {
+        .resp-footer {
+            .logo {
+                a {
+                    width: 70% !important;
+
+                    img {
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

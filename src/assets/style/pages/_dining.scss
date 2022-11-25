@@ -1,0 +1,39 @@
+section{
+    &.coins-section{
+        height: 513px;
+        margin-top: 77px;
+        // margin-bottom: 29px;
+        .title{
+            @include font-weight-600;
+            @include font-size-40;
+            line-height: 48px;
+            color: $bg-color;
+        }
+        .info{
+            margin-top: 100px;
+            word-break: break-word;
+        }
+    }
+    &.dining-info-section{
+        .container-fluid{
+            .row{
+                .col-12{
+                    .question-answer-container{
+                         h6{
+                            @include font-weight-500;
+                            @include font-size-24;
+                            line-height: 34px;
+                            color: $font-color-2;
+                        }
+                        p{
+                            @include font-weight-400;
+                            @include font-size-20;
+                            line-height: 34px;
+                            color: $font-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

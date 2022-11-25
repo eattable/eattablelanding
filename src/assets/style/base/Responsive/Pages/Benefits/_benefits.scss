@@ -1,0 +1,35 @@
+@media screen and (max-width: 1200px) {
+    .benefits-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container-fluid {
+            background: none !important;
+            h1 {
+                text-align: center !important;
+            }
+        }
+    }
+    .benefits-info-section {
+        .py-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .benefits-info-container {
+        p {
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .benefits-section {
+        h1 {
+            font-size: 30px !important;
+        }
+    }
+}

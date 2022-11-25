@@ -1,0 +1,47 @@
+.form-check{
+    margin: 0 !important;
+    padding-left: 0 !important;
+    // @include center;
+    display: block;
+    .form-check-input[type=checkbox]{
+        --checkbox-width: 1.125rem;
+        --checkbox-bg: white;
+        --checkbox-radius: 4px;
+        --checkbox-border-color: #979797 !important;
+        --checkbox-hover-border-color: #DC303C !important;
+        --checkbox-checked-bg: #DC303C !important;
+        --checkbox-disabled-bg: #DC303C !important;
+        --checkbox-disabled-checked-bg: #DC303C !important;
+        cursor: pointer;
+        &::before{
+            left: 3px;
+            top: 3px;
+        }
+    }
+    .form-check-input[type=radio]{
+        --radio-width: 1.125rem;
+        --radio-bg: white;
+        --radio-radius: 50%;
+        --radio-border-color: #979797 !important;
+        --radio-hover-border-color: #DC303C !important;
+        --radio-checked-bg: #DC303C !important;
+        --radio-disabled-bg: #DC303C !important;
+        --radio-disabled-checked-bg: #DC303C !important;
+        cursor: pointer;
+    }
+}
+.form-check-input[type=checkbox]{
+    --checkbox-width: 1.125rem;
+    --checkbox-bg: white;
+    --checkbox-radius: 4px;
+    --checkbox-border-color: #979797 !important;
+    --checkbox-hover-border-color: #DC303C !important;
+    --checkbox-checked-bg: #DC303C !important;
+    --checkbox-disabled-bg: #DC303C !important;
+    --checkbox-disabled-checked-bg: #DC303C !important;
+    cursor: pointer;
+    &::before{
+        left: 3px;
+        top: 3px;
+    }
+}

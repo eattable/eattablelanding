@@ -1,0 +1,11 @@
+{
+    "English":[
+       {"Apartment": "Apartment"},
+       {"House": "House"}
+       ],
+   
+   "French":[
+       {"Apartment": "Appartement"},
+       {"House": "Maison"}
+       ]
+   }

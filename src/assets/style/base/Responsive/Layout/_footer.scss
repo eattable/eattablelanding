@@ -1,0 +1,71 @@
+@media (max-width:767px){
+    footer{
+        .col-sm-5{
+  
+            flex: 0 0 auto;
+            width: 41.66666667%;
+        }
+        .col-sm-2 {
+        
+            flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        .logo{
+            width: 100% !important;
+            // img{
+            //     width: 100% !important;
+            // }
+        }
+        .download-apple{
+            margin: 0 0 10 0 !important;
+        }
+        .subscribe {
+            input{
+                width: 150px!important;
+            }
+            button{
+                padding: 10px!important;
+                font-size:13px!important;
+            }
+        }
+        .subscribe{
+            margin-top: 0 !important;
+        }
+        .download-apple{
+            // padding-left: 1rem;
+            margin: 20px 0 10px 0!important;
+        }
+        .download-android{
+            padding-left: 1rem;
+        }
+        .grid-item-1 {
+            h3 {
+               
+                margin-bottom: 10px!important;
+           
+            }
+            ul {
+                li{
+                    margin: 10px 0!important;
+                }
+            }
+        }
+    }
+ 
+}
+@media (min-width:1020px) and (max-width:1250px){
+    .grid{
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr))!important;
+    }
+
+}
+
+@media (max-width:450px){
+    .download-btns{
+        display: none!important;
+    }
+    .download-btns-copy{
+        display: block!important;
+    }
+}
+

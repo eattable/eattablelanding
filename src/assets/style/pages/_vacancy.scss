@@ -1,0 +1,421 @@
+section{
+    &.vacancy-section{
+        padding-top: 200px;
+        padding-bottom: 141px;
+        button{
+            &:hover{
+                color: $bg-color !important;
+            }
+        }
+        .container-fluid{
+            .row{
+                .col-6{
+                    .vacancy-search{
+                        width: 659px;
+                        height: 63px;
+                        .input-group{
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            .form-outline{
+                                width: 100%;
+                                height: 100%;
+                                input{
+                                    padding: 12px 56px;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: #F9F9F9;
+                                    border-radius: 7px;
+                                    border: none !important;
+                                    @include font-weight-400;
+                                    @include font-size-32;
+                                    line-height: 40px;
+                                    &::placeholder{
+                                        color: #AFAFAF !important;
+                                    }
+                                }
+                            }
+                            button{
+                                position: absolute;
+                                top: 15px;
+                                left: 10px;
+                                svg{
+                                    width: 24px;
+                                    height: 24px;
+                                    color: #AFAFAF !important;
+                                }
+                            }
+                        }
+                    }
+                    .upload-cv{
+                        button{
+                            width: 226px;
+                            height: 56px;
+                            padding: 13px 33px;
+                            background-color: $red-color;
+                            @include border-radius-7;
+                            color: $bg-color;
+                        }
+                    }
+                }
+                .col-12{
+                    .vacancy-amount{
+                        margin-top: 37px;
+                        h6{
+                            @include font-weight-400;
+                            @include font-size-32;
+                            line-height: 40px;
+                            color: $font-color-2;
+                        }
+                    }
+                    .vacancy-list{
+                        margin-top: 62px;
+                        width: 1191px;
+                        .vacancy-card{
+                            width: 100%;
+                            min-height: 400px;
+                            border-top: 2px solid #D9D9D9;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            &:last-child{
+                                border-bottom: 2px solid #D9D9D9;
+                            }
+                            .vacancy-col-header{
+                                margin-bottom: 16px;
+                                h6{
+                                    @include font-weight-500;
+                                    @include font-size-24;
+                                    line-height: 30px;
+                                    color: $font-color-2;
+                                }
+                            }
+                            .row{
+                                .col-12{
+                                    .vacancy-role{
+                                        .vacancy-info{
+                                            .accordion{
+                                                color: $font-color-2 !important;
+                                                background:none !important;
+                                                border: none !important;
+                                                box-shadow: none !important;
+                                                .accordion-item{
+                                                    color: $font-color-2 !important;
+                                                    background:none !important;
+                                                    border: none !important;
+                                                    box-shadow: none !important;
+                                                    .accordion-header{
+                                                        color: $font-color-2 !important;
+                                                        background:none !important;
+                                                        border: none !important;
+                                                        box-shadow: none !important;
+                                                        .accordion-button{
+                                                            padding: 0;
+                                                            background:none !important;
+                                                            border: none !important;
+                                                            box-shadow: none !important;
+                                                            @include font-weight-400;
+                                                            @include font-size-24; 
+                                                            line-height: 30px;
+                                                            color: #3894FF !important;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            &::after{
+                                                                display: none !important;
+                                                            }
+                                                            svg{
+                                                                margin-left: 7px;
+                                                                font-size: 20px;
+                                                                transition: 0.5s;
+                                                                margin-top: 4px;
+                                                            }
+                                                            svg{
+                                                                transform: rotate(0deg);
+                                                            }
+                                                            // &.collapsed{
+                                                            //     svg{
+                                                            //         transform: rotate(-270deg);
+                                                            //         transition: 0.5s;
+                                                            //     }
+                                                            // }
+                                                        }
+                                                        // .accordion-button[aria-expanded="true"]{
+                                                        //     svg{
+                                                        //         transform: rotate(0deg);
+                                                        //     }
+                                                        // }
+                                                        // .accordion-button[aria-expanded="false"]{
+                                                        //     svg{
+                                                        //         transform: rotate(180deg);
+                                                        //     }
+                                                        // }
+                                                    }
+                                                    .accordion-collapse{
+                                                        .accordion-body{
+                                                            margin-top: 16px;
+                                                            padding: 0;
+                                                            h6{
+                                                                @include font-weight-500;
+                                                                @include font-size-24;
+                                                                line-height: 30px;
+                                                                color: $font-color-2;
+                                                                &.requirement-list-title{
+                                                                    margin-top: 8px;
+                                                                    @include font-weight-400;
+                                                                    @include font-size-20;
+                                                                    line-height: 25px;
+                                                                    color: $font-color-2;
+                                                                }
+                                                            }
+                                                            ul{
+                                                                width: 95%;
+                                                                li{
+                                                                    margin-top: 5px;
+                                                                    p{
+                                                                        @include font-weight-400;
+                                                                        @include font-size-20;
+                                                                        line-height: 25px;
+                                                                        color: $font-color-2;
+                                                                        word-break: break-word;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .col-md-4{
+                                    .vacancy-team{
+                                        .vacancy-team-name{
+                                            p{
+                                                @include font-weight-400;
+                                                @include font-size-24;
+                                                line-height: 30px;
+                                                color: $font-color-2;
+                                            }
+                                        }
+                                    }
+                                }
+                                .col-md-2{
+                                    .vacancy-apply{
+                                        .apply-btn-red{
+                                            width: 178px;
+                                            height: 56px;
+                                            padding: 13px 30px;
+                                            background-color: $red-color;
+                                            @include border-radius-7;
+                                            &:hover{
+                                                color: $bg-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .vacancy-apply{
+                        .row{
+                            .col-5{
+                                @include flex-column;
+                                label{
+                                    @include font-weight-400;
+                                    @include font-size-27;
+                                    line-height: 35px;
+                                    color:$font-color-2;
+                                    margin-bottom: 8px;
+                                }
+                                input{
+                                    width: 420.87px;
+                                    height: 60px;
+                                    background-color: #F9F9F9;
+                                    @include border-radius-7;
+                                    border: none !important;
+                                    padding: 8px 10px;
+                                    margin-bottom: 32px;
+                                    &::placeholder{
+                                        @include font-weight-400;
+                                        @include font-size-20;
+                                     
+                                        color: #AFAFAF;
+                                    }
+                                }
+                            }
+                            .col-12{
+                                .apply-title{
+                                    margin-bottom: 87px;
+                                    h1{
+                                        @include font-weight-500;
+                                        @include font-size-36;
+                                        line-height: 45px;
+                                        color:$font-color-2;
+                                    }
+                                }
+                                .upload-file-container{
+                                    margin-top: 69px;
+                                    width: 1008px;
+                                    h6{
+                                        &.upload-title{
+                                            @include font-weight-400;
+                                            @include font-size-27;
+                                            line-height: 35px;
+                                            color: $font-color-2;
+                                            margin-bottom: 9px;
+                                        }
+                                    }
+                                    p{
+                                        &.file-info{
+                                            @include font-weight-400;
+                                            @include font-size-20;
+                                            line-height: 26px;
+                                            color: $placeholder;
+                                        }
+                                    }
+                                    .upload-file{
+                                        padding-top: 33px;
+                                        padding-bottom: 33px;
+                                        width: 1008px;
+                                        height: 180px;
+                                        @include border-radius-7;
+                                        border: 4px dashed #AFAFAF;
+                                        position: relative;
+                                        margin-top: 19px;
+                                        @include center;
+                                        @include flex-column;
+                                        text-align: center;
+                                        #file-preview{
+                                            position: absolute;
+                                            left: 10px;
+                                            top: 10px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: center;
+                                            max-height: 180px;
+                                            overflow-y: scroll;
+                                            width: 100px !important;
+                                        }
+                                        p{
+                                            @include font-weight-400;
+                                            @include font-size-24;
+                                            line-height: 32px;
+                                            color: $placeholder;
+                                            margin-bottom: 35px;
+                                            margin-right: 15px !important;
+                                        }
+                                        input{
+                                            visibility: hidden;
+                                        }
+                                        label{
+                                            position: absolute;
+                                            top: 79px;
+                                            width: 240px;
+                                            height: 54.07px;
+                                            // padding: 12px 30px;
+                                            padding-top: 12px;
+                                            padding-bottom: 12px;
+                                            background-color: rgba(220, 48, 60, 0.22);
+                                            @include border-radius-7;
+                                            color: #080708;
+                                            text-align: center;
+                                            p{
+                                                @include font-weight-400;
+                                                @include font-size-22;
+                                                line-height: 28px;
+                                            }
+                                            svg{
+                                                position: absolute;
+                                                top: 17px;
+                                                right: 28px;
+                                                color: #080708;
+                                                margin-left: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .additional-info-container{
+                                    margin-top: 38px;
+                                    width: 1008px;
+                                    h6{
+                                        @include font-weight-400;
+                                        @include font-size-27;
+                                        line-height: 35px;
+                                        color: $font-color-2;
+                                        margin-bottom: 21px; 
+                                    }
+                                    textarea{
+                                        width: 1000px;
+                                        height: 165.38px;
+                                        background-color: #F9F9F9;
+                                        @include border-radius-7;
+                                        border: none !important;
+                                        padding: 13px 16px;
+                                        &::placeholder{
+                                            @include font-weight-400;
+                                            @include font-size-20;                          
+                                            color: #AFAFAF;
+                                        }
+                                    }
+                                    .info-word-size{
+                                        margin-top: 16px;
+                                        text-align: end;
+                                        span{
+                                            @include font-weight-400;
+                                            @include font-size-20;
+                                            line-height: 26px;
+                                            color: $font-color-2;
+                                        }
+                                    }
+                                }
+                                .vacancy-news{
+                                    margin-top: 63px;
+                                    width: 995px;
+                                    h6{
+                                        @include font-weight-400;
+                                        @include font-size-27;
+                                        line-height: 35px;
+                                        color: $font-color-2;
+                                        margin-bottom: 21px;
+                                    }
+                                }
+                                .privacy-policy-agreement{
+                                    width: 995px;
+                                    // input{}
+                                    .agreement-text{
+                                        width: 100% !important;
+                                        margin-left: 20px;
+                                        label{
+                                            @include font-weight-400;
+                                            @include font-size-24;
+                                            line-height: 30px;
+                                            color: $font-color-2;
+                                            a{
+                                                color: $red-color;
+                                            }
+                                        }
+                                    }
+                                }
+                                .application-submit{
+                                    margin-top: 102px;
+                                    button{
+                                        // width: 307px;
+                                        height: 56px;
+                                        background-color: $red-color;
+                                        @include border-radius-7;
+                                        color: $bg-color;
+                                        padding: 13px 70px;
+                                        @include font-weight-400;
+                                        @include font-size-24;
+                                        line-height: 30px;
+                                        color: $bg-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

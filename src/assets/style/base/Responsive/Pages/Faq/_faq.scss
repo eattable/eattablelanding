@@ -1,0 +1,8 @@
+@media screen and (max-width: 1199px) {
+    .accordion-button {
+        &:after {
+            position: relative !important;
+            top: -10px !important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin table {
+    @include font-weight-400;
+    @include font-size-20();
+    line-height:20px;
+    width: 56px;
+    height: 24px;
+    color:  $bg-color;
+}
+
+@mixin table {
+    width: 1191px;
+}

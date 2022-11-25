@@ -1,0 +1,112 @@
+@media screen and (max-width: 1210px) {
+    .vacancy-section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        .container-fluid {
+            width: 100% !important;
+            .vacancy-list {
+                width: 100% !important;
+            }
+            .vacancy-apply {
+                form {
+                    .ms-auto {
+                        margin: unset !important;
+                    }
+                    .row {
+                        justify-content: space-around;
+                    }
+                    input[type="text"] {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .vacancy-section {
+        .container-fluid {
+            .upload-file-container {
+                width: 100% !important;
+                .upload-file {
+                    width: 100% !important;
+                }
+            }
+            .additional-info-container {
+                textarea {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .vacancy-section {
+        .vacancy-card {
+            .vacancy-col-header {
+                h6 {
+                    font-size: 20px !important;
+                }
+            }
+            .vacancy-team-name {
+                p {
+                    font-size: 20px !important;
+                }
+            }
+            .accordion-button {
+                font-size: 20px !important;
+            }
+            .vacancy-apply {
+                .apply-btn-red{
+                    width: 130px !important;
+                    height: 50px !important;
+                    padding: 13px 30px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .vacancy-section {
+        .container-fluid {
+            .vacancy-search {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .vacancy-section {
+        .application-submit {
+            button {
+                width: 100% !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+
+@media (max-width:991px){
+    .vacancy-search{
+        width: 100% !important;
+    }
+}
+
+@media (max-width:575px){
+    .mt-sm-5{
+        margin-top: 3rem!important;
+    }
+    .upload-file{
+        label{
+            width: auto !important;
+            svg{
+                display: none !important;
+            }
+        }
+    }
+}
