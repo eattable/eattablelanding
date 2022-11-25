@@ -104,8 +104,6 @@ $(document).ready(function() {
    $('.footer-nav' ).find('li.active').removeClass('active');
    $(this).parent('li').addClass('active');
    localStorage.setItem('activeLink',$(this).attr('id'));
-   let link = localStorage.getItem('activeLink',$(this).attr('id'));
-   localStorage.removeItem('activeLink',$(this).attr('id'));
    localStorage.clear();
    window.localStorage.clear();
  });

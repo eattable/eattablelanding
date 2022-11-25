@@ -165,14 +165,18 @@ $(".lang-item").click(function(){
   $(this).addClass('selected').siblings().removeClass('selected');
   $(".language-link ").removeClass('active')
   let activeLink = localStorage.getItem('activeLink')
-  $(`#${activeLink}`).parent().addClass('active')
+  $(`#${activeLink}`).parent().addClass('active');
+  localStorage.clear();
+   window.localStorage.clear();
 });
 //set Local Storage selected lang when page load
 $(document).ready(function() {
  let lang = localStorage.getItem('stored_lang');
  $(`#${lang}`).parent().addClass('selected')
   let activeLink = localStorage.getItem('activeLink')
-  $(`#${activeLink}`).parent().addClass('active')
+  $(`#${activeLink}`).parent().addClass('active');
+  localStorage.clear();
+   window.localStorage.clear();
 });
 
 $('.navbar-nav a').on('click', function () {
@@ -181,9 +185,13 @@ $('.navbar-nav a').on('click', function () {
 	$(this).parent('li').addClass('active');
   console.log($(this).attr('id'))
   localStorage.setItem('activeLink',$(this).attr('id'))
+  localStorage.clear();
+   window.localStorage.clear();
 });
 //remove active link when click logo
 $('.navbar-brand').on("click",function(){
   localStorage.removeItem('activeLink')
+  localStorage.clear();
+   window.localStorage.clear();
 })
 
