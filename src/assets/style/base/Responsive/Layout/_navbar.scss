@@ -11,6 +11,9 @@
             &.navbar{
                 padding: 30px 0 !important;
                 .container-fluid{
+                    @media(max-width:575px){
+                        flex-wrap: nowrap!important;
+                    }
                     // .navbar-brand{
                     // }
                     .navbar-collapse{
@@ -43,10 +46,9 @@
                     }
                     .navbar-brand{
                         width: 150px !important;
-                
                         @media(max-width:575px){
                             width: 120px!important;
-                            padding-left:15px;
+                            // padding-left:15px;
                         }
                     }
                 }

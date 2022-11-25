@@ -67,9 +67,9 @@ function error() {
 }
 
 function success() {
-    Swal.fire({
-        icon: "success",
-        title: "Success...",
-        text: "Successfully sent message",
-    });
+    Swal.fire(
+       
+        'Sorğunuz qəbul olundu!',
+        'success'
+      )
 }

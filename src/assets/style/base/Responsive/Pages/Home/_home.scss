@@ -35,6 +35,7 @@
             .aos-init {
                 margin-left: auto !important;
                 margin-right: auto !important;
+                transform: none !important;
                 .table-container {
                     img {
                         width: 350px !important;
@@ -167,7 +168,7 @@
                     .col-6 {
                         .aos-init {
                             width: 100%;
-                            transform: none !important;
+                            // transform: none !important;
                             .table-container {
                                 display: flex !important;
                                 align-items: center !important;
@@ -292,9 +293,9 @@
         width: 100% !important;
     }
     section {
-        &.home-section{
-            max-height: 600px !important;
-        }
+        // &.home-section{
+        //     max-height: 600px !important;
+        // }
         &.payment-section {
             height: 1200px !important;
             .container-fluid {

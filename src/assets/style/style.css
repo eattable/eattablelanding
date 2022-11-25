@@ -985,13 +985,18 @@ body::-moz-selection {
     width: 100% !important;
   }
 }
-@media (max-width: 767px) {
-  video {
-    margin-top: -300px !important;
-  }
-}
 .form-control:focus {
   border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+}
+
+.swal2-confirm.swal2-styled {
+  background-color: #DC303C !important;
+  outline: #DC303C !important;
+}
+.swal2-confirm.swal2-styled:focus {
+  background-color: #DC303C !important;
+  outline: #DC303C !important;
   box-shadow: none !important;
 }
 
@@ -1231,6 +1236,13 @@ input[type=text], input[type=number], input[type=email], textarea {
   header nav.navbar {
     padding: 30px 0 !important;
   }
+}
+@media (max-width: 991px) and (max-width: 575px) {
+  header nav.navbar .container-fluid {
+    flex-wrap: nowrap !important;
+  }
+}
+@media (max-width: 991px) {
   header nav.navbar .container-fluid .navbar-collapse {
     margin-top: 22px;
     position: absolute;
@@ -1254,9 +1266,13 @@ input[type=text], input[type=number], input[type=email], textarea {
   header nav.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
     margin-left: 50px !important;
   }
+}
+@media (max-width: 991px) {
   header nav.navbar .container-fluid .dark-toggle-responsive {
     margin-right: 20px;
   }
+}
+@media (max-width: 991px) {
   header nav.navbar .container-fluid .navbar-brand {
     width: 150px !important;
   }
@@ -1264,7 +1280,6 @@ input[type=text], input[type=number], input[type=email], textarea {
 @media (max-width: 991px) and (max-width: 575px) {
   header nav.navbar .container-fluid .navbar-brand {
     width: 120px !important;
-    padding-left: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -1365,9 +1380,6 @@ input[type=text], input[type=number], input[type=email], textarea {
   footer .download-apple {
     margin: 20px 0 10px 0 !important;
   }
-  footer .download-android {
-    padding-left: 1rem;
-  }
   footer .grid-item-1 h3 {
     margin-bottom: 10px !important;
   }
@@ -1415,6 +1427,7 @@ input[type=text], input[type=number], input[type=email], textarea {
   section.section-1 .aos-init {
     margin-left: auto !important;
     margin-right: auto !important;
+    transform: none !important;
   }
   section.section-1 .aos-init .table-container img {
     width: 350px !important;
@@ -1488,7 +1501,6 @@ input[type=text], input[type=number], input[type=email], textarea {
 @media (max-width: 767px) {
   section.section-1 .container-fluid .row .col-6 .aos-init {
     width: 100%;
-    transform: none !important;
   }
   section.section-1 .container-fluid .row .col-6 .aos-init .table-container {
     display: flex !important;
@@ -1579,9 +1591,6 @@ input[type=text], input[type=number], input[type=email], textarea {
   .col-sm-12 {
     flex: 0 0 auto !important;
     width: 100% !important;
-  }
-  section.home-section {
-    max-height: 600px !important;
   }
   section.payment-section {
     height: 1200px !important;
@@ -3411,15 +3420,26 @@ section .info-text {
 section .info-text p {
   font-size: 40px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 45px;
   color: #080708;
 }
 section.home-section {
-  max-height: 900px;
   overflow: hidden;
 }
-section.home-section video {
-  margin-top: -150px;
+@media (max-width: 776px) {
+  section.home-section {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.home-section video {
+    height: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  section.home-section video {
+    width: 1200px;
+  }
 }
 section.home-section .phone-animation.line {
   position: relative;
@@ -3611,6 +3631,11 @@ section.home-section .myPhone.loaded {
 }
 section.services-section {
   padding-top: 200px;
+}
+@media (max-width: 767px) {
+  section.services-section {
+    padding-top: 100px !important;
+  }
 }
 section.services-section .container-fluid .row .col-12 .animation-info-text {
   width: 100% !important;
@@ -3844,7 +3869,7 @@ section.payment-section {
   height: 1400px;
 }
 section.payment-section .title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 40px;
   line-height: 48px;
   color: #000000;

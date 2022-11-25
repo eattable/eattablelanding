@@ -81,14 +81,20 @@ background: rgba(0,0,0,0) !important;
     }
 }
 
-@media (max-width: 767px){
-    video{
-        margin-top: -300px !important;
-    }
-}
-
+        
 .form-control:focus{
     border:1px solid #ced4da !important;
     box-shadow: none!important;
 }
 
+.swal2-confirm{
+    &.swal2-styled{
+        background-color: $red-color !important;
+        outline: $red-color !important;
+        &:focus{
+        background-color: $red-color !important;
+        outline: $red-color !important;
+        box-shadow:none!important;
+        }
+    }
+}

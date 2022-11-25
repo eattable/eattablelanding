@@ -200,6 +200,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"
     integrity="sha512-1cF8XUz5U3BlnRVqNFn+aPNwwSr/FPtrmKvM1g4dJJ9tg8kmqRUzqbSOvRRAMScDnTkOcOnnfwF3+jRA/nE2Ow=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script>
 
@@ -221,12 +222,14 @@ const button = document.querySelector('.send-btn')
 const form = document.querySelector('form')
 console.log(button)
 
-function validate() {
-    let email = document.querySelector(".email");
-    ;
+let email = document.querySelector(".email");
+    
     let name = document.querySelector(".name");
     let phone = document.querySelector(".phone");
     let message = document.querySelector(".message");
+
+function validate() {
+  
     
 
     form.addEventListener("submit", (e) => {
@@ -240,6 +243,7 @@ function validate() {
             console.log(email.value)
             sendmail(email.value,name.value,phone.value,message.value);
             success();
+            resetFields()
        
         }
     });
@@ -256,6 +260,7 @@ function sendmail(email,name,phone,message) {
         message:message
         
     });
+    
 }
 
 function emptyerror() {
@@ -277,9 +282,17 @@ function error() {
 function success() {
     Swal.fire({
         icon: "success",
-        title: "Success...",
-        text: "Successfully sent message",
+        text: "Sorğunuz qəbul olundu",
     });
+
+}
+
+function resetFields(){
+  email.value = "";
+  phone.value = "";
+  name.value= "";
+  message.value = ""
+
 }
     </script>
 </body>
