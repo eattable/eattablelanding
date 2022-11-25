@@ -152,11 +152,14 @@ var _readFileDataUrl=function(input,callback){
 
 
 window.onbeforeunload = function() {
-  localStorage.removeItem('activeLink');
+  localStorage.removeItem('activeLink',$(this).attr('id'));
   return '';
 };
 
-
+window.onunload = () => {
+  // Clear the local storage
+  window.localStorage.clear()
+}
 
 // function clearStorage() {
 
