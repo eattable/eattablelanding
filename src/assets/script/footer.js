@@ -119,7 +119,9 @@ $(document).ready(function() {
 });
 
 $('.logo').on("click",function(){
-  localStorage.removeItem('activeLink')
+  localStorage.removeItem('activeLink');
+  localStorage.clear();
+   window.localStorage.clear();
 })
 
 //regret page reload
