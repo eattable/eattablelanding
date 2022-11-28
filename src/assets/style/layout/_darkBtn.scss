@@ -326,9 +326,10 @@ body{
                 background-color: $font-color-2;
             }
         }
-        .apply-section,.apply-section-responsive,.vacancy-section{
+        .apply-section,.apply-section-responsive,.vacancy-section,.form-section{
             input,textarea{
                 background-color: #282828 !important;
+                border-color: #282828 !important;
                 // &::placeholder{
                 //     color: $bg-color !important;
                 // }

@@ -839,10 +839,11 @@ body.dark-mode nav .menu-btn-1 span::after, body.dark-mode nav .menu-btn-1 span:
 body.dark-mode nav .navbar-collapse {
   background-color: #000000;
 }
-body.dark-mode .apply-section input, body.dark-mode .apply-section textarea, body.dark-mode .apply-section-responsive input, body.dark-mode .apply-section-responsive textarea, body.dark-mode .vacancy-section input, body.dark-mode .vacancy-section textarea {
+body.dark-mode .apply-section input, body.dark-mode .apply-section textarea, body.dark-mode .apply-section-responsive input, body.dark-mode .apply-section-responsive textarea, body.dark-mode .vacancy-section input, body.dark-mode .vacancy-section textarea, body.dark-mode .form-section input, body.dark-mode .form-section textarea {
   background-color: #282828 !important;
+  border-color: #282828 !important;
 }
-body.dark-mode .apply-section input .form-control, body.dark-mode .apply-section textarea .form-control, body.dark-mode .apply-section-responsive input .form-control, body.dark-mode .apply-section-responsive textarea .form-control, body.dark-mode .vacancy-section input .form-control, body.dark-mode .vacancy-section textarea .form-control {
+body.dark-mode .apply-section input .form-control, body.dark-mode .apply-section textarea .form-control, body.dark-mode .apply-section-responsive input .form-control, body.dark-mode .apply-section-responsive textarea .form-control, body.dark-mode .vacancy-section input .form-control, body.dark-mode .vacancy-section textarea .form-control, body.dark-mode .form-section input .form-control, body.dark-mode .form-section textarea .form-control {
   color: #979797 !important;
 }
 body.dark-mode .benefits-section h1 {
@@ -2878,10 +2879,11 @@ body.dark-mode nav .menu-btn-1 span::after, body.dark-mode nav .menu-btn-1 span:
 body.dark-mode nav .navbar-collapse {
   background-color: #000000;
 }
-body.dark-mode .apply-section input, body.dark-mode .apply-section textarea, body.dark-mode .apply-section-responsive input, body.dark-mode .apply-section-responsive textarea, body.dark-mode .vacancy-section input, body.dark-mode .vacancy-section textarea {
+body.dark-mode .apply-section input, body.dark-mode .apply-section textarea, body.dark-mode .apply-section-responsive input, body.dark-mode .apply-section-responsive textarea, body.dark-mode .vacancy-section input, body.dark-mode .vacancy-section textarea, body.dark-mode .form-section input, body.dark-mode .form-section textarea {
   background-color: #282828 !important;
+  border-color: #282828 !important;
 }
-body.dark-mode .apply-section input .form-control, body.dark-mode .apply-section textarea .form-control, body.dark-mode .apply-section-responsive input .form-control, body.dark-mode .apply-section-responsive textarea .form-control, body.dark-mode .vacancy-section input .form-control, body.dark-mode .vacancy-section textarea .form-control {
+body.dark-mode .apply-section input .form-control, body.dark-mode .apply-section textarea .form-control, body.dark-mode .apply-section-responsive input .form-control, body.dark-mode .apply-section-responsive textarea .form-control, body.dark-mode .vacancy-section input .form-control, body.dark-mode .vacancy-section textarea .form-control, body.dark-mode .form-section input .form-control, body.dark-mode .form-section textarea .form-control {
   color: #979797 !important;
 }
 body.dark-mode .benefits-section h1 {
