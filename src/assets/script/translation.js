@@ -12,7 +12,7 @@ var arrLang = {
           'for-restaurant': 'MƏKANLAR ÜÇÜN',
           'connect-title': 'Bizimlə əlaqə saxlayın',
           'connect-content-title': 'Yuxarıdakı bölmədə sualınıza cavab tapmadızsa, bizə müraciət etməkdən çəkinməyin:',
-          'connect-content': 'support@EATTABLE.com e-poçt ünvanına bizə bir neçə cümlə yazıb göndərin və ya chat proqramından istifadə edin',
+          'connect-content': 'support@eattable.com e-poçt ünvanına bizə bir neçə cümlə yazıb göndərin və ya chat proqramından istifadə edin',
           //footer
           'our-products': 'Kontakt',
           'our-vacancies': 'Vakansiyalar',
@@ -649,7 +649,7 @@ var arrLang = {
           'for-restaurant': 'ДЛЯ ЗАВЕДЕНИЙ',
           'connect-title': 'Свяжитесь с нами',
           'connect-content-title': 'Если вы не найдете ответа на ваш вопрос в списке часто задаваемых вопросов, то, пожалуйста, свяжитесь с нами:',
-          'connect-content': 'Напишите нам пару строк на support@EATTABLE.com или воспользуйтесь чатом в приложении',
+          'connect-content': 'Напишите нам пару строк на support@eattable.com или воспользуйтесь чатом в приложении',
           //footer
           'our-products': 'Контакт',
           'our-vacancies': 'Вакансии',
@@ -1286,7 +1286,7 @@ var arrLang = {
           'restaurant': 'FOR VENUES',
           'connect-title': 'Connect with us',
           'connect-content-title': 'If you did not find the answer to your question in the FAQ above, then feel free to contact us:',
-          'connect-content': 'Write us a couple of lines at support@EATTABLE.com or use the chat in the app',
+          'connect-content': 'Write us a couple of lines at support@eattable.com or use the chat in the app',
           //footer
           'our-products': 'Contact',
           'our-vacancies': 'Vacancies',

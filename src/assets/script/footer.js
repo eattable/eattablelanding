@@ -31,7 +31,7 @@ var footer = `
       <div class="grid-item-1">
         <h3 class="lang" key="support">Help</h3>
         <ul class="footer-nav">
-          <li><a class="lang" href="./faq-customer.html" key="faq" id="faq">FAQ</a></li>
+          <li><a class="lang" href="./help.html" key="faq" id="faq">FAQ</a></li>
           <li ><a class="lang" href="./privacy.html" key="privacy-policy" id="privacy-policy">Privacy Policy</a></li>
           <li ><a class="lang" href="./term-of-use.html" key="term-of-use-footer" id="term-of-use">Terms of use</a></li>
         </ul>
