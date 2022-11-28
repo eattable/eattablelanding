@@ -96,16 +96,15 @@ function sendEmail() {
   }
 }
 $(document).ready(function() {
-   let activeLink = localStorage.getItem('activeLink')
+   let activeLink = sessionStorage.getItem('activeLink')
    $(`#${activeLink}`).parent().addClass('active')
  });
  
  $('.footer-nav a' ).on('click', function () {
    $('.footer-nav' ).find('li.active').removeClass('active');
    $(this).parent('li').addClass('active');
-   localStorage.setItem('activeLink',$(this).attr('id'));
-   localStorage.clear();
-   window.localStorage.clear();
+   sessionStorage.setItem('activeLink',$(this).attr('id'));
+   
  });
 
  $(".apply-btn").click(function(e) {
@@ -120,8 +119,7 @@ $(document).ready(function() {
 
 $('.logo').on("click",function(){
   localStorage.removeItem('activeLink');
-  localStorage.clear();
-   window.localStorage.clear();
+  
 })
 
 //regret page reload

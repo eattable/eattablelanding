@@ -3259,7 +3259,7 @@ body {
 .Advance-Slider .item h3 {
   margin: 0px;
   color: #fff;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 300;
 }
 
@@ -3269,9 +3269,9 @@ body {
 }
 
 .Advance-Slider .item h5 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
-  padding: 40px 50px 0;
+  padding: 30px 50px 0;
   margin: 0;
 }
 
@@ -4402,7 +4402,7 @@ section.commerce-section .container-fluid .row .col-12 .row.commerce-card .col-8
   height: 100%;
 }
 section.commerce-section .container-fluid .row .col-12 .row.commerce-card .col-4 .commerce-content {
-  width: 459px;
+  width: 400px;
   position: absolute;
   word-break: break-word;
 }
@@ -4478,7 +4478,7 @@ section.how-start-section {
   overflow-x: hidden;
 }
 section.how-start-section .container-fluid .row .col-6 .how-start-content h1 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 43px;
 }
 section.how-start-section .container-fluid .row .col-6 .how-start-content ul li {
@@ -5399,9 +5399,6 @@ section.vacancy-section .container-fluid .row .col-12 .vacancy-apply .row .col-1
 section.term-section {
   margin-top: 100px;
 }
-section.term-section .container-fluid {
-  width: 1300px !important;
-}
 section.term-section .container-fluid .row {
   word-break: break-all !important;
 }
@@ -5462,7 +5459,8 @@ section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-i
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item .nav-link {
   text-align: center;
   cursor: pointer;
-  width: 142.71px;
+  width: 160px;
+  word-break: break-word !important;
   height: 120px;
   border: 2px solid #E2E2E2;
   border-radius: 15px;

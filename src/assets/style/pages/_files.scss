@@ -2,8 +2,6 @@ section{
     &.term-section{
         margin-top: 100px;
         .container-fluid{
-            width: 1300px!important;
-    
                 .row{
                     word-break: break-all !important;
                     p{
@@ -84,7 +82,8 @@ section{
                                 .nav-link{
                                     text-align: center;
                                     cursor: pointer;
-                                    width: 142.71px;
+                                    width: 160px;
+                                    word-break: break-word !important;
                                     // height: 142.71px;
                                     height: 120px;
                                     border: 2px solid $contact-input;

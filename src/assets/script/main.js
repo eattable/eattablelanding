@@ -149,17 +149,11 @@ var _readFileDataUrl=function(input,callback){
  readFile(_files.shift());
 };
 
-
-
-window.onbeforeunload = function() {
-  localStorage.removeItem('activeLink',$(this).attr('id'));
-  return '';
-};
-
-window.onunload = () => {
-  // Clear the local storage
-  window.localStorage.clear()
+document.ontouchmove = function (e) {
+  e.preventDefault();
 }
+
+
 
 // function clearStorage() {
 
