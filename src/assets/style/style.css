@@ -5450,11 +5450,24 @@ section.privacy-section .container-fluid .row p {
 }
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav {
   padding: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item {
   padding: 20px 0 20px 0;
   margin-left: 16px;
   margin-right: 16px;
+}
+@media (max-width: 767px) {
+  section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item .nav-link {
+    padding: 10px 0 10px 0;
+    width: 120px !important;
+    height: 100px !important;
+  }
+  section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item .nav-link p {
+    font-size: 10px !important;
+  }
 }
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item .nav-link {
   text-align: center;
