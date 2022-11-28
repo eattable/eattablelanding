@@ -102,7 +102,7 @@ section{
                                     @include flex-column;
                                     justify-content: center;
                                     align-items: center;
-                                    color: $font-color-2 !important;
+                                    color: $font-color-2;
                                     p{
                                         cursor: pointer;
                                         @include font-weight-500;

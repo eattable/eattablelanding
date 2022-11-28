@@ -144,6 +144,17 @@ body{
         //     }
         // }
         background-color: $font-color !important;
+        .tab-container{
+            .nav-link{
+                background-color: #282828 !important;
+                color: $bg-color !important;
+            }
+        }
+        .privacy-section,.term-section,.coins-section {
+            h1{
+                color: $bg-color !important;
+            }
+        }
         .form-control {
             color: #979797 !important;
         }

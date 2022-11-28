@@ -697,6 +697,13 @@ body .dark-mode-toggle svg.fa-moon {
 body.dark-mode {
   background-color: #080708 !important;
 }
+body.dark-mode .tab-container .nav-link {
+  background-color: #282828 !important;
+  color: #FFFFFF !important;
+}
+body.dark-mode .privacy-section h1, body.dark-mode .term-section h1, body.dark-mode .coins-section h1 {
+  color: #FFFFFF !important;
+}
 body.dark-mode .form-control {
   color: #979797 !important;
 }
@@ -770,7 +777,7 @@ body.dark-mode .services-section .card img.light-mode {
   display: none !important;
 }
 body.dark-mode .locations-section .card {
-  background-color: #080708 !important;
+  background-color: #282828 !important;
 }
 body.dark-mode .locations-section .card p, body.dark-mode .locations-section .card h6, body.dark-mode .locations-section .card h5 {
   color: #FFFFFF !important;
@@ -2737,6 +2744,13 @@ body .dark-mode-toggle svg.fa-moon {
 body.dark-mode {
   background-color: #080708 !important;
 }
+body.dark-mode .tab-container .nav-link {
+  background-color: #282828 !important;
+  color: #FFFFFF !important;
+}
+body.dark-mode .privacy-section h1, body.dark-mode .term-section h1, body.dark-mode .coins-section h1 {
+  color: #FFFFFF !important;
+}
 body.dark-mode .form-control {
   color: #979797 !important;
 }
@@ -2810,7 +2824,7 @@ body.dark-mode .services-section .card img.light-mode {
   display: none !important;
 }
 body.dark-mode .locations-section .card {
-  background-color: #080708 !important;
+  background-color: #282828 !important;
 }
 body.dark-mode .locations-section .card p, body.dark-mode .locations-section .card h6, body.dark-mode .locations-section .card h5 {
   color: #FFFFFF !important;
@@ -3824,6 +3838,8 @@ section.locations-section .row .col-12 .restaurant-location-info .card .card-foo
 section.locations-section .row .col-12 .restaurant-location-info .card .card-footer .working-hour-list .hour-item {
   border: 1.78437px solid #989898;
   border-radius: 9.8682px;
+  margin-left: 5px;
+  margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5495,7 +5511,7 @@ section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-i
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #000000 !important;
+  color: #000000;
 }
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item .nav-link p {
   cursor: pointer;
