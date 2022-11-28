@@ -234,8 +234,9 @@ body{
         }
         .locations-section{
             .card{
+                background-color: $font-color !important;
                 p,h6,h5{
-                    color: $font-color !important;
+                    color: $bg-color !important;
                 }
             }
         }

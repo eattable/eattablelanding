@@ -65,5 +65,13 @@
     .download-btns-copy{
         display: block!important;
     }
+    footer{
+        .download-apple{
+            // padding-left: 1rem;
+            margin: 20px 10px 10px 20px!important;
+        }
+        .download-android{
+            margin: 20px 10px 10px 20px!important;
+        }
+    }
 }
-

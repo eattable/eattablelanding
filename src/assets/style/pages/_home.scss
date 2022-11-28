@@ -435,7 +435,7 @@ section{
                     margin-top: 50px;
                     .card{
                         width: 100%;
-                        background: none !important;
+                        background: $bg-color;
                         border: none !important;
                         padding: 33px;
                         @media(max-width:576px){

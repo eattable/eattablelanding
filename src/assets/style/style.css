@@ -769,8 +769,11 @@ body.dark-mode .services-section .card img.dark-mode {
 body.dark-mode .services-section .card img.light-mode {
   display: none !important;
 }
+body.dark-mode .locations-section .card {
+  background-color: #080708 !important;
+}
 body.dark-mode .locations-section .card p, body.dark-mode .locations-section .card h6, body.dark-mode .locations-section .card h5 {
-  color: #080708 !important;
+  color: #FFFFFF !important;
 }
 body.dark-mode footer {
   background-color: #282828 !important;
@@ -1399,6 +1402,12 @@ input[type=text], input[type=number], input[type=email], textarea {
   .download-btns-copy {
     display: block !important;
   }
+  footer .download-apple {
+    margin: 20px 10px 10px 20px !important;
+  }
+  footer .download-android {
+    margin: 20px 10px 10px 20px !important;
+  }
 }
 @media (max-width: 1199px) {
   section .restaurant-location-info-container {
@@ -1686,7 +1695,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     height: 280px !important;
   }
   .wrapper .outer .card {
-    width: 290px !important;
+    width: 250px !important;
   }
 }
 @media screen and (max-width: 380px) {
@@ -2181,7 +2190,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: -2px;
   width: 100%;
   z-index: 9999;
 }
@@ -2799,8 +2808,11 @@ body.dark-mode .services-section .card img.dark-mode {
 body.dark-mode .services-section .card img.light-mode {
   display: none !important;
 }
+body.dark-mode .locations-section .card {
+  background-color: #080708 !important;
+}
 body.dark-mode .locations-section .card p, body.dark-mode .locations-section .card h6, body.dark-mode .locations-section .card h5 {
-  color: #080708 !important;
+  color: #FFFFFF !important;
 }
 body.dark-mode footer {
   background-color: #282828 !important;
@@ -3760,7 +3772,7 @@ section.locations-section .row .col-12 .restaurant-location-info {
 }
 section.locations-section .row .col-12 .restaurant-location-info .card {
   width: 100%;
-  background: none !important;
+  background: #FFFFFF;
   border: none !important;
   padding: 33px;
 }
@@ -5588,6 +5600,7 @@ section.form-section label {
 }
 section.form-section input {
   background: #F9F9F9;
+  border: none !important;
   border-radius: 4px;
   margin-bottom: 15px;
   height: 50px;
@@ -5595,6 +5608,7 @@ section.form-section input {
 section.form-section textarea {
   height: 240px !important;
   background: #F9F9F9;
+  border: none !important;
 }
 section.form-section .send-btn {
   background-color: #DC303C;
@@ -5603,8 +5617,12 @@ section.form-section .send-btn {
   border-radius: 6px;
   border: none;
 }
+@media (max-width: 575px) {
+  section.form-section .send-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 section.form-section .col-11 {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
