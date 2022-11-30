@@ -8,10 +8,10 @@ var footer = `
         </div>
         <div class="download-btns">
         <div class="download-apple">
-          <img src="./src/assets/img/downloadApple.svg" alt="download apple">
+          <img src="./src/assets/img/google-play.png" alt="download apple">
         </div>
         <div class="download-androids">
-          <img src="./src/assets/img/downloadAndroid.svg" alt="download android">
+          <img src="./src/assets/img/app_store.png" alt="download android">
         </div>
         </div>
       </div>

@@ -65,8 +65,8 @@ section{
                                         p{
                                             word-break: break-word !important;
                                             @include font-weight-400;
-                                            @include font-size-15;
-                                            line-height: 38px;
+                                            @include font-size-19;
+                                            line-height: 30px;
                                             color: $font-color-2; 
                                             word-break: break-all;
                                         }

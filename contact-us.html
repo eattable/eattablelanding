@@ -97,7 +97,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-6 mx-auto">
           <p >«EATTABLE» Limited Liability Company Certificate No.(VÖEN) </br><span>2007465991,</span>
             </br>
             Ministry of Taxes of the Azerbaijan Republic.
@@ -127,9 +127,10 @@
             <input type="number" required class="form-control lang-input phone" 
               minlength="3"
               min="3"
-              maxlength="12"
+              maxlength="10"
               max="3"
-              onKeyPress="if(this.value.length==12) return false;" 
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              onKeyPress="if(this.value.length==10) return false;"
               />
           </div>
         </div>
@@ -137,11 +138,13 @@
         <div class="col-md-6 mx-auto">
           <div class="ms-auto">
             <label class="lang" key="request">Request</label>
-            <textarea name="" id=""  required class="form-control message"  key="request"></textarea>
+            <textarea name="" id=""  required class="form-control message info-textarea lang-input" maxlength="100"  key="request"></textarea>
+            <div class="info-word-size" id="the-count">
+              <span id="current">0</span>
+              <span id="maximum">/ 4000</span>
+            </div>
           </div>
-       
         </div>
-  
     </div>
     <div class="row">
       <div class="col-11 col-lg-11 col-md-12 col-sm-12 d-flex align-items-center justify-content-md-end justify-content-lg-end justify-content-xl-end justify-content-sm-center">

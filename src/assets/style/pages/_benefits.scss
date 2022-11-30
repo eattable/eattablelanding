@@ -22,7 +22,7 @@ section{
                         word-break: break-word !important;
                         p{
                             @include font-weight-400;
-                            @include font-size-24;
+                            @include font-size-20;
                             line-height: 34px;
                             color: $font-color-2;
                         }

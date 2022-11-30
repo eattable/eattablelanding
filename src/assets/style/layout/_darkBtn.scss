@@ -150,9 +150,12 @@ body{
                 color: $bg-color !important;
             }
         }
-        .privacy-section,.term-section,.coins-section {
-            h1{
+        .privacy-section,.term-section,.coins-section,.address-section,.form-section,.guest-section{
+            h1,svg,p,a,span,h5{
                 color: $bg-color !important;
+            }
+            label{
+                color:  #979797 !important;
             }
         }
         .form-control {
@@ -225,6 +228,16 @@ body{
             }
             h1{
                 color: $red-color !important;
+            }
+        }
+        .marketing-section{
+            .marketing-left{
+                &::before{
+                    background-color: $bg-color !important;
+                }
+                h4{
+                    color: $bg-color !important;
+                }
             }
         }
         .services-section{

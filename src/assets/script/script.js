@@ -5,7 +5,7 @@ $('.info-textarea').keyup(function() {
   var characterCount = $(this).val().length,
       current = $('#current'),
       maximum = $('#maximum'),
-      theCount = $('#the-count');
+      theCount = $('#count');
     
   current.text(characterCount);
  

@@ -701,8 +701,11 @@ body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
   color: #FFFFFF !important;
 }
-body.dark-mode .privacy-section h1, body.dark-mode .term-section h1, body.dark-mode .coins-section h1 {
+body.dark-mode .privacy-section h1, body.dark-mode .privacy-section svg, body.dark-mode .privacy-section p, body.dark-mode .privacy-section a, body.dark-mode .privacy-section span, body.dark-mode .privacy-section h5, body.dark-mode .term-section h1, body.dark-mode .term-section svg, body.dark-mode .term-section p, body.dark-mode .term-section a, body.dark-mode .term-section span, body.dark-mode .term-section h5, body.dark-mode .coins-section h1, body.dark-mode .coins-section svg, body.dark-mode .coins-section p, body.dark-mode .coins-section a, body.dark-mode .coins-section span, body.dark-mode .coins-section h5, body.dark-mode .address-section h1, body.dark-mode .address-section svg, body.dark-mode .address-section p, body.dark-mode .address-section a, body.dark-mode .address-section span, body.dark-mode .address-section h5, body.dark-mode .form-section h1, body.dark-mode .form-section svg, body.dark-mode .form-section p, body.dark-mode .form-section a, body.dark-mode .form-section span, body.dark-mode .form-section h5, body.dark-mode .guest-section h1, body.dark-mode .guest-section svg, body.dark-mode .guest-section p, body.dark-mode .guest-section a, body.dark-mode .guest-section span, body.dark-mode .guest-section h5 {
   color: #FFFFFF !important;
+}
+body.dark-mode .privacy-section label, body.dark-mode .term-section label, body.dark-mode .coins-section label, body.dark-mode .address-section label, body.dark-mode .form-section label, body.dark-mode .guest-section label {
+  color: #979797 !important;
 }
 body.dark-mode .form-control {
   color: #979797 !important;
@@ -763,6 +766,12 @@ body.dark-mode section p, body.dark-mode section a, body.dark-mode section h6, b
 }
 body.dark-mode section h1, body.dark-mode nav h1, body.dark-mode .how-start-section h1, body.dark-mode .services-section h1, body.dark-mode form h1, body.dark-mode .reservation-section h1 {
   color: #DC303C !important;
+}
+body.dark-mode .marketing-section .marketing-left::before {
+  background-color: #FFFFFF !important;
+}
+body.dark-mode .marketing-section .marketing-left h4 {
+  color: #FFFFFF !important;
 }
 body.dark-mode .services-section .card {
   background-color: #080708 !important;
@@ -2257,7 +2266,7 @@ header nav.navbar .container-fluid .navbar-collapse .navbar-nav .language-dropdo
   }
 }
 header nav.navbar .container-fluid .navbar-collapse .navbar-nav .language-dropdown ul li {
-  border-bottom: 1px solid #EFEFEF;
+  border-bottom: 1px solid #2f2f2f;
 }
 header nav.navbar .container-fluid .navbar-collapse .navbar-nav .language-dropdown ul li:last-child {
   border: none !important;
@@ -2748,8 +2757,11 @@ body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
   color: #FFFFFF !important;
 }
-body.dark-mode .privacy-section h1, body.dark-mode .term-section h1, body.dark-mode .coins-section h1 {
+body.dark-mode .privacy-section h1, body.dark-mode .privacy-section svg, body.dark-mode .privacy-section p, body.dark-mode .privacy-section a, body.dark-mode .privacy-section span, body.dark-mode .privacy-section h5, body.dark-mode .term-section h1, body.dark-mode .term-section svg, body.dark-mode .term-section p, body.dark-mode .term-section a, body.dark-mode .term-section span, body.dark-mode .term-section h5, body.dark-mode .coins-section h1, body.dark-mode .coins-section svg, body.dark-mode .coins-section p, body.dark-mode .coins-section a, body.dark-mode .coins-section span, body.dark-mode .coins-section h5, body.dark-mode .address-section h1, body.dark-mode .address-section svg, body.dark-mode .address-section p, body.dark-mode .address-section a, body.dark-mode .address-section span, body.dark-mode .address-section h5, body.dark-mode .form-section h1, body.dark-mode .form-section svg, body.dark-mode .form-section p, body.dark-mode .form-section a, body.dark-mode .form-section span, body.dark-mode .form-section h5, body.dark-mode .guest-section h1, body.dark-mode .guest-section svg, body.dark-mode .guest-section p, body.dark-mode .guest-section a, body.dark-mode .guest-section span, body.dark-mode .guest-section h5 {
   color: #FFFFFF !important;
+}
+body.dark-mode .privacy-section label, body.dark-mode .term-section label, body.dark-mode .coins-section label, body.dark-mode .address-section label, body.dark-mode .form-section label, body.dark-mode .guest-section label {
+  color: #979797 !important;
 }
 body.dark-mode .form-control {
   color: #979797 !important;
@@ -2810,6 +2822,12 @@ body.dark-mode section p, body.dark-mode section a, body.dark-mode section h6, b
 }
 body.dark-mode section h1, body.dark-mode nav h1, body.dark-mode .how-start-section h1, body.dark-mode .services-section h1, body.dark-mode form h1, body.dark-mode .reservation-section h1 {
   color: #DC303C !important;
+}
+body.dark-mode .marketing-section .marketing-left::before {
+  background-color: #FFFFFF !important;
+}
+body.dark-mode .marketing-section .marketing-left h4 {
+  color: #FFFFFF !important;
 }
 body.dark-mode .services-section .card {
   background-color: #080708 !important;
@@ -4236,7 +4254,7 @@ section.with-us-section .container-fluid .row .col-4 .with-us-card .card-footer 
   padding: 0 !important;
 }
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-header {
-  height: 113px;
+  min-height: 113px;
 }
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-header img {
   height: 100%;
@@ -4245,13 +4263,13 @@ section.with-us-section .container-fluid .row .col-4 .with-us-card .card-body h6
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-body p,
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-footer h6,
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-footer p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #51514F;
 }
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-body {
   margin-top: 17px;
-  height: 47px;
+  min-height: 70px;
 }
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-body h6 {
   font-weight: 600;
@@ -4283,6 +4301,38 @@ section.reservation-section .section-title p {
   line-height: 29px;
   color: #080708;
 }
+section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-weight: 500;
+  line-height: 30px;
+  color: #080708;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 25px;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h5, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h5 {
+  font-weight: 500;
+  line-height: 30px;
+  color: #FFFFFF !important;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h3 {
+  font-size: 25px;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h5, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h5 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon, section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon, section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon, section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon {
+  background: none !important;
+}
+section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon svg, section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon svg, section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon svg, section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon svg {
+  width: 20px;
+  height: 30px;
+  color: #000000 !important;
+}
 section.reservation-section .container-fluid .row .col-12 .section-title {
   text-align: center;
   margin-bottom: 60px;
@@ -4295,6 +4345,41 @@ section.reservation-section .container-fluid .row .col-12 .section-title p {
   font-size: 24px;
   line-height: 29px;
   color: #080708;
+}
+section.marketing-section {
+  margin-top: 120px;
+}
+section.marketing-section .marketing-img {
+  height: 460px;
+}
+@media (max-width: 776px) {
+  section.marketing-section .marketing-img {
+    height: 300px;
+  }
+}
+section.marketing-section .marketing-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+section.marketing-section .marketing-left {
+  margin-bottom: 30px;
+}
+section.marketing-section .marketing-left::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+section.marketing-section .marketing-left p {
+  line-height: 25px;
+  font-size: 17px;
 }
 section.marketing-section .title {
   font-weight: 500;
@@ -4715,7 +4800,7 @@ section.connect-section {
   padding-bottom: 149px;
 }
 section.connect-section .title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 40px;
   line-height: 48px;
 }
@@ -4929,8 +5014,8 @@ section.faq-section .container-fluid .row .col-12 .faq-accordion .accordion-item
 section.faq-section .container-fluid .row .col-12 .faq-accordion .accordion-item .accordion-collapse .accordion-body p, section.faq-section .container-fluid .row .col-12 .accordion-item .accordion-item .accordion-collapse .accordion-body p {
   word-break: break-word !important;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 38px;
+  font-size: 19px;
+  line-height: 30px;
   color: #000000;
   word-break: break-all;
 }
@@ -5005,7 +5090,7 @@ section.benefits-info-section .container-fluid .row .col-12 .benefits-info-conta
 }
 section.benefits-info-section .container-fluid .row .col-12 .benefits-info-container p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 34px;
   color: #000000;
 }
@@ -5598,12 +5683,12 @@ section.address-section .col-md-4 div p, section.address-section .col-md-4 div s
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
-  color: #000000 !important;
+  color: #000000;
 }
 section.address-section .col-md-4 div p a, section.address-section .col-md-4 div span a {
-  color: #000 !important;
+  color: #000000;
 }
-section.address-section .col-md-8 {
+section.address-section .col-md-6 {
   display: flex;
   justify-content: flex-end;
 }

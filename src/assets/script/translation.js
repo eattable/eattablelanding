@@ -1,5 +1,16 @@
 var arrLang = {
       'az': {
+          //marketing
+          "marketing":"Marketinq",
+          "marketing-text":"EATTABLE marketinq alətlərinin köməyi ilə siz məkanınıza daha çox qonaq cəlb edə biləcəksiz.",
+          "marketing-visibility":"İnternet üzerindən daha çox baxış sayı",
+          "marketing-visibility-text":"EATTABLE-ın geniş auditoriyası təşkilatınızın tanınmasını artırmağa və daha çox sifariş əldə etməyə kömək edəcəkdir. Müştəri trafikinin 50% artırılması. Yeni müştərilər arasında restoranın tanınmasını 2 dəfə artırın.",
+          "marketing-booking":"Rezervasiya vidjeti",
+          "marketing-booking-text":"Onlayn reservasiya və fərdiləşdirilə bilən qonaq idarəçiliyi ilə olan vidjetlər.",
+          "marketing-team":"Marketinq komandası",
+          "marketing-team-text":"Biz hər bir qonağın cəlb edilməsinə və saxlanmasına çəkilən xərcləri azaltmağa kömək edirik, çünki marketinq, düzgün reklam və irəliləmə üzrə bütün işləri öz üzərimizə götürürük.",
+          "marketing-loyalty":"Loyallıq proqramı",
+          "marketing-loyalty-text":"EATTABLE cashback-lərin sayəsində müştərilər sizdən ən az bron olunan saat və günlərdə belə rezervasiya edəcəklər.",
           "phone-text": "EATTABLE seçimləri ilə ən mükəmməl nahar yerinizi seçin. Dostlarınıza dəvət göndərin, müxtəlif filtrlarla çeşidləyin. Bir tətbiqdə çox sayda faydalı xüsusiyyətlər əldə edin. ",
           "card-text": "EATTABLE Pul Kisəsinə bütün ödəniş metodlarını əlavə edin və növbəti rezervasiyalarınız üçün coins qazanın",
           "apply":"Müraciət etmək",
@@ -633,10 +644,19 @@ var arrLang = {
           "cookies-accept":"",
       },
       'ru': {
+          //marketing
+          "marketing":"Маркетинг",
+          "marketing-text":"С инструментами маркетинга от EATTABLE вы сможете привлечь больше гостей в ваше заведение.  ",
+          "marketing-visibility":"Больше видимости в интернете",
+          "marketing-visibility-text":"Широкая аудитория EATTABLE поможет увеличить видимость вашего заведения и получать больше заказов. Повышение клиентского трафика на 50%. Рост узнаваемости ресторана среди новых клиентов в 2 раза.",
+          "marketing-booking":"Виджет бронирования",
+          "marketing-booking-text":"Онлайн резервация и виджеты бронирования с настраиваемым менеджментом гостей.",
+          "marketing-team":"Маркетинг команда",
+          "marketing-team-text":"Мы поможем уменьшить затраты на привлечение и удержание каждого из гостей, так как мы заботимся о всей работе маркетинга, подходящей рекламе и продвижении.",
+          "marketing-loyalty":"Программа лояльности",
+          "marketing-loyalty-text":"Благодаря кэшбекам от EATTABLE гости будут бронировать у вас даже в самые разгруженные дни.",
           "card-text": "Добавьте все способы оплаты в свой Кошелек EATTABLE и зарабатывайте coins при следующем бронировании",
           "phone-text": "Выберите идеальное место для ужина с подборками от EATTABLE. Отправьте приглашения друзьям, отсортируйте из десятков фильтров. Получайте множество полезных функций в одном приложении. ",
-          
-          
           "apply":"Подать заявку",
           //help page
           'support-title': 'Служба поддержки',
@@ -1266,6 +1286,17 @@ var arrLang = {
         
       },
       'en': {
+        //marketing
+        "marketing":"Marketing",
+        "marketing-text":"With Eattable marketing tools you can attract more guests toyour establishment",
+        "marketing-visibility":"More visibility on the internet",
+        "marketing-visibility-text":" A wide audience of EATTABLE will help increase the visibility of your establishment and get more bookings. Increase in client traffic by 50%.The increase in the recognition of the restaurant among new customers by 2 times.",
+        "marketing-booking":"Booking Widget",
+        "marketing-booking-text":"Online booking and booking widgets with customizable guest management.",
+        "marketing-team":"Marketing team",
+        "marketing-team-text":"We will help reduce the cost of attracting and retaining each of the guests, as we take care of all the marketing work, suitable advertising and promotion.",
+        "marketing-loyalty":"Loyalty program",
+        "marketing-loyalty-text":"Thanks to the cashback from EATTABLE, customers will book with you even on unloaded days.",
            "privacy-nav":"Privacy Policy",
           "cookies-nav":"Cookies",
           "processing-nav":"Personal Data Processing",

@@ -1,22 +1,22 @@
 //phone animation on scrolling
 
-gsap.from(".line video", {
-  scrollTrigger: {
-    trigger: ".orange",
-    scrub: true,
-    pin: true,
-    // start: "top top",
-    end: "+=100%"
-  },
-  scaleX: 2, 
-  scaleY: 2, 
-  // transformOrigin: "left center", 
-  ease: "none"
-});
+// gsap.from(".line video", {
+//   scrollTrigger: {
+//     trigger: ".orange",
+//     scrub: true,
+//     pin: true,
+//     // start: "top top",
+//     end: "+=100%"
+//   },
+//   scaleX: 2, 
+//   scaleY: 2, 
+//   // transformOrigin: "left center", 
+//   ease: "none"
+// });
 
 
 AOS.init({
-duration: 1200,
+duration: 1000,
 })
 
 
