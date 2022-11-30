@@ -98,7 +98,7 @@
         </div>
 
         <div class="col-12 col-md-8">
-          <p >«EATTABLE» Limited Liability Company Certificate No.(VÖEN) </br>2007465991,
+          <p >«EATTABLE» Limited Liability Company Certificate No.(VÖEN) </br><span>2007465991,</span>
             </br>
             Ministry of Taxes of the Azerbaijan Republic.
           </p>
@@ -120,11 +120,17 @@
           </div>
           <div>
             <label class="lang" key="contact-emil">Email</label>
-            <input type="text" required class="form-control lang-input email"/>
+            <input type="email" required class="form-control lang-input email"/>
           </div>
           <div>
             <label class="lang" key="contact-phone">Phone number</label>
-            <input type="text" required class="form-control lang-input phone"/>
+            <input type="number" required class="form-control lang-input phone" 
+              minlength="3"
+              min="3"
+              maxlength="12"
+              max="3"
+              onKeyPress="if(this.value.length==12) return false;" 
+              />
           </div>
         </div>
         

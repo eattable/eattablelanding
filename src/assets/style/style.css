@@ -5427,11 +5427,12 @@ section.vacancy-section .container-fluid .row .col-12 .vacancy-apply .row .col-1
 }
 
 section.term-section {
+  padding: 0 10px;
   margin-top: 100px;
 }
 section.term-section .container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 section.term-section .container-fluid .row > * {
   padding-left: 0 !important;
@@ -5593,14 +5594,14 @@ section.address-section svg {
 section.address-section .col-md-4 div {
   margin-bottom: 40px;
 }
-section.address-section .col-md-4 div p {
+section.address-section .col-md-4 div p, section.address-section .col-md-4 div span {
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
-  color: #000000;
+  color: #000000 !important;
 }
-section.address-section .col-md-4 div p a {
-  color: #000;
+section.address-section .col-md-4 div p a, section.address-section .col-md-4 div span a {
+  color: #000 !important;
 }
 section.address-section .col-md-8 {
   display: flex;
