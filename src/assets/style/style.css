@@ -4301,6 +4301,26 @@ section.reservation-section .section-title p {
   line-height: 29px;
   color: #080708;
 }
+section.reservation-section .carousel {
+  height: 800px !important;
+}
+section.reservation-section .carousel .carousel-inner {
+  width: 844px;
+  height: 100% !important;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item {
+  height: 425px !important;
+}
+section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  margin-top: 50px;
+  max-width: 700px;
+  width: 100%;
+}
 section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-weight: 500;
   line-height: 30px;
@@ -4316,7 +4336,6 @@ section.reservation-section .carousel .carousel-inner .carousel-item .carousel-c
 section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h5, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h5 {
   font-weight: 500;
   line-height: 30px;
-  color: #FFFFFF !important;
 }
 section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .carousel-caption h3, section.reservation-section .carousel .carousel-inner .carousel-item.item-5 .carousel-caption h3 {
   font-size: 25px;
@@ -4325,13 +4344,57 @@ section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .car
   margin-top: 20px;
   font-size: 16px;
 }
-section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon, section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon, section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon, section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon {
+section.reservation-section .carousel .carousel-control-prev,
+section.reservation-section .carousel .carousel-control-next {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #F1F1F1;
+  opacity: 1;
+  top: 20%;
+  color: #000;
+}
+@media (max-width: 1199px) {
+  section.reservation-section .carousel .carousel-control-prev,
+section.reservation-section .carousel .carousel-control-next {
+    background: none !important;
+  }
+}
+@media (max-width: 575px) {
+  section.reservation-section .carousel .carousel-control-prev,
+section.reservation-section .carousel .carousel-control-next {
+    top: 3% !important;
+  }
+}
+section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon,
+section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon,
+section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon,
+section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon {
   background: none !important;
 }
-section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon svg, section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon svg, section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon svg, section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon svg {
+section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon svg,
+section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon svg,
+section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon svg,
+section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon svg {
   width: 20px;
   height: 30px;
   color: #000000 !important;
+}
+section.reservation-section .carousel .carousel-control-prev {
+  left: 2%;
+}
+@media (max-width: 575px) {
+  section.reservation-section .carousel .carousel-control-prev {
+    left: -8% !important;
+  }
+}
+section.reservation-section .carousel .carousel-control-next {
+  right: 2%;
+}
+@media (max-width: 575px) {
+  section.reservation-section .carousel .carousel-control-next {
+    right: -8% !important;
+  }
 }
 section.reservation-section .container-fluid .row .col-12 .section-title {
   text-align: center;
@@ -4345,9 +4408,6 @@ section.reservation-section .container-fluid .row .col-12 .section-title p {
   font-size: 24px;
   line-height: 29px;
   color: #080708;
-}
-section.marketing-section {
-  margin-top: 120px;
 }
 section.marketing-section .marketing-img {
   height: 460px;
