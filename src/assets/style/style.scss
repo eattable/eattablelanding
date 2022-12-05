@@ -8,14 +8,12 @@
 @import "./utilities/border";
 //Buttons
 @import "./utilities/button";
-//Tables
-@import "./utilities/table";
+//dark light btn
+@import "./layout/darkBtn";
 //Inputs
 @import "./utilities/input";
 //Variables
 @import "./utilities/variables";
-//dark light btn
-@import "./layout/darkBtn";
 /*Base*/
     //*Main CSS
     @import "./base/main";

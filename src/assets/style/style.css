@@ -736,6 +736,9 @@ body.dark-mode .language-dropdown .lang-item.selected {
 body.dark-mode .language-dropdown ul li {
   border-bottom: 1px solid #2f2f2f !important;
 }
+body.dark-mode .faq-section .accordion-item {
+  border-bottom: 1px solid #2f2f2f !important;
+}
 body.dark-mode .dark-mode-toggle svg.fa-sun {
   display: none !important;
   visibility: hidden !important;
@@ -2823,6 +2826,9 @@ body.dark-mode .language-dropdown .lang-item.selected {
   background-color: #444445 !important;
 }
 body.dark-mode .language-dropdown ul li {
+  border-bottom: 1px solid #2f2f2f !important;
+}
+body.dark-mode .faq-section .accordion-item {
   border-bottom: 1px solid #2f2f2f !important;
 }
 body.dark-mode .dark-mode-toggle svg.fa-sun {
@@ -5110,12 +5116,12 @@ section.faq-section .container-fluid .row .col-12 .section-title {
   margin-bottom: 30px;
 }
 section.faq-section .container-fluid .row .col-12 .faq-accordion, section.faq-section .container-fluid .row .col-12 .accordion-item {
-  border: none !important;
+  border: none;
   background: none !important;
   cursor: pointer !important;
 }
 section.faq-section .container-fluid .row .col-12 .faq-accordion .accordion-item, section.faq-section .container-fluid .row .col-12 .accordion-item .accordion-item {
-  border-bottom: 1px solid #D9D9D9 !important;
+  border-bottom: 1px solid #D9D9D9;
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer !important;

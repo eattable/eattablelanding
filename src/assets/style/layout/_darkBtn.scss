@@ -193,6 +193,11 @@ body{
                 }
             }
         }
+        .faq-section{
+            .accordion-item{
+                border-bottom:1px solid #2f2f2f !important;
+            }
+        }
         .dark-mode-toggle{
             svg{
                 &.fa-sun {
