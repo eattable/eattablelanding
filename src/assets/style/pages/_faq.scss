@@ -72,7 +72,7 @@ section{
                                         }
                                         h6{
                                             @include font-weight-500;
-                                            @include font-size-15;
+                                            @include font-size-20;
                                             line-height: 38px;
                                             color: $font-color-2; 
                                             word-break: break-all;
@@ -80,10 +80,10 @@ section{
                                         &::before{
                                             position: absolute;
                                             content: "";
-                                            top: 13px;
+                                            top: 0px;
                                             left: 50px;
                                             width: 5px;
-                                            height: 60%;
+                                            height: 100%;
                                             background-color: $red-color;
                                             border-radius: 14px;
                                         }

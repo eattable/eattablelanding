@@ -187,6 +187,11 @@ body{
                     background-color: #444445  !important;
                 }
             }
+            ul{
+                li{
+                    border-bottom: 1px solid #2f2f2f !important;
+                }
+            }
         }
         .dark-mode-toggle{
             svg{
@@ -228,6 +233,37 @@ body{
             }
             h1{
                 color: $red-color !important;
+            }
+            .carousel-section {
+                .carousel-caption{
+                    h3,h5{
+                        color: $bg-color !important;
+                    }
+                }
+            }
+        }
+        .privacy-section{
+            .tab-container{
+                .nav {
+                    .nav-item {
+                        .nav-link{
+                            background-color: $font-color !important;
+                            border-color: #444445;
+                            &.active{
+                                border-color: $red-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .info-section{
+            .info-list{
+                li{
+                    &::before{
+                        background: $bg-color !important;
+                    }
+                }
             }
         }
         .marketing-section{
@@ -448,17 +484,19 @@ label{
             }
         }
         svg{
+            width: 20px;
+            height: 20px;
             &.svg-inline--fa{
                 position: absolute;
                 z-index: 10000;
                 &.fa-sun{
-                    left: 14px;
-                    top: 12px;
+                    left: 10px !important;
+                    top: 10px !important;
                     color: $font-color;
                 }
                 &.fa-moon{
-                    top: 11px;
-                    right: 16px;
+                    top: 10px !important;
+                    right: 10px !important;
                     color: $bg-color;
                 }
             } 

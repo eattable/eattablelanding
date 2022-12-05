@@ -71,4 +71,16 @@ $('.info-textarea').keyup(function() {
 // });
 
 
+// var url = window.location.href;
+// console.log(url)
+// function UrlExists(url){
+//   var http= new XMLHttpRequest();
+//   http.open('HEAD',url,false);
+//   http.send();
+//    console.log(http.status);
+//   if(http.status != 404){
+//     alert('GUZÍ')
 
+//   }
+// }
+// window.addEventListener('load',UrlExists(url))

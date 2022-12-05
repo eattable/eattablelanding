@@ -23,7 +23,9 @@ var arrLang = {
           'for-restaurant': 'MƏKANLAR ÜÇÜN',
           'connect-title': 'Bizimlə əlaqə saxlayın',
           'connect-content-title': 'Yuxarıdakı bölmədə sualınıza cavab tapmadızsa, bizə müraciət etməkdən çəkinməyin:',
-          'connect-content': 'support@eattable.com e-poçt ünvanına bizə bir neçə cümlə yazıb göndərin və ya chat proqramından istifadə edin',
+          'connect-content': ' e-poçt ünvanına bizə bir neçə cümlə yazıb göndərin',
+          'support-mail': ' support@eattable.com',
+          'support-chat': ' və ya chat proqramından istifadə edin',
           //footer
           'our-products': 'Kontakt',
           'our-vacancies': 'Vakansiyalar',
@@ -559,7 +561,9 @@ var arrLang = {
           "11.2": "11.2.     Hər hansı səbəbdən tərəflər məhkəmədən öncə olan həll prosesində razılığa qəlmədiyi təqdirdə, Razılaşmadan irəli gələn mübahisə İnzibatçının olduğu yer üzrə aidiyyəti məhkəmə tərəfindən baxılmalıdır. ",
           "11.3": "11.3. Razılaşma Azərbaycan dilində tərtib edilib. Razılaşma üzrə tərflər arasında yaranan münasibətlərə Azərbaycan Respublikaısının qanunvericiliyi (tədbiq edilən hüquq) şamil edilir. Əcnəbi İstifadəçi tərəfindən Razılaşmanın aksepti onu bildirir ki, Razılaşmanın mətni ona aydındır və tərcümadə ehtiyacı yoxdur. Tərcümə lazım olduqda İstifadəçilər tərcüməni öz gücü və vəsaiti hesabına edir. ",
           "following-part":"Razılaşmanın ayrılmaz hissəsi hesab olunur:",
-          "agreement-last": "Əlavə № 1 “Konfidensiallıq siyasəti” hazırki redasiyaya keçid ünvanı :_______________.",
+          "agreement-last": "Əlavə № 1",
+          "privacy-link": "“Konfidensiallıq siyasəti”",
+          "reference": ", hazırki redasiyaya keçid ünvanı :_______________.",
           //contact
           "address":"Ünvan:",
           "address-desc": "AZ1025,Bakı şəhəri,Xətai rayonu, Ayaz İsmayılov ev.8",
@@ -641,6 +645,7 @@ var arrLang = {
           "cookies-allow":"Cookie fayılları İstifadəçini  qurğusunda  blok etmək. Bu halda İstifadəçi xəbərdar olunur ki, Servis üzrə naqiqasiya çətinləşə bilər. Bəzi funksiyalar cookie –fayılalların tədbiqini tələb edir (məsələn əməliyyat sisteminin və arzu olunan dilin tanınması və müəyyən edilməsi üçün). Nəticədə, İnzibatçı cookie faylların söndürülməsi nəticəsində Servisin serverlərin lazımı qaydada işlənməməsindən irəli gələn rahatsızlıqlara görə məsuliyyət daşımır.",
           "cookies-block":"Hər bir fərdi halda sorğu əsasında cookie-fayılların istifadəsini aktivləşdirmək",
           "cookies-enable":"Dərc edəndən asılı olaraq cookie-fayılları qəbul etmək və ya onlardan imtina etmək.  ",
+          "note":"Qeyd",
           "cookies-accept":"",
       },
       'ru': {
@@ -667,7 +672,9 @@ var arrLang = {
           'for-restaurant': 'ДЛЯ ЗАВЕДЕНИЙ',
           'connect-title': 'Свяжитесь с нами',
           'connect-content-title': 'Если вы не найдете ответа на ваш вопрос в списке часто задаваемых вопросов, то, пожалуйста, свяжитесь с нами:',
-          'connect-content': 'Напишите нам пару строк на support@eattable.com или воспользуйтесь чатом в приложении',
+          'connect-content': 'Напишите нам пару строк на ',
+          'support-mail': ' support@eattable.com',
+          'support-chat': ' или воспользуйтесь чатом в приложении',
           //footer
           'our-products': 'Контакт',
           'our-vacancies': 'Вакансии',
@@ -759,6 +766,7 @@ var arrLang = {
           'open-vacany': 'Вакантные места',
           //business page
           'you-are-with-us': "С нами вы",
+          "note":"заметка",
           "feature-1-title": "Приобретете больше гостей и резерваций",
           "feature-1-subtitle": "Наша команда делает все необходимое, чтобы как можно больше людей узнали о вашем заведении.",
           "feature-2-title": "Увеличите объемы продаж",
@@ -1230,7 +1238,9 @@ var arrLang = {
           "11.2": "11.2. Если согласие по каким-либо причинам не будет достигнуто в ходе досудебного урегулирования, спор, вытекающий из Соглашения, подлежит рассмотрению в суде по месту нахождения Администрации.",
           "11.3": "11.3. К отношениям сторон по Соглашению применяется право Азербайджанской Республики (применимое право). Акцепт Соглашения иностранным Пользователем означает, что текст Соглашения ему понятен и в переводе он не нуждается. В случае необходимости в переводе иностранные Пользователи обязуются осуществить перевод на нужный им язык своими силами и за свой счет. ",
           "following-part":"Неотъемлемой частью Соглашения является.",
-          "agreement-last": "Приложение № 1 «Политика конфиденциальности», ссылка на действующую редакцию: _______________.",
+          "agreement-last": "Приложение № 1 ",
+          "privacy-link": "«Политика конфиденциальности»",
+          "reference": ", ссылка на действующую редакцию: _______________.",
           "address":"Адрес:",
           "address-desc": "AZ1025,Bakı şəhəri,Xətai rayonu, Ayaz İsmayılov ev.8",
           "email1": "Контакт: ",
@@ -1313,7 +1323,9 @@ var arrLang = {
           'restaurant': 'FOR VENUES',
           'connect-title': 'Connect with us',
           'connect-content-title': 'If you did not find the answer to your question in the FAQ above, then feel free to contact us:',
-          'connect-content': 'Write us a couple of lines at support@eattable.com or use the chat in the app',
+          'connect-content': 'Write us a couple of lines at',
+          'support-mail': ' support@eattable.com',
+          'support-chat': ' or use the chat in the app',
           //footer
           'our-products': 'Contact',
           'our-vacancies': 'Vacancies',
@@ -1844,7 +1856,9 @@ var arrLang = {
           "11.2": "11.2.     If consent for any reason is not reached during pre-trial settlement, the dispute arising from the Agreement is subject to judicial review at the location of the Administration.",
           "11.3": "11.3. The Agreement is made in English. The law of the Republic of Azerbaijan applies to the relations of the parties under the Agreement (applicable law). The acceptance of the Agreement by a foreign User means that the text of the Agreement is understood and does not require translation. If necessary, foreign Users undertake to translate into the language they need on their own and at their own expense.",
            "following-part":"The following is an integral part of the Agreement",
-          "agreement-last": "1.    Application No. 1 “Privacy Policy”, reference to the current version: _______________.",
+          "agreement-last": "Application No. 1 ",
+          "privacy-link": "“Privacy Policy”",
+          "reference": ", reference to the current version: _______________.",
           "address":"Address:",
           "address-desc": "AZ1025,Bakı şəhəri,Xətai rayonu, Ayaz İsmayılov ev.8",
           "write-us": "Write us",
@@ -1928,6 +1942,7 @@ var arrLang = {
             "cookies-block":"block cookies on the User's device. In that case the User is warned that navigation on Service can be complicated. Some functions require the use of cookies (for example, for recognition of the operating system and the User`s preferred language). Therefore, the Administration is not responsible for the inconveniences caused by inadequate work of services of Service because of disabled cookie-files;",
             "cookies-enable":"enable the use of cookies on a case-by-case basis;",
             "cookies-accept":"accept or reject cookies depending on their publisher.",
+            "note":"Note"
       },
     };
     

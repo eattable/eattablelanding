@@ -153,8 +153,6 @@ document.ontouchmove = function (e) {
   e.preventDefault();
 }
 
-
-
 // function clearStorage() {
 
 //   let session = sessionStorage.getItem('activeLink');

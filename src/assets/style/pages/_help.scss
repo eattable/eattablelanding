@@ -2,7 +2,7 @@ section{
     &.support-section{
         // background-image: url("../../img/section/business/apply.png");
         height: 479px;
-        margin-top: 93px;
+        margin-top: 91px;
         .title{
             @include font-weight-600;
             @include font-size-40;
@@ -113,24 +113,24 @@ section{
                                 // border-radius: 0px 0px 42.9187px 42.9187px;
                                 h6,svg{
                                     @include font-weight-600;
-                                    @include font-size-36;
+                                    @include font-size-25;
                                     line-height: 43px;
                                     color: $bg-color;
                                 }
                             }
-                            &:hover{
-                                .card-img{
-                                    -webkit-transform:scale(1.25); /* Safari and Chrome */
-                                    -moz-transform:scale(1.25); /* Firefox */
-                                    -ms-transform:scale(1.25); /* IE 9 */
-                                    -o-transform:scale(1.25); /* Opera */
-                                    transform:scale(1.25);
-                                    border-radius: 39.8187px !important;
-                                    -webkit-border-radius: 39.8187px !important; 
-                                    -moz-border-radius:39.8187px !important;
-                                }
+                            // &:hover{
+                            //     .card-img{
+                            //         -webkit-transform:scale(1.25); /* Safari and Chrome */
+                            //         -moz-transform:scale(1.25); /* Firefox */
+                            //         -ms-transform:scale(1.25); /* IE 9 */
+                            //         -o-transform:scale(1.25); /* Opera */
+                            //         transform:scale(1.25);
+                            //         border-radius: 39.8187px !important;
+                            //         -webkit-border-radius: 39.8187px !important; 
+                            //         -moz-border-radius:39.8187px !important;
+                            //     }
                                 
-                            }
+                            // }
                         }
                     }
                 }
@@ -145,6 +145,11 @@ section{
             @include font-size-40;
             line-height: 48px;
         }
+        a{
+            &.support-mail{
+                 color: $red-color;
+            }
+         }
         .info{
             word-break: break-word;
         }

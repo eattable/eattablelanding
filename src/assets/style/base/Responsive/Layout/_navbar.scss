@@ -43,6 +43,22 @@
                     .dark-toggle-responsive{
                         // margin-left: auto;
                         margin-right: 20px;
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                            &.svg-inline--fa{
+                                &.fa-sun{
+                                    left: 7px !important;
+                                    top: 6px !important;
+                                    color: $font-color;
+                                }
+                                &.fa-moon{
+                                    top: 6px !important;
+                                    right: 3px !important;
+                                    color: $bg-color;
+                                }
+                            } 
+                        }
                     }
                     .navbar-brand{
                         width: 150px !important;

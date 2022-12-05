@@ -197,8 +197,9 @@
           <div
             class="col-5 col-xl-5 col-lg-5 d-xl-block d-lg-block d-md-none d-sm-none d-xs-none ps-xl-0"
           >
-            <form action="" class="apply-form d-flex">
+            <form id="apply-form" action="" class="apply-form d-flex">
               <input
+              id="fullname"
                 required
                 type="text"
                 class="form-control lang-input"
@@ -206,6 +207,7 @@
                 placeholder="Full Name"
               />
               <input
+              id="voen"
                 required
                 type="text"
                 class="form-control lang-input"
@@ -213,6 +215,7 @@
                 placeholder="VOEN"
               />
               <input
+              id="email"
                 required
                 type="email"
                 class="form-control lang-input"
@@ -222,6 +225,7 @@
               <div class="input-box">
                 <span class="prefix">+994</span>
                 <input
+                id="phone-number"
                   required
                   style="margin-top: 0"
                   type="number"
@@ -236,6 +240,7 @@
               </div>
               <input
                 required
+                id="restaurant-name"
                 type="text"
                 class="form-control lang-input"
                 key="restaurant-name"
@@ -243,11 +248,17 @@
               />
               <input
                 required
+                id="address"
                 type="text"
                 class="form-control lang-input"
                 placeholder="Restaurant address"
                 key="restaurant-address"
               />
+              <textarea placeholder="Note" rows="3" class="form-control lang-input" cols="5" maxlength="30" key="note" id="note"></textarea>
+              <div class="info-word-size" id="the-count">
+                <span id="current">0</span>
+                <span id="maximum">/ 4000</span>
+              </div>
               <div
                 class="g-recaptcha my-2"
                 data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
@@ -285,20 +296,23 @@
           <div
             class="col-md-8 col-sm-12 col-xs-12 d-xl-none d-lg-none mx-md-auto d-md-block d-sm-block d-xs-block ps-xl-0"
           >
-            <form action="" class="apply-form d-flex">
+            <form id="res-form" action="" class="apply-form d-flex">
               <input
+                id="res-fullName"
                 required
                 type="text"
                 class="form-control"
                 placeholder="Full Name"
               />
               <input
+                id="res-voen"
                 required
                 type="text"
                 class="form-control"
                 placeholder="VOEN"
               />
               <input
+                id="res-email"
                 required
                 type="email"
                 class="form-control lang-input"
@@ -309,6 +323,7 @@
                 <span class="prefix">+994</span>
                 <input
                   required
+                  id="res-phoneNumber"
                   style="margin-top: 0"
                   type="number"
                   class="form-control lang-input"
@@ -322,6 +337,8 @@
 
               <input
                 required
+              
+                id="res-restaurant-name"
                 type="text"
                 class="form-control lang-input"
                 key="restaurant-name"
@@ -333,7 +350,14 @@
                 class="form-control lang-input"
                 placeholder="Restaurant address"
                 key="restaurant-address"
+                id="res-address"
               />
+
+              <textarea placeholder="Note" rows="3" class="form-control lang-input" maxlength="30" cols="5" key="note" id="res-note"></textarea>
+              <div class="info-word-size" id="the-count">
+                <span id="current-res">0</span>
+                <span id="maximum-res">/ 4000</span>
+              </div>
               <div
                 class="g-recaptcha my-2"
                 data-theme="dark"
@@ -838,7 +862,6 @@
               <h1 class="title info-title lang" key="it-is-not-all">
                 And that is not all!
               </h1>
-              <br />
               <h1 class="title info-title lang" key="additional">
                 We have additional tools to help you make your business even
                 more profitable.
@@ -1028,5 +1051,215 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+
+const fullname = document.getElementById('fullname')
+const voen  = document.getElementById("voen")
+const email  = document.getElementById("email")
+const phoneNumber = document.getElementById('phone-number');
+const address = document.getElementById('address');
+const restaurantName = document.getElementById("restaurant-name");
+const note = document.getElementById('note')
+
+
+//
+const resFullname = document.getElementById('res-fullName')
+const resVoen  = document.getElementById("res-voen")
+const resEmail  = document.getElementById("res-email")
+const resPhoneNumber = document.getElementById('res-phoneNumber');
+const resAddress = document.getElementById('res-address');
+const resRestaurantName = document.getElementById("res-restaurant-name");
+const resNote = document.getElementById('res-note')
+
+
+const form = document.getElementById('apply-form');
+form.addEventListener('submit',postData);
+
+
+
+
+async function postData(e){
+  e.preventDefault();
+
+
+  let dataObj = {
+  fullName: fullname.value,
+  mobile: `994${phoneNumber.value}`,
+  email: email.value,
+  city: address.value,
+  restaurant: restaurantName.value,
+  note:  note.value,
+
+}
+
+
+  const response = await fetch("https://api-management.eattable.com/api/v1/partnerships",{
+     method:"POST",
+     headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(dataObj)
+
+  }).then(() =>{
+    Swal.fire({
+        icon: "success",
+        text: "Müraciətiniz qəbul  olundu",
+    });
+     resetFields();
+  }).catch((err) =>{
+    console.log(err)
+  })
+
+}
+
+function resetFields(){
+    fullname.value = "";
+    voen.value = ""
+    voen.value= "";
+    phoneNumber.value = "";
+    address.value = "" ;
+    restaurantName.value =""
+   
+
+}
+
+
+function resetFieldsRes(){
+    resFullname.value = "";
+    resVoen.value = ""
+    resEmail.value= "";
+    resPhoneNumber.value = "";
+    resAddress.value = "" ;
+    resRestaurantName.value =""
+   
+
+}
+
+
+const resForm = document.getElementById('res-form');
+
+
+resForm.addEventListener('submit',postDataRes);
+async function postDataRes(e){
+  e.preventDefault()
+
+
+  let dataObj = {
+  fullName: resFullname.value,
+  mobile: `994${resPhoneNumber.value}`,
+  email: resEmail.value,
+  city: resAddress.value,
+  restaurant: resRestaurantName.value,
+  note:  resNote.value,
+
+}
+
+
+const response = await fetch("https://api-management.eattable.com/api/v1/partnerships",{
+     method:"POST",
+     headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(dataObj)
+
+  }).then(() =>{
+    Swal.fire({
+        icon: "success",
+        text: "Müraciətiniz qəbul  olundu",
+    });
+     resetFieldsRes();
+  }).catch((err) =>{
+    console.log(err)
+  })
+
+
+}
+
+
+$('#note').keyup(function() {
+    
+    var characterCount = $(this).val().length,
+        current = $('#current'),
+        maximum = $('#maximum'),
+        theCount = $('#count');
+      
+    current.text(characterCount);
+   
+    
+    /*This isn't entirely necessary, just playin around*/
+    if (characterCount < 70) {
+      current.css('color', '#666');
+    }
+    if (characterCount > 70 && characterCount < 90) {
+      current.css('color', '#6d5555');
+    }
+    if (characterCount > 90 && characterCount < 100) {
+      current.css('color', '#793535');
+    }
+    if (characterCount > 100 && characterCount < 120) {
+      current.css('color', '#841c1c');
+    }
+    if (characterCount > 120 && characterCount < 139) {
+      current.css('color', '#8f0001');
+    }
+    
+    if (characterCount >= 140) {
+      maximum.css('color', '#8f0001');
+      current.css('color', '#8f0001');
+      theCount.css('font-weight','bold');
+    } else {
+      maximum.css('color','#666');
+      theCount.css('font-weight','normal');
+    }
+    
+        
+  });
+  
+  $('#res-note').keyup(function() {
+    console.log('ds')
+    var characterCount = $(this).val().length,
+        current = $('#current'),
+        maximum = $('#maximum-res'),
+        theCount = $('#count');
+     
+     document.getElementById('current-res').innerText = characterCount
+     console.log(document.getElementById('current'));  
+   
+    
+    /*This isn't entirely necessary, just playin around*/
+    if (characterCount < 70) {
+      current.css('color', '#666');
+    }
+    if (characterCount > 70 && characterCount < 90) {
+      current.css('color', '#6d5555');
+    }
+    if (characterCount > 90 && characterCount < 100) {
+      current.css('color', '#793535');
+    }
+    if (characterCount > 100 && characterCount < 120) {
+      current.css('color', '#841c1c');
+    }
+    if (characterCount > 120 && characterCount < 139) {
+      current.css('color', '#8f0001');
+    }
+    
+    if (characterCount >= 140) {
+      maximum.css('color', '#8f0001');
+      current.css('color', '#8f0001');
+      theCount.css('font-weight','bold');
+    } else {
+      maximum.css('color','#666');
+      theCount.css('font-weight','normal');
+    }
+    
+        
+  });
+  
+
+
+    </script>
   </body>
 </html>
