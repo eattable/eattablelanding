@@ -368,7 +368,7 @@
                                   <li><p class="lang" key="privacy-provisions-final-2">10.2.	The Operator has the right to change unilaterally the text of the Policy without prior notice to the User. In that case, the appropriate notification of the User will be the publication of new edition of the Policy on Service. Responsibility for timely review of the current version of the Policy is entirely up to the User.</p></li>
                                   <li><p class="lang" key="privacy-provisions-final-3">10.3.	The Policy is made in English. The right of the Azerbaijan Republic is applied to the relations of the parties within the Policy (applicable law). The acceptance of the Policy by a foreign User means that the text of the Agreement is clear to him and he does not need the translation. If required for translation the foreign Users undertake to translate into the language they need on their own and at their own expense. </p></li>
                                   <li><p class="lang" key="privacy-provisions-final-4">10.4.	All disagreements and disputes arising in connection with use of Personal information of the User are settled in accordance with the current legislation in the claim pre-trial procedure. Term of answer to the claim concerning personal data processing is 30 (thirty) working days. If the dispute has not been resolved in the pre-trial procedure – it is subject to consideration in the court where the Operator is located.</p></li>
-                                  <li><p class="lang" key="privacy-provisions-final-5">10.5.	An integral part of the Policy – "The Policy of processing of cookies" is enclosed (application No. 1).</p></li>
+                                  <li><p class="lang" key="privacy-provisions-final-5" onclick="setActive()">10.5.	An integral part of the Policy – "The Policy of processing of cookies" is enclosed (application No. 1).</p></li>
                                 </ul>
                               </li>
                             </ul>
@@ -577,6 +577,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js" integrity="sha512-1cF8XUz5U3BlnRVqNFn+aPNwwSr/FPtrmKvM1g4dJJ9tg8kmqRUzqbSOvRRAMScDnTkOcOnnfwF3+jRA/nE2Ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const setActive = () =>{
+      const tabPanes = document.querySelectorAll('.tab-pane');
+      tabPanes.forEach(item =>{
+        item.classList.remove('active')
+      })
+      document.getElementById("cookies").classList.add('active')
+      const navLinks = document.querySelectorAll('a.nav-link');
+      navLinks.forEach(item => item.classList.remove('active'))
+        document.querySelectorAll('li a.nav-link')[3].classList.add('active')
+     window.scrollTo({top:0})
+    }
+  </script>
 </body>
 
 </html>
