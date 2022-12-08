@@ -56,7 +56,7 @@ background: rgba(0,0,0,0) !important;
 // }
 @media(max-width:575px){
     section h1,section .title{
-        font-size: 27px!important;
+        font-size: 22px!important;
     }
     section.info-section .title {
         font-size: 20px!important;
@@ -70,6 +70,12 @@ background: rgba(0,0,0,0) !important;
     .g-recaptcha {
         div,iframe{
             width: 100% !important;
+        }
+    }
+    .rc-anchor-normal{
+        width: auto !important;
+        &.rc-anchor-dark{
+            background-color: #f9f9f9 !important;
         }
     }
 }
@@ -97,4 +103,59 @@ background: rgba(0,0,0,0) !important;
         box-shadow:none!important;
         }
     }
+}
+
+
+
+//email validation
+.con-input {
+    position: relative;
+}
+input.valid ~ .icons .check{
+    opacity: 1;
+    visibility: visible;
+}
+input.invalid ~ .icons .x{
+    opacity: 1;
+    visibility: visible;
+}
+.icons {
+    position: absolute;
+    top: 23px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    transition: all .25s ease;
+}
+i {
+    position: absolute;
+    transition: all .25s ease;
+    font-size: 1.3rem;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 30px !important;
+}
+.check {
+    color: #3aba6f;
+    text-shadow: 0px 5px 10px rgba(58, 186, 111, .3);
+}
+.x {
+    color: rgb(240, 90, 92);
+    text-shadow: 0px 5px 10px rgba(240, 90, 92, .3);
+}
+// input:focus {
+//     box-shadow: 0px 15px 25px 0px rgba(0,0,0,.09);
+//     padding-left: 20px;
+// }
+// input:focus ~ .icons {
+//     transform: translate(0, -6px);
+// }
+
+
+.rc-anchor-normal{
+    width: 100% !important;
 }

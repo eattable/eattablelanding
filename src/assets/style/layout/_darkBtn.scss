@@ -109,6 +109,9 @@ img{
 
 //dark preview
 body{
+    .captcha-dark{
+        display: none !important;
+    }
     video{
         &.dark-mode{
             display: none ;
@@ -143,6 +146,12 @@ body{
         //         }
         //     }
         // }
+        .captcha-light{
+            display: none !important;
+        }
+        .captcha-dark{
+            display: block !important;
+        }
         background-color: $font-color !important;
         .tab-container{
             .nav-link{

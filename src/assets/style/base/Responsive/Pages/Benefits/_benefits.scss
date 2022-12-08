@@ -30,6 +30,9 @@
     .benefits-section {
         h1 {
             font-size: 30px !important;
+            @media(max-width:776px){
+                font-size: 25px !important;
+            }
         }
     }
 }

@@ -678,6 +678,9 @@ img.dark-mode {
   display: none;
 }
 
+body .captcha-dark {
+  display: none !important;
+}
 body video.dark-mode {
   display: none;
   visibility: hidden;
@@ -696,6 +699,12 @@ body .dark-mode-toggle svg.fa-moon {
 }
 body.dark-mode {
   background-color: #080708 !important;
+}
+body.dark-mode .captcha-light {
+  display: none !important;
+}
+body.dark-mode .captcha-dark {
+  display: block !important;
 }
 body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
@@ -1008,7 +1017,7 @@ body::-moz-selection {
 
 @media (max-width: 575px) {
   section h1, section .title {
-    font-size: 27px !important;
+    font-size: 22px !important;
   }
   section.info-section .title {
     font-size: 20px !important;
@@ -1021,6 +1030,12 @@ body::-moz-selection {
   }
   .g-recaptcha div, .g-recaptcha iframe {
     width: 100% !important;
+  }
+  .rc-anchor-normal {
+    width: auto !important;
+  }
+  .rc-anchor-normal.rc-anchor-dark {
+    background-color: #f9f9f9 !important;
   }
 }
 @media (max-width: 1199px) {
@@ -1041,6 +1056,56 @@ body::-moz-selection {
   background-color: #DC303C !important;
   outline: #DC303C !important;
   box-shadow: none !important;
+}
+
+.con-input {
+  position: relative;
+}
+
+input.valid ~ .icons .check {
+  opacity: 1;
+  visibility: visible;
+}
+
+input.invalid ~ .icons .x {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icons {
+  position: absolute;
+  top: 23px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  transition: all 0.25s ease;
+}
+
+i {
+  position: absolute;
+  transition: all 0.25s ease;
+  font-size: 1.3rem;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 30px !important;
+}
+
+.check {
+  color: #3aba6f;
+  text-shadow: 0px 5px 10px rgba(58, 186, 111, 0.3);
+}
+
+.x {
+  color: rgb(240, 90, 92);
+  text-shadow: 0px 5px 10px rgba(240, 90, 92, 0.3);
+}
+
+.rc-anchor-normal {
+  width: 100% !important;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -1625,8 +1690,8 @@ input[type=text], input[type=number], input[type=email], textarea {
     justify-content: center !important;
   }
   .restaurant-location-info .card-header .restaurant-img img {
-    width: 80% !important;
-    height: 170px !important;
+    width: 110px !important;
+    height: 110px !important;
   }
   .restaurant-location-info .card-header .restaurant-name {
     display: flex !important;
@@ -1656,7 +1721,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     width: 100% !important;
   }
   section.payment-section {
-    height: 1200px !important;
+    height: 1000px !important;
   }
   section.payment-section .container-fluid .row .col-12 .digital-cards img {
     width: 100% !important;
@@ -1935,6 +2000,11 @@ input[type=text], input[type=number], input[type=email], textarea {
     font-size: 30px !important;
   }
 }
+@media screen and (max-width: 550px) and (max-width: 776px) {
+  .benefits-section h1 {
+    font-size: 25px !important;
+  }
+}
 @media screen and (max-width: 700px) {
   .texts {
     padding-top: 0 !important;
@@ -2056,12 +2126,12 @@ input[type=text], input[type=number], input[type=email], textarea {
   section.with-us-section .col-sm-10 {
     flex: 0 0 auto;
     width: 100%;
-    margin-bottom: 3rem !important;
+    margin-bottom: 1.5rem !important;
   }
   section.guest-section .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
-    margin-bottom: 3rem !important;
+    margin-bottom: 1rem !important;
   }
   section.guest-section .marketing-content {
     width: 100% !important;
@@ -2079,7 +2149,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     height: 400px !important;
   }
   section.commerce-section .commerce-img {
-    height: 400px !important;
+    height: 300px !important;
   }
   section.commerce-section .col-4,
 section.commerce-section .col-8 {
@@ -2770,6 +2840,9 @@ img.dark-mode {
   display: none;
 }
 
+body .captcha-dark {
+  display: none !important;
+}
 body video.dark-mode {
   display: none;
   visibility: hidden;
@@ -2788,6 +2861,12 @@ body .dark-mode-toggle svg.fa-moon {
 }
 body.dark-mode {
   background-color: #080708 !important;
+}
+body.dark-mode .captcha-light {
+  display: none !important;
+}
+body.dark-mode .captcha-dark {
+  display: block !important;
 }
 body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
@@ -3528,6 +3607,11 @@ section .info-text p {
   line-height: 45px;
   color: #080708;
 }
+@media (max-width: 576px) {
+  section .info-text p {
+    line-height: 30px;
+  }
+}
 section.home-section {
   overflow: hidden;
 }
@@ -3752,7 +3836,7 @@ section.services-section .container-fluid .row .col-12 .animation-info-text {
 }
 @media (max-width: 776px) {
   section.services-section .container-fluid .row .col-12 .animation-info-text {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     font-size: 20px;
     line-height: 35px;
   }
@@ -3763,6 +3847,11 @@ section.services-section .container-fluid .row .col-12 .animation-info-text p {
   line-height: 48px;
   text-align: center;
   color: #000000;
+}
+@media (max-width: 576px) {
+  section.services-section .container-fluid .row .col-12 .animation-info-text p {
+    line-height: 30px;
+  }
 }
 section.services-section .container-fluid .row .col-12 h1 {
   font-weight: 600;
@@ -3780,8 +3869,8 @@ section.services-section .container-fluid .row .col-12 .info-text {
 }
 @media (max-width: 776px) {
   section.services-section .container-fluid .row .col-12 .info-text {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 section.services-section .container-fluid .row .col-12 .wrapper {
@@ -3981,6 +4070,12 @@ section.payment-section .title {
   line-height: 48px;
   color: #000000;
 }
+@media (max-width: 776px) {
+  section.payment-section .title {
+    line-height: 35px;
+    font-size: 25px;
+  }
+}
 section.payment-section .container-fluid .row .col-12 .payment-title {
   width: 1108px;
   margin-bottom: 94px;
@@ -4139,6 +4234,11 @@ section.apply-section .title {
   text-align: center;
   color: #FFFFFF;
 }
+@media (max-width: 576px) {
+  section.apply-section .title {
+    line-height: 27px;
+  }
+}
 section.apply-section .section-title {
   text-align: center;
 }
@@ -4150,7 +4250,7 @@ section.apply-section .section-title p {
 }
 @media (max-width: 776px) {
   section.apply-section {
-    height: 500px;
+    height: 400px;
   }
 }
 section.apply-section .container-fluid .input-box {
@@ -4348,7 +4448,7 @@ section.with-us-section .container-fluid .row .col-4 .with-us-card .card-footer 
 }
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-body {
   margin-top: 17px;
-  min-height: 70px;
+  min-height: 60px;
 }
 section.with-us-section .container-fluid .row .col-4 .with-us-card .card-body h6 {
   font-weight: 600;
@@ -4386,7 +4486,7 @@ section.reservation-section .section-title p {
   color: #080708;
 }
 section.reservation-section .carousel {
-  height: 800px !important;
+  height: 765px !important;
 }
 section.reservation-section .carousel .carousel-inner {
   width: 844px;
@@ -4634,8 +4734,8 @@ section.guest-section .container-fluid .row .col-8 .marketing-content.content-4 
 }
 section.commerce-section {
   overflow-x: hidden;
-  padding-top: 200px;
-  height: 1900px;
+  padding-top: 100px;
+  height: 1600px;
 }
 section.commerce-section .title {
   font-weight: 500;
@@ -4646,7 +4746,7 @@ section.commerce-section .title {
 }
 section.commerce-section .section-title {
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 section.commerce-section .section-title p {
   font-weight: 500;
@@ -5221,9 +5321,14 @@ section.dining-info-section .container-fluid .row .col-12 .question-answer-conta
 }
 
 section.benefits-section {
-  height: 495px !important;
+  height: 495px;
   padding-top: 38px;
   margin-top: 93px;
+}
+@media (max-width: 776px) {
+  section.benefits-section {
+    height: 350px;
+  }
 }
 section.benefits-section .title {
   font-weight: 600;
@@ -5231,12 +5336,19 @@ section.benefits-section .title {
   line-height: 48px;
   color: #FFFFFF;
 }
+@media (max-width: 776px) {
+  section.benefits-section .title {
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
 section.benefits-section .info {
   margin-top: 58px;
   word-break: break-word;
 }
 section.benefits-info-section .container-fluid .row .col-12 .benefits-info-container {
   word-break: break-word !important;
+  padding: 20px 0;
 }
 section.benefits-info-section .container-fluid .row .col-12 .benefits-info-container p {
   font-weight: 400;
@@ -5747,6 +5859,7 @@ section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-i
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav .nav-item .nav-link {
   text-align: center;
   cursor: pointer;
+  border: 1px solid #efefef;
   flex: 1;
   word-break: break-word !important;
   height: 120px;

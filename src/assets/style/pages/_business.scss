@@ -6,6 +6,9 @@ section {
       line-height: 57px;
       text-align: center;
       color: $bg-color;
+      @media(max-width:576px){
+        line-height: 27px;
+      }
     }
     .section-title {
       text-align: center;
@@ -21,7 +24,7 @@ section {
     padding-top: 100px;
     margin-top: 33px;
     @media(max-width:776px){
-        height: 500px;
+        height: 400px;
     }
 
     .container-fluid {
@@ -269,7 +272,7 @@ section {
             }
             .card-body {
               margin-top: 17px;
-              min-height: 70px;
+              min-height: 60px;
               h6 {
                 @include font-weight-600;
               }
@@ -310,7 +313,7 @@ section {
       }
     }
     .carousel {
-      height: 800px !important;
+      height: 765px !important;
       .carousel-inner {
         width: 844px;
         height: 100% !important;
@@ -633,9 +636,9 @@ section {
   }
   &.commerce-section {
     overflow-x: hidden;
-    padding-top: 200px;
+    padding-top: 100px;
     // height: 1400px;
-    height: 1900px;
+    height: 1600px;
     .title {
       @include font-weight-500;
       @include font-size-48;
@@ -645,7 +648,7 @@ section {
     }
     .section-title {
       text-align: center;
-      margin-bottom: 90px;
+      margin-bottom: 30px;
       p {
         @include font-weight-500;
         @include font-size-24;

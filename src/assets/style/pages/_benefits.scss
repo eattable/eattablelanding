@@ -1,13 +1,20 @@
 section{
     &.benefits-section{
-        height: 495px !important;
+        height: 495px;
         padding-top: 38px;
         margin-top: 93px;
+        @media(max-width:776px){
+            height: 350px;
+        }
         .title{
             @include font-weight-600;
             @include font-size-40;
             line-height: 48px;
             color: $bg-color;
+            @media(max-width:776px){
+                @include font-size-32;
+                line-height: 30px;
+            }
         }
         .info{
             margin-top: 58px;
@@ -20,6 +27,7 @@ section{
                 .col-12{
                     .benefits-info-container{
                         word-break: break-word !important;
+                        padding: 20px 0;
                         p{
                             @include font-weight-400;
                             @include font-size-20;

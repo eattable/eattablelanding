@@ -3,11 +3,15 @@ section{
         width: 400px;
         height: auto !important;
         word-break: break-word;
+
         p{
             @include font-size-40;
             @include font-weight-500;
             line-height: 45px;
             color: $font-color;
+            @media(max-width:576px){
+                line-height: 30px;
+            }
         }
     }
     &.home-section {
@@ -305,7 +309,7 @@ section{
                         -webkit-background-clip: text;
                         // will-change: transform;
                             @media(max-width:776px){
-                                margin-bottom: 120px;
+                                margin-bottom: 80px;
                                 font-size: 20px;
                                 line-height: 35px;
                             }
@@ -315,6 +319,10 @@ section{
                             line-height: 48px;
                             text-align: center;
                             color: #000000;
+                            @media(max-width:576px){
+                                line-height: 30px;
+                            }
+                            
                             // color: transparent !important;
                         }
                     }
@@ -333,8 +341,8 @@ section{
                         height: 100px;
                         word-break: break-word;
                         @media(max-width:776px){
-                            margin-top: 40px;
-                            margin-bottom: 40px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
                         }
                         
                     }
@@ -422,6 +430,7 @@ section{
                     height: 712.39px;
                     z-index: 1000;
                     // margin-top: 70px;
+                 
                 }
                 .restaurant-card {
                     width: 619.07px;
@@ -569,6 +578,10 @@ section{
             @include font-size-40;
             line-height: 48px;
             color: $font-color-2;
+            @media(max-width:776px){
+                line-height: 35px;
+                @include font-size-25;
+            }
         }
         .container-fluid{
             .row{

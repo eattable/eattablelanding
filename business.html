@@ -177,6 +177,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.min.css"
     />
+    <link 
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' 
+    />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"></script>
   </head>
@@ -199,7 +203,7 @@
           >
             <form id="apply-form" action="" class="apply-form d-flex">
               <input
-              id="fullname"
+                id="fullname"
                 required
                 type="text"
                 class="form-control lang-input"
@@ -214,24 +218,39 @@
                 key="voen"
                 placeholder="VOEN"
               />
-              <input
+              <!-- <input
               id="email"
                 required
                 type="email"
                 class="form-control lang-input"
                 key="email"
                 placeholder="Email address"
-              />
+              /> -->
+              <div class="con-input w-100">
+                <input
+                  id="email"
+                  required
+                  type="text"
+                  class="form-control lang-input"
+                  key="email"
+                  placeholder="Email address"
+                  oninput="handleInput(event)" 
+                />
+                <div class="icons">
+                  <i class='bx bxs-check-circle check' ></i>
+                  <i class='bx bxs-x-circle x' ></i>
+                </div>
+               </div>
               <div class="input-box">
                 <span class="prefix">+994</span>
                 <input
+                placeholder="xx xxx xx xx"
                 id="phone-number"
                   required
                   style="margin-top: 0"
                   type="number"
                   class="form-control lang-input"
                   key="phone-number"
-                  minlength="3"
                   maxlength="9"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   onKeyPress="if(this.value.length==9) return false;"
@@ -261,8 +280,16 @@
               </div>
               <div
                 class="g-recaptcha my-2"
+                data-theme="light"
+                class="captcha-light"
                 data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
               ></div>
+              <!-- <div
+                class="g-recaptcha my-2"
+                data-theme="dark"
+                class="captcah-dark"
+                data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
+              ></div> -->
               <button
                 type="submit"
                 class="btn apply-btn-red mx-auto lang mt-3"
@@ -311,24 +338,33 @@
                 class="form-control"
                 placeholder="VOEN"
               />
-              <input
-                id="res-email"
-                required
-                type="email"
-                class="form-control lang-input"
-                key="email"
-                placeholder="Email address"
-              />
+              <div class="con-input w-100">
+                <input
+                  id="email"
+                  required
+                  type="text"
+                  class="form-control lang-input"
+                  key="email"
+                  placeholder="Email address"
+                  oninput="handleInput(event)" 
+                />
+                <div class="icons">
+                  <i class='bx bxs-check-circle check' ></i>
+                  <i class='bx bxs-x-circle x' ></i>
+                </div>
+              </div>
+               <!-- pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" -->
+              <!-- pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" -->
               <div class="input-box">
                 <span class="prefix">+994</span>
                 <input
+                placeholder="xx xxx xx xx"
                   required
                   id="res-phoneNumber"
                   style="margin-top: 0"
                   type="number"
                   class="form-control lang-input"
                   key="phone-number"
-                  minlength="3"
                   maxlength="9"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   onKeyPress="if(this.value.length==9) return false;"
@@ -353,16 +389,23 @@
                 id="res-address"
               />
 
-              <textarea placeholder="Note" rows="3" class="form-control lang-input" maxlength="30" cols="5" key="note" id="res-note"></textarea>
+              <textarea placeholder="Note" rows="3" class="form-control lang-input" cols="5" key="note" id="res-note"></textarea>
               <div class="info-word-size" id="the-count">
                 <span id="current-res">0</span>
                 <span id="maximum-res">/ 4000</span>
               </div>
               <div
                 class="g-recaptcha my-2"
-                data-theme="dark"
+                data-theme="light"
+                class="captcha-light"
                 data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
               ></div>
+              <!-- <div
+                class="g-recaptcha my-2"
+                data-theme="dark"
+                class="captcah-dark"
+                data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
+              ></div> -->
               <button
                 type="submit"
                 class="btn apply-btn-red mx-auto lang"
@@ -375,8 +418,8 @@
         </div>
       </div>
     </section>
-    <!-- With us section -->
-    <section class="with-us-section">
+     <!-- With us section -->
+     <section class="with-us-section">
       <div class="container-fluid">
         <div class="row">
           <div
@@ -1259,6 +1302,25 @@ $('#note').keyup(function() {
   });
   
 
+
+
+  //email validation
+  function handleInput(evt) {
+  const value = evt.target.value
+  const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+  
+  if (emailRegex.test(value.trim())) {
+      evt.target.classList.add('valid')
+      evt.target.classList.remove('invalid')
+  } else {
+      evt.target.classList.add('invalid')
+      evt.target.classList.remove('valid')
+  }
+
+  if (!value) {
+      evt.target.classList.remove('invalid')
+  }
+}
 
     </script>
   </body>
