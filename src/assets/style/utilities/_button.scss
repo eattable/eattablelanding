@@ -50,9 +50,7 @@
     color: $bg-color;
     border: none;
     @include border-radius-5;
-    &:hover {
-        color: $bg-color;
-    }
+  
 }
 
 //Edit btn icon

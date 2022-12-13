@@ -7,7 +7,9 @@ section {
       text-align: center;
       color: $bg-color;
       @media(max-width:576px){
-        line-height: 27px;
+        line-height: 24px;
+        @include font-size-20;
+        
       }
     }
     .section-title {
@@ -23,8 +25,12 @@ section {
     height: 850px;
     padding-top: 100px;
     margin-top: 33px;
-    @media(max-width:776px){
-        height: 400px;
+    @media(max-width:991px){
+      height: 450px;
+    }
+    @media(max-width:576px){
+        height: 170px;
+        padding-top: 0;
     }
 
     .container-fluid {
@@ -40,18 +46,13 @@ section {
         font-family: sans-serif;
       }
 
-      .input-box .prefix {
-        font-weight: 500;
-        font-size: 14px;
-        height: 30px;
-        padding: 0 5px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000;
-        border-right: 1px solid #5a5a5a;
-      }
-
+    .prefix-select{
+      border:none!important;
+      background-color: transparent!important ;
+      border-right:1px solid #000!important;
+      border-radius: 0!important;
+      width: 40%!important;
+    }
       .input-box input {
         flex-grow: 1;
         font-size: 14px;
@@ -136,21 +137,16 @@ section {
         background: #f9f9f9;
         margin-top: 10px;
         border-radius: 4px;
-        padding-left: 0.5rem;
         overflow: hidden;
         font-family: sans-serif;
       }
 
-      .input-box .prefix {
-        font-weight: 500;
-        font-size: 14px;
-        height: 30px;
-        padding: 0 5px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000;
-        border-right: 1px solid #5a5a5a;
+      .res-prefix-select{
+        width: 40%;
+        background-color: transparent;
+        border-radius: 0;
+        border:none!important;
+        border-right: 1px solid #000!important;
       }
 
       .input-box input {
@@ -176,6 +172,7 @@ section {
             background-color: $bg-color;
             padding: 50px;
             .info-word-size{
+               margin:10px 0;
                 margin-left: auto;
             }
             input,
@@ -186,6 +183,9 @@ section {
               background-color: $input-grey;
               border: none !important;
               margin-top: 10px;
+              @media(max-width:576px){
+                height: 45px;
+              }
             }
             textarea {
               height: 120px;
@@ -211,12 +211,19 @@ section {
   &.with-us-section {
     padding-top: 81px;
     // height: 473px;
+    @media(max-width:576px){
+      padding-top: 40px;
+    }
     .title {
       @include font-weight-500;
       @include font-size-48;
       line-height: 57px;
       text-align: center;
       color: $bg-color;
+      @media(max-width:576px){
+        padding-top: 24px;
+        @include font-size-20;
+      }
     }
     .section-title {
       text-align: center;
@@ -232,6 +239,9 @@ section {
         .col-12 {
           .section-title {
             margin-bottom: 68px;
+            @media(max-width:576px){
+              margin-bottom: 20px;
+            }
             h1 {
               color: $red-color !important;
             }
@@ -248,6 +258,10 @@ section {
             border: none !important;
             background: none;
             text-align: center;
+            @media(max-width:576px){
+              align-items: flex-start;
+              text-align: left;
+            }
             .card-header,
             .card-body,
             .card-footer {
@@ -257,6 +271,7 @@ section {
             }
             .card-header {
               min-height: 113px;
+              margin: 0 auto;
               img {
                 height: 100%;
               }
@@ -274,7 +289,11 @@ section {
               margin-top: 17px;
               min-height: 60px;
               h6 {
-                @include font-weight-600;
+                @include font-weight-300;
+                @media(max-width:576px){
+                
+                }
+
               }
             }
             .card-footer {
@@ -291,6 +310,9 @@ section {
   }
   &.reservation-section {
     padding-top: 100px;
+    @media(max-width:991px){
+      padding-top: 40px;
+    }
     // padding-bottom: 150px;
     .title {
       @include font-weight-500;
@@ -298,22 +320,33 @@ section {
       line-height: 57px;
       text-align: center;
       color: $red-color;
-      @media(max-width:776px){
+      @media(max-width:576px){
         line-height: 37px;
+        @include font-size-20;
+
       }
     }
     .section-title {
       text-align: center;
       margin-bottom: 58px;
+      @media(max-width:776px){
+        margin-bottom: 40px;
+      }
       p {
         @include font-weight-500;
         @include font-size-24;
         line-height: 29px;
         color: $font-color;
+        @media(max-width:576px){
+          margin-top: 7px!important;
+        }
       }
     }
     .carousel {
-      height: 765px !important;
+      height: 765px;
+      @media(max-width:576px){
+       height: 500px;
+      }
       .carousel-inner {
         width: 844px;
         height: 100% !important;
@@ -337,6 +370,10 @@ section {
               font-weight: 500;
               line-height: 30px;
               color: #080708;
+              @media(max-width:576px){
+                line-height: 20px!important;
+              }
+           
             }
             h3 {
               font-size: 25px;
@@ -353,6 +390,9 @@ section {
               h5 {
                 font-weight: 500;
                 line-height: 30px;
+                @media(max-width:576px){
+                  line-height: 19px;
+                }
               }
               h3 {
                 font-size: 25px;
@@ -409,6 +449,9 @@ section {
           .section-title {
             text-align: center;
             margin-bottom: 60px;
+            @media(max-width:576px){
+              margin-bottom: 40px;
+            }
             h1 {
               color: $red-color !important;
             }
@@ -417,6 +460,9 @@ section {
               @include font-size-24;
               line-height: 29px;
               color: $font-color;
+              @media(max-width:576px){
+                line-height: 19px;
+              }
             }
           }
           // .carousel-section {
@@ -511,6 +557,11 @@ section {
     }
     .marketing-left {
       margin-bottom: 30px;
+      h4{
+        @media(max-width:576px){
+          @include font-size-16;
+        }
+      }
 
       &::before {
         content: "";
@@ -522,10 +573,16 @@ section {
         padding: 5px;
         background-color: $font-color-2;
         border-radius: 50%;
+        @media(max-width:576px){
+          top: 5px;
+        }
       }
       p {
         line-height: 25px;
-        @include font-size-17;
+        font-size: 16px;
+        @media(max-width:576px){
+          line-height:17px;
+        }
       }
     }
     .title {
@@ -534,6 +591,10 @@ section {
       line-height: 57px;
       text-align: center;
       color: $red-color;
+      @media(max-width:576px){
+        line-height: 24px;
+        @include font-size-20;
+      }
     }
     .section-title {
       text-align: center;
@@ -543,17 +604,31 @@ section {
         @include font-size-24;
         line-height: 29px;
         color: $font-color-2;
+        @media(max-width:576px){
+          line-height: 17px;
+          @include font-size-14;
+        }
       }
     }
   }
   &.guest-section {
     padding-top: 140px;
+    
+    @media(max-width:576px){
+      padding-top: 40px;
+    
+    }
+
     .title {
       @include font-weight-500;
       @include font-size-48;
       line-height: 57px;
       text-align: center;
       color: $bg-color;
+      @media(max-width:576px){
+        line-height: 24px;
+        @include font-size-20;
+      }
     }
     .section-title {
       text-align: center;
@@ -570,7 +645,7 @@ section {
         .col-12 {
           .section-title {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 0px;
             width: 812px;
             h1 {
               color: $red-color !important;
@@ -581,14 +656,27 @@ section {
               line-height: 29px;
               color: $font-color;
               word-break: break-word;
+              @media(max-width:776px){
+                line-height: 19px;
+              }
             }
           }
         }
         .col-4 {
           position: relative;
+          .guest-section-img-responsive{
+            width: 350px;
+            height: 350px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
           .guest-section-img {
             width: 600px;
             height: 600px;
+            
             img {
               width: 100%;
               height: 100%;
@@ -607,9 +695,16 @@ section {
             }
             h5 {
               @include font-size-20;
+              @media(max-width:576px){
+                @include font-size-16;
+              }
             }
             p {
               @include font-size-16;
+              @media(max-width:576px){
+                @include font-size-14;
+                line-height: 17px;
+              }
             }
             &.content-1 {
               margin-left: auto;
@@ -618,13 +713,13 @@ section {
             }
             &.content-2 {
               width: 543px;
-              margin: 22px 0 35px 0;
+              margin: 22px 0 0px 0;
             }
             &.content-3 {
               width: 653px;
               margin-left: auto;
               margin-right: auto;
-              margin-bottom: 58px;
+             
             }
             &.content-4 {
               width: 776px;
@@ -638,13 +733,17 @@ section {
     overflow-x: hidden;
     padding-top: 100px;
     // height: 1400px;
-    height: 1600px;
+    // height: 1600px;
     .title {
       @include font-weight-500;
       @include font-size-48;
       line-height: 57px;
       text-align: center;
       color: $bg-color;
+      @media(max-width:776px){
+        line-height: 24px;
+          @include font-size-24;
+      }
     }
     .section-title {
       text-align: center;
@@ -654,6 +753,9 @@ section {
         @include font-size-24;
         line-height: 29px;
         color: $font-color;
+        @media(max-width:776px){
+          line-height: 19px;
+        }
       }
     }
     .container-fluid {
@@ -690,9 +792,15 @@ section {
                     @include font-weight-500;
                     color: $font-color-2;
                     line-height: 24px;
+                    @media(max-width:776px){
+                      line-height: 19px;
+                    }
                   }
                   h5 {
                     @include font-size-20;
+                    @media(max-width:576px){
+                      @include font-size-16;
+                    }
                   }
                   p {
                     @include font-size-16;
@@ -726,14 +834,17 @@ section {
     }
   }
   &.info-section {
-    // padding-top: 190px;
-    padding-bottom: 130px;
+padding-bottom: 22px;
     .title {
       @include font-weight-500;
       font-size: 32px;
       line-height: 57px;
       text-align: left;
       color: $red-color;
+      @media(max-width:576px){
+        line-height: 19px;
+        @include font-size-16;
+      }
     }
     .section-title {
       text-align: left;
@@ -747,11 +858,18 @@ section {
               margin-bottom: 25px;
               position: relative;
               padding-left: 25px;
+              @media(max-width:776px){
+                margin-bottom: 16px;
+              }
               p {
                 @include font-weight-500;
                 @include font-size-24;
                 line-height: 29px;
                 color: $font-color-2;
+                @media(max-width:776px){
+                  font-size: 16px;
+                  line-height: 20px;
+                }
               }
               &::before {
                 position: absolute;
@@ -773,8 +891,11 @@ section {
   &.how-start-section {
     padding-top: 170px;
     background-color: #fcfcfc !important;
-    padding-bottom: 33px;
+    padding-bottom: 68px;
     overflow-x: hidden;
+    @media(max-width:576px){
+      padding-top: 10px;
+    }
     .container-fluid {
       .row {
         .col-6 {
@@ -782,15 +903,25 @@ section {
             h1 {
               font-size: 35px;
               margin-bottom: 43px;
+              @media(max-width:576px){
+                margin-bottom: 16px;
+                font-size: 20px;
+              }
             }
             ul {
               li {
                 margin-bottom: 27px;
+                @media(max-width:576px){
+                  margin-bottom: 13px;
+                }
                 p {
                   @include font-weight-500;
                   @include font-size-24;
                   line-height: 29px;
                   color: $font-color-2;
+                  @media(max-width:776px){
+                    line-height: 19px;
+                  }
                 }
               }
             }
@@ -850,6 +981,9 @@ section {
                 left: 10%;
                 height: 80%;
                 width: 80%;
+                @media(max-width:576px){
+               font-size: 27px;
+                }
               }
             }
           }

@@ -36,9 +36,16 @@
                 -moz-transition: .3s ease-in-out;
                 -o-transition: .3s ease-in-out;
                 transition: .3s ease-in-out;
+                @media(max-width:576px){
+                   width: 30px;
+                }
+
             }
             &::before {
                 margin-top:-10px;
+                @media(max-width:576px){
+                    margin-top: -5px;
+                }
             }
             &::after {
                 margin-top:10px;

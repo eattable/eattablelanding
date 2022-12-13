@@ -3,6 +3,7 @@ section{
         width: 400px;
         height: auto !important;
         word-break: break-word;
+        
 
         p{
             @include font-size-40;
@@ -10,7 +11,8 @@ section{
             line-height: 45px;
             color: $font-color;
             @media(max-width:576px){
-                line-height: 30px;
+                line-height: 19px;
+                @include font-size-20;
             }
         }
     }
@@ -309,9 +311,9 @@ section{
                         -webkit-background-clip: text;
                         // will-change: transform;
                             @media(max-width:776px){
-                                margin-bottom: 80px;
+                                margin-bottom: 40px;
                                 font-size: 20px;
-                                line-height: 35px;
+                                line-height: 24px;
                             }
                         p{
                             font-weight: 500;
@@ -333,6 +335,10 @@ section{
                         line-height: 71px;
                         text-align: center;
                         color:  $red-color;
+                        @media(max-width:576px){
+                            line-height: 30px;
+                            @include font-size-20;
+                        }
                     }
                     .info-text {
                         margin-top: 106px;
@@ -340,6 +346,7 @@ section{
                         width: 600px;
                         height: 100px;
                         word-break: break-word;
+             
                         @media(max-width:776px){
                             margin-top: 20px;
                             margin-bottom: 20px;
@@ -521,7 +528,7 @@ section{
             width: 800px;
             margin-bottom: 100px;
             @media(max-width:576px){
-                margin-bottom: 50px;
+                margin-bottom: 60px;
             }
         }
         .container-fluid {
@@ -546,7 +553,8 @@ section{
                                 font-size: 50px;
                                 line-height: 60px;
                                 @media(max-width:576px){
-                                    font-size:25px;
+                                    font-size:20px;
+                                    line-height: 24px;
                                 }
                             }
                             ul {
@@ -561,6 +569,10 @@ section{
                                         font-size: 20px;
                                         line-height: 48px;
                                         color: #232323;
+                                        @media(max-width:576px){
+                                            font-size:18px;
+                                          
+                                        }
                                     }
                                 }
                             }
@@ -573,14 +585,17 @@ section{
     &.payment-section{
         padding-top: 150px;
         height: 1400px;
+        @media(max-width:576px){
+            padding-top: 50px;
+        }
         .title{
             @include font-weight-500;
             @include font-size-40;
             line-height: 48px;
             color: $font-color-2;
-            @media(max-width:776px){
-                line-height: 35px;
-                @include font-size-25;
+            @media(max-width:576px){
+                line-height: 24px;
+                @include font-size-18;
             }
         }
         .container-fluid{
@@ -589,6 +604,9 @@ section{
                     .payment-title{
                         width: 1108px;
                         margin-bottom: 94px;
+                        @media(max-width:776px){
+                            margin-bottom: 40px;
+                        }
                     }
                     .digital-cards{
                         .bank-cards{
@@ -629,6 +647,15 @@ section{
     &.trending-section{
         overflow-x: hidden;
         margin-bottom: 100px;
+
+        .services-title{
+            @include font-size-48;
+            line-height: 24px;
+            color: $red-color;
+            @media(max-width:576px){
+                @include font-size-20;
+            }
+        }
         .section {
             position: relative;
             display: flex;

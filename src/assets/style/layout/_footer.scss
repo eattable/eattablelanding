@@ -1,7 +1,7 @@
 footer {
-    padding: 65px 0px 55px 0px;
-    background: $input-grey;
-
+    padding: 25px 0px 25px 0px;
+    background: $input-grey; 
+  
     .container-fluid {
         .footer-nav {
             li.active a {
@@ -17,6 +17,11 @@ footer {
             gap: 20px 0;
             padding: 0 15px;
             .grid-item-1 {
+                &-flex{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
                 .logo {
                     img {
                         width: 180px;
@@ -25,22 +30,26 @@ footer {
                 }
 
                 .download-apple {
-                    margin: 20px 0 10px 0;
-                    margin-bottom: 10px;
-
+               
                     img {
-                        width: 170px;
-                      
-                        cursor: pointer;
+                        width: 150px;
+                        @media(max-width:576px){
+                            width: 90px;                    
+                          
+                        }
+                       
                     }
                 }
 
-                .download-android {
-
+                .download-androids {
+                
                     img {
-                        width: 171px;
-                        height: 44px;
+                        width: 150px;
                         cursor: pointer;
+                        @media(max-width:576px){
+                            width: 90px;                    
+                          
+                        }
                     }
                 }
 
@@ -154,7 +163,7 @@ footer {
     .download-btns-copy {
         display: none;
         img{
-            width: 170px;
+            width: 90px;
         }
     }
     .download-btns {

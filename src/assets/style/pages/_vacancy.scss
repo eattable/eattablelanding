@@ -206,9 +206,7 @@ section{
                                             padding: 13px 30px;
                                             background-color: $red-color;
                                             @include border-radius-7;
-                                            &:hover{
-                                                color: $bg-color !important;
-                                            }
+                                         
                                         }
                                     }
                                 }

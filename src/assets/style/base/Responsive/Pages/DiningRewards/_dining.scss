@@ -1,26 +1,19 @@
 @media screen and (max-width: 700px) {
     .coins-section {
         h1 {
-            font-size: 30px !important;
+     
             padding: 0 5% !important;
         }
     }
     .question-answer-container {
         h6 {
-            font-size: 20px !important;
+            font-size: 16px !important;
         }
         .answer {
             p {
-                font-size: 18px !important;
+                font-size: 14px !important;
             }
         }
     }
 }
 
-@media screen and (max-width: 500px) {
-    .coins-section {
-        h1 {
-            font-size: 26px !important;
-        }
-    }
-}

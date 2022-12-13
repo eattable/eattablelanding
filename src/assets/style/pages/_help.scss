@@ -3,6 +3,12 @@ section{
         // background-image: url("../../img/section/business/apply.png");
         height: 479px;
         margin-top: 91px;
+        @media(max-width:991px){
+            height: 450px;
+        }
+        @media(max-width:576px){
+            height: 170px;
+        }
         .title{
             @include font-weight-600;
             @include font-size-40;
@@ -20,6 +26,12 @@ section{
                         margin-top: 150px;
                         width: 1267px;
                         text-align: center;
+                        h1{
+                            @media(max-width:576px){
+                                @include font-size-20;
+                                line-height: 24px;
+                            }
+                        }
                         h1,p{
                             color: $bg-color;
                         }
@@ -28,6 +40,10 @@ section{
                             @include font-weight-500;
                             @include font-size-32;
                             line-height: 38px;
+                            @media(max-width:576px){
+                                line-height: 24px;
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -36,6 +52,9 @@ section{
     }
     &.help-section{
         padding-top: 100px;
+        @media(max-width:576px){
+            padding-top: 40px;
+        }
         .title{
             @include font-weight-600;
             @include font-size-40;
@@ -48,6 +67,9 @@ section{
             .row{
                 .col-12{
                     margin-bottom: 48px;
+                    @media(max-width:576px){
+                       margin-bottom: 0;
+                    }
                     .help-info{
                         width: 1117px;
                         h1,p{
@@ -58,6 +80,11 @@ section{
                             @include font-weight-500;
                             @include font-size-27;
                             line-height: 31px;
+                            @media(max-width:576px){
+                                @include font-size-14;
+                                line-height: 17px;
+                                margin-top: 9px;
+                            }
                         }
                     }
                 }
@@ -107,15 +134,20 @@ section{
                                 justify-content:flex-end !important;
                                 text-align: left;
                                 padding-bottom: 50px;
-                                padding-left: 30px;
-                                padding-right: 30px;
+                                padding-left: 25px;
+                                padding-right: 25px;
                                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%) !important;
                                 // border-radius: 0px 0px 42.9187px 42.9187px;
                                 h6,svg{
                                     @include font-weight-600;
-                                    @include font-size-25;
+                                   font-size: 24px;
                                     line-height: 43px;
                                     color: $bg-color;
+                                    @media(max-width:576px){
+                                        line-height: 24px;
+                                        @include font-weight-400;
+                                        font-size: 19px;
+                                    }
                                 }
                             }
                             // &:hover{
@@ -139,11 +171,19 @@ section{
     }
     &.connect-section{
         padding-top: 170px;
-        padding-bottom: 149px;
+    padding-bottom: 68px;
+        @media(max-width:576px){
+            padding-top: 20px;
+   
+        }
         .title{
-            @include font-weight-500;
+            @include font-weight-600;
             @include font-size-40;
             line-height: 48px;
+            @media(max-width:576px){
+                line-height: 9px;
+                @include font-size-18;
+            }
         }
         a{
             &.support-mail{
@@ -179,9 +219,9 @@ section{
                                 line-height: 39px;
                                 margin-top:20px;
                                 color: $font-color-2;
-                                @media(max-width:776px){
-                                    line-height: 32px;
-                                    font-size: 20px; 
+                                @media(max-width:576px){
+                                    line-height: 19px;
+                                    font-size: 16px; 
                                 }
                             }
                             p{
@@ -190,6 +230,11 @@ section{
                                 @include font-size-22;
                                 line-height: 27px;
                                 color: $font-color-2;
+                                @media(max-width:576px){
+                                   margin-top: 8px;
+                                   line-height: 17px;
+                                   @include font-size-18;
+                                }
                             }
                         }
                     }

@@ -1,20 +1,33 @@
 section{
     &.coins-section{
-        height: 513px;
+        height: 566px;
         margin-top: 77px;
         // margin-bottom: 29px;
+        @media(max-width:992px){
+            height: 450px;
+        }
+        @media(max-width:576px){
+            height: 170px;
+        }
         .title{
             @include font-weight-600;
             @include font-size-40;
             line-height: 48px;
             color: $bg-color;
+            @media(max-width:576px){
+               line-height: 24px;
+               @include font-size-20;
+            }
+            
+
         }
         .info{
-            margin-top: 100px;
+            
             word-break: break-word;
         }
     }
     &.dining-info-section{
+        margin-bottom: 68px;
         .container-fluid{
             .row{
                 .col-12{
@@ -24,12 +37,19 @@ section{
                             @include font-size-24;
                             line-height: 34px;
                             color: $font-color-2;
+                            
+                            @media(max-width:576px){
+                                line-height: 24px;
+                            }
                         }
                         p{
                             @include font-weight-400;
                             @include font-size-20;
                             line-height: 34px;
                             color: $font-color-2;
+                            @media(max-width:576px){
+                                line-height: 24px;
+                            }
                         }
                     }
                 }

@@ -23,6 +23,10 @@ section{
                                 padding-top:20px;
                                 padding-bottom:20px;
                                 cursor: pointer !important;
+                                @media(max-width:576px){
+                                    padding-top:0px!important;
+                                    padding-bottom:0px!important;
+                                }
                                 .accordion-header{
                                     button{
                                         padding-left: 0 !important;
@@ -32,6 +36,10 @@ section{
                                         line-height: 38px;
                                         color: $font-color-2;
                                         box-shadow: none !important;
+                                        @media(max-width:576px){
+                                            @include font-size-18;
+                                            line-height: 24px;
+                                        }
                                         &.accordion-button{
                                             &::after{
                                                 width: 5px;
@@ -42,6 +50,11 @@ section{
                                                 color: $red-color !important;
                                                 font-size: 40px;
                                                 transition: .5s all;
+                                                @media(max-width:576px){
+                                                    width: 10px;
+                                                    height: 25px;
+                                                    font-size: 30px;
+                                                }
                                             }
                                             &.collapsed{
                                                 &::after{
@@ -59,7 +72,7 @@ section{
                                     .accordion-body{
                                         border: none !important;
                                         padding: 0 !important;
-                                        padding-left: 70px !important;
+                                        padding-left: 30px !important;
                                         word-break: break-all;
                                         position: relative;
                                         p{
@@ -69,6 +82,9 @@ section{
                                             line-height: 30px;
                                             color: $font-color-2; 
                                             word-break: break-all;
+                                            @media(max-width:576px){
+                                                line-height: 19px;
+                                            }
                                         }
                                         h6{
                                             @include font-weight-500;
@@ -81,7 +97,7 @@ section{
                                             position: absolute;
                                             content: "";
                                             top: 0px;
-                                            left: 50px;
+                                            left: 15px;
                                             width: 5px;
                                             height: 100%;
                                             background-color: $red-color;

@@ -2,8 +2,10 @@ section {
     &.address-section {
         padding-top: 70px;
          padding-bottom: 60px;
-      
-
+        @media(max-width:576px){
+            padding-bottom: 0;
+        }
+    
         svg {
             font-size: 20px;
             color: $red-color;
@@ -13,7 +15,7 @@ section {
         .col-md-4 {
 
             div {
-                margin-bottom: 40px;
+                margin-bottom: 20px;
 
                 p ,span{
                     font-weight: 400;
@@ -49,7 +51,8 @@ section {
         }
     }
     &.form-section{
-        padding: 50px 0 100px 0;
+        padding: 20px 0 0px 0;
+        margin-bottom: 68px;
         h1{
             margin-bottom: 40px;
         }
@@ -67,9 +70,12 @@ section {
         
         }
         textarea{
-            height: 240px!important;
+            height: 240px;
             background: #F9F9F9;
             border: none !important;
+            @media(max-width:576px){
+                height:100px;
+            }
         }
         .info-word-size{
             display: flex;
@@ -89,6 +95,9 @@ section {
         }
         .col-11{
             margin-top:100px;
+            @media (max-width:575px){
+               margin-top:36px;
+            }
         }
     }
 }

@@ -28,13 +28,25 @@ var footer = `
           <li ><a class="lang" href="./benefits.html" key="reservation-benefits" id="reservation-benefits">Reservation benefits</a></li>
         </ul>
       </div>
-      <div class="grid-item-1">
+      <div class="grid-item-1 grid-item-1-flex">
+      <div>
         <h3 class="lang" key="support">Help</h3>
         <ul class="footer-nav">
           <li><a class="lang" href="./help.html" key="faq" id="faq">FAQ</a></li>
           <li ><a class="lang" href="./privacy.html" key="privacy-policy" id="privacy-policy">Privacy Policy</a></li>
           <li ><a class="lang" href="./term-of-use.html" key="term-of-use-footer" id="term-of-use">Terms of use</a></li>
         </ul>
+        </div>
+      
+        <div class="download-btns-copy">
+        <div class="download-apple">
+          <img src="./src/assets/img/downloadApple.svg" alt="download apple">
+        </div>
+        <div class="download-android">
+          <img src="./src/assets/img/downloadAndroid.svg" alt="download android">
+        </div>
+      
+      </div>
       </div>
       <div class="grid-item-1 d-none">
         <div class="subscribe">
@@ -58,16 +70,7 @@ var footer = `
         </ul>
       </div>
     </div>
-    <div class="grid-item-1">
-    <div class="download-btns-copy">
-    <div class="download-apple">
-      <img src="./src/assets/img/downloadApple.svg" alt="download apple">
-    </div>
-    <div class="download-android">
-      <img src="./src/assets/img/downloadAndroid.svg" alt="download android">
-    </div>
-    </div>
-  </div>
+
   <div>
   </div>
   </div>
