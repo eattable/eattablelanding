@@ -9,6 +9,7 @@ $bg-color:#FFFFFF !default;
     // -webkit-font-smoothing: antialiased;
     // -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth !important;
+    background-color: $bg-color !important;
 }
 
 body,section{

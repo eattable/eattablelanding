@@ -80,6 +80,7 @@ section{
                                             @include font-weight-400;
                                             @include font-size-19;
                                             line-height: 30px;
+                                            padding: 7px 0;
                                             color: $font-color-2; 
                                             word-break: break-all;
                                             @media(max-width:576px){
@@ -89,9 +90,17 @@ section{
                                         h6{
                                             @include font-weight-500;
                                             @include font-size-20;
-                                            line-height: 38px;
+                                            line-height: 30px;
                                             color: $font-color-2; 
                                             word-break: break-all;
+                                            @media(max-width:576px){
+                                                line-height: 20px;
+                                               
+                                            }
+                                         
+                                        }
+                                        ul{
+                                            padding: 7px 0;
                                         }
                                         &::before{
                                             position: absolute;
@@ -99,7 +108,7 @@ section{
                                             top: 0px;
                                             left: 15px;
                                             width: 5px;
-                                            height: 100%;
+                                            height: 98%;
                                             background-color: $red-color;
                                             border-radius: 14px;
                                         }
