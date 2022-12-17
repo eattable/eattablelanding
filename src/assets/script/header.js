@@ -4,7 +4,7 @@ var header = `
 <nav class="navbar navbar-expand-lg">
 <div class="container-fluid">
 
-  <a class="navbar-brand eattable-img ms-lg-5 ms-md-5 ms-sm-5 ms-xl-0" href="/index.html">
+  <a class="navbar-brand eattable-img ms-lg-5 ms-md-5 ms-sm-5 ms-xl-0" href="/">
   <img src="./src/assets/img/header/Frame.svg"/>
 </a>
 
