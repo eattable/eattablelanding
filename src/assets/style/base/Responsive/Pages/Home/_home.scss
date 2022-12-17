@@ -36,20 +36,12 @@
                 margin-left: auto !important;
                 margin-right: auto !important;
                 transform: none !important;
-                .table-container {
-                    img {
-                        width: 350px !important;
-                    }
-                }
+             
             }
             .card {
                 width: 480px !important;
             }
-            .table-container {
-                img {
-                    height: 450px !important;
-                }
-            }
+           
         }
         &.trending-section {
             .horizontal-sections {
@@ -62,14 +54,7 @@
 @media (max-width: 991px) {
     section {
         &.section-1 {
-            .aos-init {
-                .table-container {
-                    img {
-                        // width: 372px !important;
-                        width: 492px !important;
-                    }
-                }
-            }
+          
             .card {
                 // width: 372px !important;
                 width: 600px !important;
@@ -115,12 +100,7 @@
                 justify-content: center !important;
                 .restaurant-location-info {
                     width: 90% !important;
-                    .restaurant-img {
-                        img {
-                            width: 200px;
-                            height: 150px;
-                        }
-                    }
+                 
                 }
             }
         }
@@ -137,12 +117,7 @@
 
 @media screen and (max-width: 850px) {
     .restaurant-location-info {
-        .restaurant-img {
-            img {
-                width: 100% !important;
-                height: 120px !important;
-            }
-        }
+     
         .restaurant-name {
             padding-left: 10px !important;
             h6 {
@@ -173,9 +148,7 @@
                                 display: flex !important;
                                 align-items: center !important;
                                 justify-content: center !important;
-                                img {
-                                    width: 70% !important;
-                                }
+                           
                             }
                             .card {
                                 width: 95% !important;
@@ -196,11 +169,7 @@
 
 @media screen and (max-width: 730px) {
     .restaurant-location-info {
-        .restaurant-img {
-            img {
-                height: 100px !important;
-            }
-        }
+      
         .restaurant-name {
             padding-left: 10px !important;
             h6 {
@@ -220,11 +189,7 @@
 
 @media screen and (max-width: 700px) {
     .restaurant-location-info {
-        .restaurant-img {
-            img {
-                height: 80px !important;
-            }
-        }
+    
         .working-hour-list {
             .hour-item {
                 height: 70px !important;
@@ -236,17 +201,6 @@
     }
 }
 
-@media screen and (max-width: 650px) {
-    section {
-        &.section-1 {
-            .table-container {
-                img {
-                    height: 400px !important;
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 630px) {
     .restaurant-location-info {
@@ -256,11 +210,6 @@
                 display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
-                img {
-                    // width: 100% !important;
-                    width: 110px!important;
-                    height: 110px !important;
-                }
             }
             .restaurant-name {
                 display: flex !important;
@@ -331,16 +280,18 @@
                                 display: flex;
                                 align-items: center;
                                 img {
-                                    width: 400px !important;
+                                    width: 250px;
+                                    height: 250px;
                                     margin-left: auto;
                                     margin-right: auto;
+                                    
                                 }
                             }
                             .card {
                                 width: 500px;
                                 border-radius: 32px !important;
 
-                                @media (max-width: 576px) {
+                                @media (max-width: 430px) {
                                     width: 100%;
                                 }
                             }
@@ -354,8 +305,8 @@
 
 @media screen and (max-width: 530px) {
     .wrapper {
-        width: 360px !important;
-        height: 360px !important;
+        width: 320px !important;
+        height: 320px !important;
         .outer {
             .card {
                 padding: 5px !important;
@@ -379,25 +330,7 @@
     }
 }
 
-@media screen and (max-width: 520px) {
-    section {
-        .restaurant-location-info {
-            .restaurant-img {
-                img {
-                    height: 170px !important;
-                }
-            }
-        }
-        &.section-1 {
-            .table-container {
-                img {
-                    width: 100% !important;
-                    height: 250px !important;
-                }
-            }
-        }
-    }
-}
+
 
 @media screen and (max-width: 500px) {
     .restaurant-location-info {
@@ -415,12 +348,6 @@
 @media screen and (max-width: 450px) {
     section {
         &.section-1 {
-            .table-container {
-                img {
-                    width: 300px !important;
-                    height: 300px !important;
-                }
-            }
             .card {
                 width: 100% !important;
             }
@@ -471,11 +398,7 @@
 
 @media screen and (max-width: 350px) {
     .restaurant-location-info {
-        .restaurant-img {
-            img {
-                height: 150px !important;
-            }
-        }
+      
         .restaurant-name {
             h5 {
                 font-size: 18px !important;

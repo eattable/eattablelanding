@@ -647,6 +647,50 @@ var arrLang = {
           "cookies-enable":"Dərc edəndən asılı olaraq cookie-fayılları qəbul etmək və ya onlardan imtina etmək.  ",
           "note":"Qeyd",
           "cookies-accept":"",
+        //meta
+         "home-original-title": "EATTABLE : Restoran və Restoran Rezervasiyası",
+         "home-meta-title": "EATTABLE : Restoran və Restoran Rezervasiyası",
+         'home-meta-desc': "EATTABLE : Bəyəndiyiniz restoranları onlyan rezervasiya edin. Restoran rezervasiya etməzdən öncə getmək istədiyiniz məkanla bağlı rəyləri oxumaq imkanı.",
+         'home-meta-keywords': 'EATTABLE, EATTABLE restoran rezervasiyası, EATTABLE onlayn restoran rezervasiyası, restoran, restoran rezervasiyası, restoran rezervasiya ed, bakıda restoran rezervasiya ed, bakıda restoranlar, Azərbaycanda restoranlar, restoran rəyləri, yerli restoranlar, Çin restoranları, suşi restoranları.',
+         'home-img-text':'EATTABLE Əsas Səhifə',
+         "business-original-title": "Restoranlarınız üçün Rezervasiya Proqramı | EATTABLE",
+         "business-meta-title": "Restoranlarınız üçün Rezervasiya Proqramı | EATTABLE",
+         'business-meta-desc': "EATTABLE tətbiqi sizi qonaqların cəlb edilməsi və saxlanması üçün xərclərdən azad edəcək, bütün iş prossesinə nəzarət etmənizə imkan yaradacaq",
+         'business-meta-keywords': 'EATTABLE, eattable rezervasiya, eattable rezervasiya tətbiqi, sizin biznesiniz üçün, biznes üçün, restoranlar üçün rezervasiya tətbiqi, restoran üçün, restoran üçün tətbiq, restoran rezervasiya tətbiqi, kooperasiya, əməkdaşlıq, mobil tətbiq ',
+         'business-img-text':'EATTABLE Biznes Səhifəsi',
+         "help-original-title": "EATTABLE Müştəri & Restoran Dəstəyi",
+         "help-meta-title": "EATTABLE Müştəri & Restoran Dəstəyi",
+         'help-meta-desc': "Dəstək xidmətimiz istifadəçilərin restoranları asanlıqla rezervasiya etmələri üçün məsuliyyət daşıyır və  yaranan problemləri qısa zamanda həll edir.",
+         'help-meta-keywords': 'EATTABLE dəstək mərkəzi, eattable dəstək, eattable dəstək komandası, dəstək, yardım, yardım komandası, müştəri dəstək mərkəzi, müştəri dəstəyi, dəstək mərkəzi, mobil tətbiq',
+         'help-img-text':'EATTABLE Yardım Səhifəsi',
+         "contact-original-title": "EATTABLE Restoran Rezervasiyası | Bizimlə Əlaqə",
+         "contact-meta-title": "EATTABLE Restoran Rezervasiyası | Bizimlə Əlaqə",
+         'contact-meta-desc': "EATTABLE dəstək komandamızla əlaqə saxlayın. Təcrübələr, hesab məlumatları və yaxud xətalar barəsində kömək istəyin",
+         'contact-meta-keywords': 'EATTABLE əlaqə, ettable bizimlə əlaqə, kömək əldə ed, eattable dəstək komandası ilə əlaqə, dəstək komandasından kömək əldə ed, kömək üçün əlaqə, dəstək istə, mobil tətbiq',
+         "coins-original-title": "EATTABLE Coins | Restoran Rezervasiya Tətbiqi",
+         "coins-meta-title": "EATTABLE Coins | Restoran Rezervasiya Tətbiqi",
+         'coins-meta-desc': "Tətbiqdən etdiyiniz rezervasiyalardan qazandığınız EATTABLE Coins ballarından rezervasiyanın gec ləğv edilmə komissiyasını ödəmək üçün istifadə edə bilərsiniz",
+         'coins-meta-keywords': 'EATTABLE coins, eattable mükafatları, ləğv etmə komissiyası, restoran rezervasiyası, gec ləğv etmə, mobil tətbiq',
+         "benefit-original-title": "Rezervasiyaların Üstünlükləri | EATTABLE",
+         "benefit-meta-title": "Rezervasiyaların Üstünlükləri | EATTABLE",
+         'benefit-meta-desc': "EATTABLE-dan yer rezervasiya etdiyiniz zaman rezervasiyasınız restoranın onlayn sifariş kitabında dərhal qeydiyyata alınır və tez bir zamanda təsdiqlənir",
+         'benefit-meta-keywords': 'EATTABLE restoran rezervasiya üstünlükləri, rezervasiyanın faydaları, eattable tətbiqinin faydaları, restoran rezervasiya tətbiqi, tətbiq faydaları, mobil tətbiq',
+         "customer-original-title": "FAQ Müştərilər üçün | EATTABLE",
+         "customer-meta-title": "FAQ Müştərilər üçün | EATTABLE",
+         'customer-meta-desc': "Müştərilər tərəfindən ən çox ünvanlanan sualları EATTABLE cavablandırdı. ",
+         'customer-meta-keywords': 'FAQ, EATTABLE FAQ, ən çox soruşulan suallar, müşətrilər tərəfindən ünvanlanan suallar, restoran rezervasiyası, eattable rezervasiya tətbiqi, mobil tətbiq',
+         "restaurant-original-title": "FAQ Restoranlar üçün | EATTABLE",
+         "restaurant-meta-title": "FAQ Restoranlar üçün | EATTABLE",
+         'restaurant-meta-desc': "Restoranlar tərəfindən ən çox ünvanlanan sualları EATTABLE cavablandırdı",
+         'restaurant-meta-keywords': 'FAQ, EATTABLE FAQ, ən çox soruşulan suallar, restoranlar tərəfindən ünvanlanan suallar',
+         "privacy-original-title": "Məxfilik Siyasəti | EATTABLE",
+         "privacy-meta-title": "Məxfilik Siyasəti | EATTABLE",
+         'privacy-meta-desc': "Məxfilik Siyasəti “EATTABLE” İstifadəçi Razılaşmasının ayrılmaz hissəsidir və Servis istifadəçilərinə məxsus fərdi məlumatın işlənməsini tənzimləyən sənəddir",
+         'privacy-meta-keywords': 'Məxfilik siyasəti, eattable məxfilik siyasəti, eattable rezervasiya, restoran rezervasiyası, istifadəçi razılaşması, mobil tətbiq',
+         "terms-original-title": "İstifadə Qaydaları | EATTABLE",
+         "terms-meta-title": "İstifadə Qaydaları | EATTABLE",
+         'terms-meta-desc': "“EATTABLE” mobil tətbiqini istifadə edərək İnternet istifadəçisi, şərtsiz olaraq, Servisin qaydalarını tənzimləyən bu Razılaşmanın şərtləri ilə razılaşır",
+         'terms-meta-keywords': 'Eattable, istifadə qaydası, istifadıçi razılaşması, eattable istifadə qaydası, mobil tətbiq, restoran rezervasiyası, eattable rezervasiya, reservasiya tətbiqi',
       },
       'ru': {
           //marketing
@@ -1292,8 +1336,51 @@ var arrLang = {
            "last-1":"Я ознакомлен что какие именно данные обрабатывает Администрация при использовании мной Сервиса, а также мне понятны способы управления этими данными.",
            "last-2": "Своей волей и в своих интересах выражаю согласие на осуществление Администрацией действий в отношении моих персональных данных, которые необходимы или желаемы для достижения целей, указанных в Соглашении со всеми его неотъемлемыми частями, в том числе выражаю согласие на сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, запись на электронные носители и их хранение, в соответствии с требованиями действующего законодательства.",
            "last-3": "Также я даю согласие на обработку иных своих персональных данных, необходимых Администрации для исполнения обязательств в рамках Соглашения, сообщенных мной в процессе взаимодействия с Администрацией, если необходимость возникла в соответствии с обязательствами. ",
-           "last-4":"Настоящее согласие дано до момента моего отзыва согласия или завершения обязательств в рамках Соглашения или аналогичного договора (в зависимости от того, что наступит раньше).      "
-        
+           "last-4":"Настоящее согласие дано до момента моего отзыва согласия или завершения обязательств в рамках Соглашения или аналогичного договора (в зависимости от того, что наступит раньше).",
+          //meta
+           "home-original-title": "EATTABLE :  Рестораны и Резервация Ресторанов",
+           "home-meta-title": "EATTABLE :  Рестораны и Резервация Ресторанов",
+           'home-meta-desc': "EATTABLE :  Забронируйте свой любимый ресторан онлайн. Перед посещением ресторана, вы также можете прочитать отзывы о заведении.",
+           'home-meta-keywords': 'EATTABLE, EATTABLE резервация ресторана,  EATTABLE онлайн резервация ресторана, ресторан, резервация ресторана, сделать резервацию ресторана, сделать резервацию ресторана в баку, рестораны в Баку, рестораны Азербайджана,  отзывы ресторанов, местные рестораны, китайские рестораны, рестораны суши',
+           'home-img-text':'EATTABLE Главная Cтраница',
+           "business-original-title": "Приложение для резервации ваших ресторанов",
+           "business-meta-title": "Приложение для резервации ваших ресторанов",
+           'business-meta-desc': "Приложение EATTABLE избавит вас от затрат на привлечение и удержание гостей, позволяя контролировать весь бизнес-процесс",
+           'business-meta-keywords': 'EATTABLE, eattable резервация, eatable приложение для резервации, для вашего бизнеса, приложение резервации для ресторанов, для ресторана, приложение для ресторана, приложение для резервации ресторана, кооперация, сотрудничество, мобильное приложение',
+           'business-img-text':'EATTABLE Бизнес Cтраница',
+           "help-original-title": "EATTABLE Поддержка для клиентов и ресторанов",
+           "help-meta-title": "EATTABLE Поддержка для клиентов и ресторанов",
+           'help-meta-desc': "Наша служба поддержки отвечает за то, чтобы бронирование мест в ресторанах было удобным для пользователей, и решает возникающие проблемы в короткие сроки",
+           'help-meta-keywords': 'EATTABLE центр поддержки, eattable поддержка, eattable команда поддержки, поддержка, помощь, команда помощи, центр поддержки клиентов, поддержка клиентов, мобильное приложение',
+           'help-img-text':'EATTABLE Страница помощи',
+           "contact-original-title": "EATTABLE Резервация Ресторанов I Связь с нами",
+           "contact-meta-title": "EATTABLE Резервация Ресторанов I Связь с нами",
+           'contact-meta-desc': "Свяжитесь с нашей службой поддержки EATTABLE. Попросите помощи с опытом с нами, информацией об учетной записи или ошибками.",
+           'contact-meta-keywords': 'EATTABLE контакт, eattable связаться с нами, получить помощь, связаться со службой поддержки eattable, получить помощь от службы поддержки, обратиться за помощью, запросить помощь, мобильное приложение',
+           "coins-original-title": "EATTABLE Coins  | Приложение для Резервации Ресторана",
+           "coins-meta-title": "EATTABLE Coins  | Приложение для Резервации Ресторана",
+           'coins-meta-desc': "Вы можете использовать монеты EATTABLE, которые вы зарабатываете от бронирований, сделанных через приложение, для оплаты штрафа за позднюю отмену",
+           'coins-meta-keywords': 'EATTABLE coins, eattable награды, комиссия за отмену, бронирование ресторана, поздняя отмена, мобильное приложение',
+           "benefit-original-title": "Преимущества Резервации | EATTABLE",
+           "benefit-meta-title": "Преимущества Резервации | EATTABLE",
+           'benefit-meta-desc': "Когда вы делаете резервацию в EATTABLE, ваша резервация немедленно регистрируется в онлайн-книге заказов ресторана и быстро подтверждается.",
+           'benefit-meta-keywords': 'Преимущества бронирования ресторана EATTABLE, преимущества бронирования, преимущества приложения eattable, приложение для бронирования ресторанов, преимущества приложения, мобильное приложение',
+           "customer-original-title": "FAQ для клиентов | EATTABLE",
+           "customer-meta-title": "FAQ для клиентов | EATTABLE",
+           'customer-meta-desc': "EATTABLE ответил на наиболее часто задаваемые вопросы клиентов.",
+           'customer-meta-keywords': 'FAQ, EATTABLE FAQ, часто задаваемые вопросы, часто задаваемые вопросы клиентов, бронирование ресторанов, приложение для бронирования, мобильное приложение',
+           "restaurant-original-title": "FAQ для Ресторанов | EATTABLE",
+           "restaurant-meta-title": "FAQ для Ресторанов | EATTABLE",
+           'restaurant-meta-desc': "EATTABLE ответил на наиболее часто задаваемые ресторанами вопросы.",
+           'restaurant-meta-keywords': 'FAQ, EATTABLE FAQ, часто задаваемые вопросы, вопросы к ресторанам',
+           "privacy-original-title": "Политика Конфиденциальности | EATTABLE",
+           "privacy-meta-title": "Политика Конфиденциальности | EATTABLE",
+           'privacy-meta-desc': "Политика конфиденциальности является неотъемлемой частью Пользовательского соглашения EATTABLE и документов обработки данных Пользователей Сервиса.",
+           'privacy-meta-keywords': 'Политика конфиденциальности, политика конфиденциальности eattable, резервация eattable, бронирование ресторана, пользовательское соглашение, мобильное приложение',
+           "terms-original-title": "Правила пользования | EATTABLE",
+           "terms-meta-title": "Правила пользования | EATTABLE",
+           'terms-meta-desc': "Используя мобильное приложение EATTABLE, пользователь сети Интернет безоговорочно соглашается с настоящим соглашением, регулирующим использование Сервиса",
+           'terms-meta-keywords': 'Eattable, условия использования, пользовательское соглашение, условия использования eattable, мобильное приложение, резервирование ресторана, eattable резервация, приложение для резервации',
       },
       'en': {
         //marketing
@@ -1942,7 +2029,51 @@ var arrLang = {
             "cookies-block":"block cookies on the User's device. In that case the User is warned that navigation on Service can be complicated. Some functions require the use of cookies (for example, for recognition of the operating system and the User`s preferred language). Therefore, the Administration is not responsible for the inconveniences caused by inadequate work of services of Service because of disabled cookie-files;",
             "cookies-enable":"enable the use of cookies on a case-by-case basis;",
             "cookies-accept":"accept or reject cookies depending on their publisher.",
-            "note":"Note"
+            "note":"Note",
+            //meta
+            "home-original-title": "EATTABLE : Restaurant & Restaurant Reservations",
+            "home-meta-title": "EATTABLE : Restaurant & Restaurant Reservations",
+            'home-meta-desc': "EATTABLE : Book your favorite restaurants online. Before making a restaurant reservation, you can also read reviews about the place you want to go.",
+            'home-meta-keywords': 'EATTABLE, EATTABLE restaurant reservations, EATTABLE online restaurant booking, restaurant, Restaurant reservation, book a restaurant, restaurant booking, booking restaurant in baku, restaurants in baku, restaurant in Azerbaijan, restaurant reviews, local restaurants, Chinese restaurants, Shushi restaurants.',
+            'home-img-text':'EATTABLE Home Page',
+            "business-original-title": "Reservation Software for Your Restaurants | EATTABLE",
+            "business-meta-title": "Reservation Software for Your Restaurants | EATTABLE",
+            'business-meta-desc': "EATTABLE application will exempt from expense for attracting and retaining guests, allowing you to control the entire business process",
+            'business-meta-keywords': 'EATTABLE, eattable reservation, eattable booking application, for your business, for business, reservation software for restaurant, for restaurant, application for restauran, restaurant reservation app, cooperation, partnership, mobile application',
+            'business-img-text':'EATTABLE Business Page',
+            "help-original-title": "EATTABLE Help for Customers & Venues",
+            "help-meta-title": "EATTABLE Help for Customers & Venues",
+            'help-meta-desc': "Our support service is responsible for making restaurant reservations easy for users and solves the problems that arise in a short time.",
+            'help-meta-keywords': 'EATTABLE help center, eattable support, eatable support team, support, help, help team, costumer help center, customer support, support center, mobile application',
+            'help-img-text':'EATTABLE Help Page',
+            "contact-original-title": "EATTABLE Restaurant Reservation | Contact Us",
+            "contact-meta-title": "EATTABLE Restaurant Reservation | Contact Us",
+            'contact-meta-desc': "Contact our EATTABLE support team. Get help with experiences, account details or errors",
+            'contact-meta-keywords': 'EATTABLE contact, eattable contact us, get help, contact eattable support team, get help from support team, contact for help, request help, mobile application',
+            "coins-original-title": "EATTABLE Coins | Restaurant Reservation App",
+            "coins-meta-title": "EATTABLE Coins | Restaurant Reservation App",
+            'coins-meta-desc': "You can use the EATTABLE Coins that you earn from bookings by making through the app to pay the late cancellation fee",
+            'coins-meta-keywords': 'EATTABLE coins, eattable rewards, cancellation fee, restaurant reservation, late cancellation, mobile application',
+            "benefit-original-title": "Reservation Benefits | EATTABLE",
+            "benefit-meta-title": "Reservation Benefits | EATTABLE",
+            'benefit-meta-desc': "When you make a reservation from EATTABLE, your reservation is immediately registered in the restaurant's online order book and quickly confirmed",
+            'benefit-meta-keywords': 'EATTABLE restaurant reservation benefits, reservation benefits, benefits of eattable app, restaurant reservation app, app benefits, mobile application',
+            "customer-original-title": "FAQ for Customers | EATTABLE",
+            "customer-meta-title": "FAQ for Customers | EATTABLE",
+            'customer-meta-desc': "The most frequently asked questions by customers have been answered by EATTABLE",
+            'customer-meta-keywords': 'FAQ, EATTABLE FAQ, frequently asked questions, faq by customers, restaurant reservation, eattable reservation app, mobile application',
+            "restaurant-original-title": "FAQ for Restaurants | EATTABLE",
+            "restaurant-meta-title": "FAQ for Restaurants | EATTABLE",
+            'restaurant-meta-desc': "The most frequently asked questions by restaurants have been answered by EATTABLE",
+            'restaurant-meta-keywords': 'FAQ, EATTABLE FAQ, frequently asked questions, faq by restaurants',
+            "privacy-original-title": "Privacy Policy | EATTABLE",
+            "privacy-meta-title": "Privacy Policy | EATTABLE",
+            'privacy-meta-desc': "Privacy policy is the integral part of the ‘EATTABLE’ User agreement and the document data processing of Service Users",
+            'privacy-meta-keywords': 'Privacy policy, eattable privacy policy, eattable reservation, restaurant reservation, user agreement, mobile application',
+            "terms-original-title": "Terms of Use | EATTABLE",
+            "terms-meta-title": "Terms of Use | EATTABLE",
+            'terms-meta-desc': "Using the “ EATTABLE” mobile application, the Internet user unconditionally agrees to this agreement governing the use of Service",
+            'terms-meta-keywords': 'Eattable, terms of use, user agreement, eattable terms of use, mobile application, restaurant reservation, eattable reservation, reservation app',
       },
     };
     
@@ -1950,13 +2081,19 @@ var arrLang = {
     
     function translateLang(lang)
     {
+        $('meta').each(function(index, item) {
+                $(this).attr('content',arrLang[lang][$(this).attr('key')])
+        });
          $('.lang').each(function(index, item) {
-          $(this).text(arrLang[lang][$(this).attr('key')]);    
+                $(this).text(arrLang[lang][$(this).attr('key')]);    
          });
   
          $('.lang-input').each(function(index, item) {
-          $(this).attr("placeholder",arrLang[lang][$(this).attr('key')]);    
+                $(this).attr("placeholder",arrLang[lang][$(this).attr('key')]);    
          });
+        $('img').each(function(index, item) {
+                $(this).attr('alt',arrLang[lang][$(this).attr('key')])
+        });
        
     }
     

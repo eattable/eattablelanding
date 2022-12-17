@@ -6,10 +6,9 @@ section {
       line-height: 57px;
       text-align: center;
       color: $bg-color;
-      @media(max-width:576px){
+      @media (max-width: 430px) {
         line-height: 24px;
         @include font-size-20;
-        
       }
     }
     .section-title {
@@ -25,12 +24,12 @@ section {
     height: 850px;
     padding-top: 100px;
     margin-top: 33px;
-    @media(max-width:991px){
+    @media (max-width: 991px) {
       height: 450px;
     }
-    @media(max-width:576px){
-        height: 170px;
-        padding-top: 0;
+    @media (max-width: 430px) {
+      height: 190px;
+      padding-top: 0;
     }
 
     .container-fluid {
@@ -46,13 +45,13 @@ section {
         font-family: sans-serif;
       }
 
-    .prefix-select{
-      border:none!important;
-      background-color: transparent!important ;
-      border-right:1px solid #000!important;
-      border-radius: 0!important;
-      width: 40%!important;
-    }
+      .prefix-select {
+        border: none !important;
+        background-color: transparent !important ;
+        border-right: 1px solid #000 !important;
+        border-radius: 0 !important;
+        width: 40% !important;
+      }
       .input-box input {
         flex-grow: 1;
         font-size: 14px;
@@ -68,10 +67,10 @@ section {
       .row {
         .col-5 {
           form {
-              .info-word-size{
-                margin-top: 10px;
-                  margin-left: auto;
-              }
+            .info-word-size {
+              margin-top: 10px;
+              margin-left: auto;
+            }
             flex-direction: column;
             align-items: flex-start;
             width: 390px;
@@ -86,7 +85,7 @@ section {
               border: none !important;
               margin-top: 10px;
               padding: 10px;
-           
+
               // &.form-control{
               //     &:focus{
               //         border: 1px solid #ced4da !important;
@@ -102,9 +101,8 @@ section {
             }
             textarea {
               height: 150px;
-           
             }
-         
+
             button {
               z-index: 1 !important;
               // margin-top: 32px;
@@ -141,12 +139,12 @@ section {
         font-family: sans-serif;
       }
 
-      .res-prefix-select{
-        width: 40%;
+      .res-prefix-select {
+        width: 50%;
         background-color: transparent;
         border-radius: 0;
-        border:none!important;
-        border-right: 1px solid #000!important;
+        border: none !important;
+        border-right: 1px solid #000 !important;
       }
 
       .input-box input {
@@ -171,9 +169,9 @@ section {
             height: auto !important;
             background-color: $bg-color;
             padding: 50px;
-            .info-word-size{
-               margin:10px 0;
-                margin-left: auto;
+            .info-word-size {
+              margin: 10px 0;
+              margin-left: auto;
             }
             input,
             textarea {
@@ -183,7 +181,7 @@ section {
               background-color: $input-grey;
               border: none !important;
               margin-top: 10px;
-              @media(max-width:576px){
+              @media (max-width: 430px) {
                 height: 45px;
               }
             }
@@ -211,7 +209,7 @@ section {
   &.with-us-section {
     padding-top: 81px;
     // height: 473px;
-    @media(max-width:576px){
+    @media (max-width: 430px) {
       padding-top: 40px;
     }
     .title {
@@ -220,7 +218,7 @@ section {
       line-height: 57px;
       text-align: center;
       color: $bg-color;
-      @media(max-width:576px){
+      @media (max-width: 430px) {
         padding-top: 24px;
         @include font-size-20;
       }
@@ -239,7 +237,7 @@ section {
         .col-12 {
           .section-title {
             margin-bottom: 68px;
-            @media(max-width:576px){
+            @media (max-width: 430px) {
               margin-bottom: 20px;
             }
             h1 {
@@ -258,9 +256,13 @@ section {
             border: none !important;
             background: none;
             text-align: center;
-            @media(max-width:576px){
+            @media (max-width: 430px) {
               align-items: flex-start;
               text-align: left;
+              height: auto;
+            }
+            .card-title {
+              margin-bottom: 0;
             }
             .card-header,
             .card-body,
@@ -278,9 +280,21 @@ section {
             }
             .card-body,
             .card-footer {
+              h6 {
+                @include font-size-20;
+                @media (max-width: 430px) {
+                  @include font-size-16;
+                }
+              }
+
+              p {
+                @include font-size-20;
+                @media (max-width: 430px) {
+                  @include font-size-14;
+                }
+              }
               h6,
               p {
-                @include font-size-18;
                 line-height: 24px;
                 color: $placeholder;
               }
@@ -288,12 +302,12 @@ section {
             .card-body {
               margin-top: 17px;
               min-height: 60px;
+              @media (max-width: 430px) {
+                min-height: 0;
+              }
+
               h6 {
                 @include font-weight-300;
-                @media(max-width:576px){
-                
-                }
-
               }
             }
             .card-footer {
@@ -310,7 +324,7 @@ section {
   }
   &.reservation-section {
     padding-top: 100px;
-    @media(max-width:991px){
+    @media (max-width: 991px) {
       padding-top: 40px;
     }
     // padding-bottom: 150px;
@@ -320,16 +334,15 @@ section {
       line-height: 57px;
       text-align: center;
       color: $red-color;
-      @media(max-width:576px){
+      @media (max-width: 430px) {
         line-height: 37px;
         @include font-size-20;
-
       }
     }
     .section-title {
       text-align: center;
       margin-bottom: 58px;
-      @media(max-width:776px){
+      @media (max-width: 776px) {
         margin-bottom: 40px;
       }
       p {
@@ -337,15 +350,15 @@ section {
         @include font-size-24;
         line-height: 29px;
         color: $font-color;
-        @media(max-width:576px){
-          margin-top: 7px!important;
+        @media (max-width: 430px) {
+          margin-top: 7px !important;
         }
       }
     }
     .carousel {
-      height: 765px;
-      @media(max-width:576px){
-       height: 500px;
+      height: 665px;
+      @media (max-width: 430px) {
+        height: 450px;
       }
       .carousel-inner {
         width: 844px;
@@ -361,22 +374,24 @@ section {
             margin-top: 50px;
             max-width: 700px;
             width: 100%;
-            @media (max-width: 576px) {
+            @media (max-width: 430px) {
               margin-top: 0;
-              top: 70%;
+              top: 60%;
             }
             h3,
             h5 {
               font-weight: 500;
               line-height: 30px;
               color: #080708;
-              @media(max-width:576px){
-                line-height: 20px!important;
+              @media (max-width: 430px) {
+                line-height: 20px !important;
               }
-           
             }
             h3 {
               font-size: 25px;
+              @media (max-width: 430px) {
+                @include font-size-20;
+              }
             }
             h5 {
               margin-top: 20px;
@@ -389,13 +404,16 @@ section {
               h3,
               h5 {
                 font-weight: 500;
-                line-height: 30px;
-                @media(max-width:576px){
+                line-height: 19px;
+                @media (max-width: 430px) {
                   line-height: 19px;
                 }
               }
               h3 {
                 font-size: 25px;
+                @media (max-width: 430px) {
+                  @include font-size-20;
+                }
               }
               h5 {
                 margin-top: 20px;
@@ -449,7 +467,7 @@ section {
           .section-title {
             text-align: center;
             margin-bottom: 60px;
-            @media(max-width:576px){
+            @media (max-width: 430px) {
               margin-bottom: 40px;
             }
             h1 {
@@ -460,8 +478,9 @@ section {
               @include font-size-24;
               line-height: 29px;
               color: $font-color;
-              @media(max-width:576px){
+              @media (max-width: 430px) {
                 line-height: 19px;
+                @include font-size-14;
               }
             }
           }
@@ -557,8 +576,12 @@ section {
     }
     .marketing-left {
       margin-bottom: 30px;
-      h4{
-        @media(max-width:576px){
+      h4 {
+        font-weight: 500;
+        @include font-size-21;
+        line-height: 27px;
+        margin-left: 9px;
+        @media (max-width: 430px) {
           @include font-size-16;
         }
       }
@@ -573,15 +596,14 @@ section {
         padding: 5px;
         background-color: $font-color-2;
         border-radius: 50%;
-        @media(max-width:576px){
-          top: 5px;
-        }
+    
       }
       p {
-        line-height: 25px;
-        font-size: 16px;
-        @media(max-width:576px){
-          line-height:17px;
+        line-height: 21px;
+        font-size: 17px;
+        @media (max-width: 430px) {
+          line-height: 17px;
+          @include font-size-14;
         }
       }
     }
@@ -591,7 +613,7 @@ section {
       line-height: 57px;
       text-align: center;
       color: $red-color;
-      @media(max-width:576px){
+      @media (max-width: 430px) {
         line-height: 24px;
         @include font-size-20;
       }
@@ -604,7 +626,7 @@ section {
         @include font-size-24;
         line-height: 29px;
         color: $font-color-2;
-        @media(max-width:576px){
+        @media (max-width: 430px) {
           line-height: 17px;
           @include font-size-14;
         }
@@ -613,10 +635,9 @@ section {
   }
   &.guest-section {
     padding-top: 140px;
-    
-    @media(max-width:576px){
+
+    @media (max-width: 430px) {
       padding-top: 40px;
-    
     }
 
     .title {
@@ -625,7 +646,7 @@ section {
       line-height: 57px;
       text-align: center;
       color: $bg-color;
-      @media(max-width:576px){
+      @media (max-width: 430px) {
         line-height: 24px;
         @include font-size-20;
       }
@@ -656,15 +677,16 @@ section {
               line-height: 29px;
               color: $font-color;
               word-break: break-word;
-              @media(max-width:776px){
-                line-height: 19px;
+              @media (max-width: 776px) {
+                line-height: 17px;
+                @include font-size-14;
               }
             }
           }
         }
         .col-4 {
           position: relative;
-          .guest-section-img-responsive{
+          .guest-section-img-responsive {
             width: 350px;
             height: 350px;
             img {
@@ -676,7 +698,7 @@ section {
           .guest-section-img {
             width: 600px;
             height: 600px;
-            
+
             img {
               width: 100%;
               height: 100%;
@@ -695,13 +717,13 @@ section {
             }
             h5 {
               @include font-size-20;
-              @media(max-width:576px){
+              @media (max-width: 430px) {
                 @include font-size-16;
               }
             }
             p {
               @include font-size-16;
-              @media(max-width:576px){
+              @media (max-width: 430px) {
                 @include font-size-14;
                 line-height: 17px;
               }
@@ -719,7 +741,6 @@ section {
               width: 653px;
               margin-left: auto;
               margin-right: auto;
-             
             }
             &.content-4 {
               width: 776px;
@@ -740,9 +761,9 @@ section {
       line-height: 57px;
       text-align: center;
       color: $bg-color;
-      @media(max-width:776px){
+      @media (max-width: 776px) {
         line-height: 24px;
-          @include font-size-24;
+        @include font-size-24;
       }
     }
     .section-title {
@@ -753,8 +774,9 @@ section {
         @include font-size-24;
         line-height: 29px;
         color: $font-color;
-        @media(max-width:776px){
-          line-height: 19px;
+        @media (max-width: 776px) {
+          line-height: 17px;
+          @include font-size-14;
         }
       }
     }
@@ -792,18 +814,21 @@ section {
                     @include font-weight-500;
                     color: $font-color-2;
                     line-height: 24px;
-                    @media(max-width:776px){
+                    @media (max-width: 776px) {
                       line-height: 19px;
                     }
                   }
                   h5 {
                     @include font-size-20;
-                    @media(max-width:576px){
+                    @media (max-width: 430px) {
                       @include font-size-16;
                     }
                   }
                   p {
                     @include font-size-16;
+                    @media (max-width: 430px) {
+                      @include font-size-14;
+                    }
                   }
                 }
               }
@@ -834,14 +859,14 @@ section {
     }
   }
   &.info-section {
-padding-bottom: 22px;
+    padding-bottom: 22px;
     .title {
       @include font-weight-500;
       font-size: 32px;
-      line-height: 57px;
+      line-height: 39px;
       text-align: left;
       color: $red-color;
-      @media(max-width:576px){
+      @media (max-width: 430px) {
         line-height: 19px;
         @include font-size-16;
       }
@@ -858,7 +883,7 @@ padding-bottom: 22px;
               margin-bottom: 25px;
               position: relative;
               padding-left: 25px;
-              @media(max-width:776px){
+              @media (max-width: 776px) {
                 margin-bottom: 16px;
               }
               p {
@@ -866,7 +891,7 @@ padding-bottom: 22px;
                 @include font-size-24;
                 line-height: 29px;
                 color: $font-color-2;
-                @media(max-width:776px){
+                @media (max-width: 776px) {
                   font-size: 16px;
                   line-height: 20px;
                 }
@@ -889,11 +914,11 @@ padding-bottom: 22px;
     }
   }
   &.how-start-section {
-    padding-top: 170px;
+    padding-top: 30px;
     background-color: #fcfcfc !important;
     padding-bottom: 68px;
     overflow-x: hidden;
-    @media(max-width:576px){
+    @media (max-width: 430px) {
       padding-top: 10px;
     }
     .container-fluid {
@@ -901,9 +926,13 @@ padding-bottom: 22px;
         .col-6 {
           .how-start-content {
             h1 {
-              font-size: 35px;
+              font-size: 40px;
+              line-height: 48px;
               margin-bottom: 43px;
-              @media(max-width:576px){
+              @media(max-width:991px){
+                font-size: 30px;
+              }
+              @media (max-width: 430px) {
                 margin-bottom: 16px;
                 font-size: 20px;
               }
@@ -911,7 +940,7 @@ padding-bottom: 22px;
             ul {
               li {
                 margin-bottom: 27px;
-                @media(max-width:576px){
+                @media (max-width: 430px) {
                   margin-bottom: 13px;
                 }
                 p {
@@ -919,8 +948,9 @@ padding-bottom: 22px;
                   @include font-size-24;
                   line-height: 29px;
                   color: $font-color-2;
-                  @media(max-width:776px){
-                    line-height: 19px;
+                  @media (max-width: 776px) {
+                    line-height: 17px;
+                    @include font-size-14;
                   }
                 }
               }
@@ -977,12 +1007,12 @@ padding-bottom: 22px;
                 text-align: center;
                 border-radius: 50%;
                 padding: 15px;
-                top: 10%;
+                top: 9%;
                 left: 10%;
                 height: 80%;
                 width: 80%;
-                @media(max-width:576px){
-               font-size: 27px;
+                @media (max-width: 430px) {
+                  font-size: 27px;
                 }
               }
             }

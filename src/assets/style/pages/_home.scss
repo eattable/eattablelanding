@@ -10,9 +10,9 @@ section{
             @include font-weight-500;
             line-height: 45px;
             color: $font-color;
-            @media(max-width:576px){
+            @media(max-width:430px){
                 line-height: 19px;
-                @include font-size-20;
+                @include font-size-16;
             }
         }
     }
@@ -28,7 +28,7 @@ section{
         }
         video{
             // margin-top: -150px;
-            // @media (min-width:576px) and (max-width:767px) {
+            // @media (min-width:430px) and (max-width:767px) {
             //     margin-top: 150px;
             // }
             @media(min-width:768px) and (max-width:991px){
@@ -321,8 +321,13 @@ section{
                             line-height: 48px;
                             text-align: center;
                             color: #000000;
-                            @media(max-width:576px){
-                                line-height: 30px;
+                            @media(max-width:991px){
+                            font-size: 30px;;
+                            }
+                            
+                            @media(max-width:430px){
+                                line-height: 18px;
+                               font-size: 15px;
                             }
                             
                             // color: transparent !important;
@@ -335,7 +340,7 @@ section{
                         line-height: 71px;
                         text-align: center;
                         color:  $red-color;
-                        @media(max-width:576px){
+                        @media(max-width:430px){
                             line-height: 30px;
                             @include font-size-20;
                         }
@@ -420,6 +425,9 @@ section{
     }
     &.locations-section {
         padding-bottom: 100px;
+        @media(max-width:430px){
+            padding-bottom: 10px;
+        }
         .info-text{
             width: 800px;
         }
@@ -433,8 +441,7 @@ section{
                 //     margin-bottom: 90px;
                 // }
                 img {
-                    width: 1087.27px;
-                    height: 712.39px;
+          
                     z-index: 1000;
                     // margin-top: 70px;
                  
@@ -443,30 +450,28 @@ section{
                     width: 619.07px;
                     height: 274.31px;
                 }
+                .restaurant-img img{
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
                 .restaurant-location-info{
-                    background: #FFFFFF;
-                    box-shadow: -1px 7px 15.3779px 3px rgba(115, 115, 115, 0.15);
-                    border-radius: 19.2224px;
-                    width: 678.552001953125px;
+                 
+                
                     margin-top: 50px;
                     .card{
                         width: 100%;
                         background: $bg-color;
                         border: none !important;
                         padding: 33px;
-                        @media(max-width:576px){
+                        @media(max-width:430px){
                             padding: 15px;
                         }
                         .card-header{
                             width: 100%;
                             background: none !important;
                             border: none !important;
-                            .restaurant-img{
-                                img{
-                                    width: 109.57px;
-                                    height: 111.85px;
-                                }
-                            }
+                           
                             .restaurant-name{
                                 width: 300px;
                                 h6{
@@ -527,7 +532,7 @@ section{
         .info-text{
             width: 800px;
             margin-bottom: 100px;
-            @media(max-width:576px){
+            @media(max-width:430px){
                 margin-bottom: 60px;
             }
         }
@@ -552,7 +557,7 @@ section{
                                 font-weight: 500;
                                 font-size: 50px;
                                 line-height: 60px;
-                                @media(max-width:576px){
+                                @media(max-width:430px){
                                     font-size:20px;
                                     line-height: 24px;
                                 }
@@ -569,7 +574,7 @@ section{
                                         font-size: 20px;
                                         line-height: 48px;
                                         color: #232323;
-                                        @media(max-width:576px){
+                                        @media(max-width:430px){
                                             font-size:18px;
                                           
                                         }
@@ -585,7 +590,7 @@ section{
     &.payment-section{
         padding-top: 150px;
         height: 1400px;
-        @media(max-width:576px){
+        @media(max-width:430px){
             padding-top: 50px;
         }
         .title{
@@ -593,7 +598,7 @@ section{
             @include font-size-40;
             line-height: 48px;
             color: $font-color-2;
-            @media(max-width:576px){
+            @media(max-width:430px){
                 line-height: 24px;
                 @include font-size-18;
             }
@@ -647,12 +652,12 @@ section{
     &.trending-section{
         overflow-x: hidden;
         margin-bottom: 100px;
-
+        padding-top: 100px;
         .services-title{
             @include font-size-48;
             line-height: 24px;
             color: $red-color;
-            @media(max-width:576px){
+            @media(max-width:430px){
                 @include font-size-20;
             }
         }
@@ -715,7 +720,8 @@ section{
             width: 661px ;
             height: 427px ;
             @media(max-width:776px){
-                height: 300px;
+                height: 270px;
+                width: 500px;
             }
         }
         img{

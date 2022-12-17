@@ -33,7 +33,7 @@ footer {
                
                     img {
                         width: 150px;
-                        @media(max-width:576px){
+                        @media(max-width:430px){
                             width: 90px;                    
                           
                         }
@@ -46,7 +46,7 @@ footer {
                     img {
                         width: 150px;
                         cursor: pointer;
-                        @media(max-width:576px){
+                        @media(max-width:430px){
                             width: 90px;                    
                           
                         }
@@ -302,7 +302,7 @@ footer {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 430px) {
     footer {
         .resp-footer {
             .foot-end {

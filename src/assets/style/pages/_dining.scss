@@ -6,7 +6,7 @@ section{
         @media(max-width:992px){
             height: 450px;
         }
-        @media(max-width:576px){
+        @media(max-width:430px){
             height: 170px;
         }
         .title{
@@ -14,7 +14,11 @@ section{
             @include font-size-40;
             line-height: 48px;
             color: $bg-color;
-            @media(max-width:576px){
+            @media(max-width:991px){
+                line-height: 35px;
+                font-size: 30px;
+             }
+            @media(max-width:430px){
                line-height: 24px;
                @include font-size-20;
             }
@@ -38,7 +42,7 @@ section{
                             line-height: 34px;
                             color: $font-color-2;
                             
-                            @media(max-width:576px){
+                            @media(max-width:430px){
                                 line-height: 24px;
                             }
                         }
@@ -47,7 +51,7 @@ section{
                             @include font-size-20;
                             line-height: 34px;
                             color: $font-color-2;
-                            @media(max-width:576px){
+                            @media(max-width:430px){
                                 line-height: 24px;
                             }
                         }
