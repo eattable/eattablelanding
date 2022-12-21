@@ -129,11 +129,15 @@ footer {
                     line-height: 24px;
                     color: $font-color;
                     margin-top: 10px;
+                    @media(max-width:576px){
+                        @include font-size-18;
+                        line-height: 19px;
+                    }
                 }
 
                 ul {
                     li {
-                        margin: 18px 0;
+                        margin: 10px 0;
 
                         a {
                             font-weight: 400;
@@ -168,6 +172,9 @@ footer {
     }
     .download-btns {
         display: block;
+        .download-androids{
+            margin-top: 10px;
+        }
     }
     .footer-bottom {
         border-top: 1px solid #ECECEC;

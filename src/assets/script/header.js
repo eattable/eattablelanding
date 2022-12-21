@@ -118,17 +118,26 @@ checkbox1.addEventListener("change", function() {
     nodark(); //else run this funtion
   }
 });
+const mode = sessionStorage.getItem('mode');
 
 //function for checkbox when checkbox is checked
 function darkmode() {
   document.body.classList.add("dark-mode"); //add a class to the body tag
   checkbox.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+
 }
+
 function darkmode() {
   document.body.classList.add("dark-mode"); //add a class to the body tag
   checkbox1.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+  let img = document.querySelector('.mc-img');
+  if(img){
+    img.src = './src/assets/img/card.png';
+  }
+ 
+
 }
 
 //function for checkbox when checkbox is not checked
@@ -141,6 +150,11 @@ function nodark() {
   document.body.classList.remove("dark-mode"); //remove added class from body tag
   checkbox1.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
+  let img = document.querySelector('.mc-img');
+  if(img){
+    img.src = './src/assets/img/mcd.png';
+  }
+ 
 }
 
 //add remove active class nav items in localstorage between pages
@@ -208,8 +222,10 @@ $('.navbar-nav a').on('click', function () {
   //  window.sessionStorage.clear();
 });
 //remove active link when click logo
-$('.navbar-brand').on("click",function(){
+const logo = document.querySelector('.navbar-brand');
+console.log(logo)
+logo.addEventListener('click',function(){
   sessionStorage.removeItem('activeLink')
-;
 })
+
 

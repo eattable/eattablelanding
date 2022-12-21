@@ -104,3 +104,4 @@ function handleInput(evt) {
       evt.target.classList.remove('invalid')
   }
 }
+

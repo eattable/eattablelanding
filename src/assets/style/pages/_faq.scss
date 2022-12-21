@@ -1,12 +1,16 @@
 section{
     &.faq-section{
-        margin-top: 150px;
+        padding-top: 150px;
         margin-bottom: 150px;
         // height: 1600px;
         .title{
             @include font-weight-600;
             @include font-size-40;
             line-height: 48px;
+            @media(max-width:576px){
+                @include font-size-32;
+                line-height: 36px;
+            }
         }
         .container-fluid{
                 .row{

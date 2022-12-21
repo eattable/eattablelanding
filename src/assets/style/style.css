@@ -1541,6 +1541,10 @@ input[type=text], input[type=number], input[type=email], textarea {
     align-items: center;
     justify-content: center;
   }
+  section .table-container img {
+    width: 400px;
+    height: 400px;
+  }
   section .info-text {
     width: 100% !important;
   }
@@ -1574,7 +1578,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     width: 600px !important;
   }
   section.payment-section {
-    height: 1400px !important;
+    height: 1200px !important;
   }
   section.payment-section .container-fluid .row .col-12 .digital-cards img {
     width: 100% !important;
@@ -1737,7 +1741,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     height: 40px;
   }
   .wrapper .outer .card .content p {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .wrapper .outer .card .content svg {
     width: 20px;
@@ -1769,7 +1773,7 @@ input[type=text], input[type=number], input[type=email], textarea {
 @media screen and (max-width: 400px) {
   .wrapper {
     width: 300px !important;
-    height: 280px !important;
+    height: 260px !important;
   }
   .wrapper .outer .card {
     width: 250px !important;
@@ -2089,7 +2093,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     margin-top: 3rem !important;
   }
   section.guest-section .guest-section-img {
-    height: 400px !important;
+    height: 300px !important;
   }
   section.commerce-section .commerce-img {
     height: 250px !important;
@@ -2454,8 +2458,14 @@ footer .container-fluid .grid .grid-item-1 h3 {
   color: #080708;
   margin-top: 10px;
 }
+@media (max-width: 576px) {
+  footer .container-fluid .grid .grid-item-1 h3 {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
 footer .container-fluid .grid .grid-item-1 ul li {
-  margin: 18px 0;
+  margin: 10px 0;
 }
 footer .container-fluid .grid .grid-item-1 ul li a {
   font-weight: 400;
@@ -2479,6 +2489,9 @@ footer .download-btns-copy img {
 }
 footer .download-btns {
   display: block;
+}
+footer .download-btns .download-androids {
+  margin-top: 10px;
 }
 footer .footer-bottom {
   border-top: 1px solid #ECECEC;
@@ -3565,6 +3578,12 @@ section .info-text p {
   line-height: 45px;
   color: #080708;
 }
+@media (max-width: 776px) {
+  section .info-text p {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
 @media (max-width: 430px) {
   section .info-text p {
     line-height: 19px;
@@ -3581,7 +3600,7 @@ section.home-section {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   section.home-section video {
-    height: 800px;
+    height: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -3810,6 +3829,7 @@ section.services-section .container-fluid .row .col-12 .animation-info-text p {
 @media (max-width: 991px) {
   section.services-section .container-fluid .row .col-12 .animation-info-text p {
     font-size: 30px;
+    line-height: 34px;
   }
 }
 @media (max-width: 430px) {
@@ -3824,6 +3844,11 @@ section.services-section .container-fluid .row .col-12 h1 {
   line-height: 71px;
   text-align: center;
   color: #DC303C;
+}
+@media (max-width: 776px) {
+  section.services-section .container-fluid .row .col-12 h1 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 430px) {
   section.services-section .container-fluid .row .col-12 h1 {
@@ -3853,6 +3878,12 @@ section.services-section .container-fluid .row .col-12 .wrapper {
   width: 700px;
   border-radius: 100%;
 }
+@media (max-width: 776px) {
+  section.services-section .container-fluid .row .col-12 .wrapper {
+    height: 500px;
+    width: 500px;
+  }
+}
 section.services-section .container-fluid .row .col-12 .wrapper .outer {
   display: flex;
   align-items: center;
@@ -3867,6 +3898,11 @@ section.services-section .container-fluid .row .col-12 .wrapper .outer .content 
   font-weight: 400;
   font-size: 27px;
   line-height: 56px;
+}
+@media (max-width: 576px) {
+  section.services-section .container-fluid .row .col-12 .wrapper .outer .content {
+    line-height: 30px;
+  }
 }
 section.services-section .container-fluid .row .col-12 .wrapper .outer .content img {
   margin-right: 15px;
@@ -3891,6 +3927,12 @@ section.services-section .container-fluid .row .col-12 .wrapper .card {
   -webkit-animation-delay: calc(3s * var(--delay));
           animation-delay: calc(3s * var(--delay));
 }
+@media (max-width: 776px) {
+  section.services-section .container-fluid .row .col-12 .wrapper .card {
+    padding: 10px;
+    width: 450px;
+  }
+}
 section.services-section .container-fluid .row .col-12 .wrapper .card:last-child {
   -webkit-animation-delay: calc(-3s * var(--delay));
           animation-delay: calc(-3s * var(--delay));
@@ -3906,13 +3948,33 @@ section.locations-section {
 }
 @media (max-width: 430px) {
   section.locations-section {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
 }
 section.locations-section .info-text {
   width: 800px;
 }
-section.locations-section .row .col-12 img {
+section.locations-section .row .col-12 .location-img-container {
+  height: 700px;
+}
+@media (max-width: 776px) {
+  section.locations-section .row .col-12 .location-img-container {
+    height: 450px;
+  }
+}
+@media (max-width: 576px) {
+  section.locations-section .row .col-12 .location-img-container {
+    height: 300px;
+  }
+}
+@media (max-width: 776px) {
+  section.locations-section .row .col-12 .location-img-container img {
+    max-width: 500px;
+    height: 500px;
+    width: 100%;
+  }
+}
+section.locations-section .row .col-12 .location-img-container img {
   z-index: 1000;
 }
 section.locations-section .row .col-12 .restaurant-card {
@@ -3997,12 +4059,18 @@ section.section-1 .info-text {
 }
 @media (max-width: 430px) {
   section.section-1 .info-text {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 section.section-1 .container-fluid .row .col-6 .table-container img {
   width: 550px;
   height: 547px;
+}
+@media (max-width: 1199px) {
+  section.section-1 .container-fluid .row .col-6 .table-container img {
+    width: 400px;
+    height: 400px;
+  }
 }
 section.section-1 .container-fluid .row .col-6 .card {
   width: 600px;
@@ -4042,6 +4110,11 @@ section.payment-section {
   padding-top: 150px;
   height: 1400px;
 }
+@media (max-width: 776px) {
+  section.payment-section {
+    height: 1200px;
+  }
+}
 @media (max-width: 430px) {
   section.payment-section {
     padding-top: 50px;
@@ -4052,6 +4125,12 @@ section.payment-section .title {
   font-size: 40px;
   line-height: 48px;
   color: #000000;
+}
+@media (max-width: 776px) {
+  section.payment-section .title {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 @media (max-width: 430px) {
   section.payment-section .title {
@@ -4099,6 +4178,11 @@ section.trending-section .services-title {
   font-size: 48px;
   line-height: 24px;
   color: #DC303C;
+}
+@media (max-width: 776px) {
+  section.trending-section .services-title {
+    font-size: 30px;
+  }
 }
 @media (max-width: 430px) {
   section.trending-section .services-title {
@@ -4531,6 +4615,12 @@ section.reservation-section .title {
   text-align: center;
   color: #DC303C;
 }
+@media (max-width: 776px) {
+  section.reservation-section .title {
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
 @media (max-width: 430px) {
   section.reservation-section .title {
     line-height: 37px;
@@ -4769,6 +4859,12 @@ section.marketing-section .title {
   text-align: center;
   color: #DC303C;
 }
+@media (max-width: 776px) {
+  section.marketing-section .title {
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
 @media (max-width: 430px) {
   section.marketing-section .title {
     line-height: 24px;
@@ -4805,6 +4901,12 @@ section.guest-section .title {
   line-height: 57px;
   text-align: center;
   color: #FFFFFF;
+}
+@media (max-width: 776px) {
+  section.guest-section .title {
+    line-height: 40px;
+    font-size: 36px;
+  }
 }
 @media (max-width: 430px) {
   section.guest-section .title {
@@ -4921,6 +5023,12 @@ section.commerce-section .title {
   color: #FFFFFF;
 }
 @media (max-width: 776px) {
+  section.commerce-section .title {
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 430px) {
   section.commerce-section .title {
     line-height: 24px;
     font-size: 24px;
@@ -5160,7 +5268,7 @@ section.how-start-section .container-fluid .row .col-6 a .wrapper .content {
 }
 @media (max-width: 430px) {
   section.how-start-section .container-fluid .row .col-6 a .wrapper .content {
-    font-size: 27px;
+    font-size: 24px;
   }
 }
 
@@ -5288,8 +5396,7 @@ section.help-section .container-fluid .row .col-6 a .help-card, section.help-sec
   background: none !important;
 }
 section.help-section .container-fluid .row .col-6 a .help-card {
-  width: 544px;
-  height: 594px;
+  height: 500px;
   border-radius: 39.8187px !important;
   -webkit-border-radius: 39.8187px !important;
   -moz-border-radius: 39.8187px !important;
@@ -5302,13 +5409,17 @@ section.help-section .container-fluid .row .col-6 a .help-card {
   }
 }
 section.help-section .container-fluid .row .col-6 a .help-card .card-img {
-  max-height: 100%;
-  max-width: 100%; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+  height: 500px; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transition: all 0.5s ease;
 }
+@media (max-width: 576px) {
+  section.help-section .container-fluid .row .col-6 a .help-card .card-img {
+    height: 300px;
+  }
+}
 section.help-section .container-fluid .row .col-6 a .help-card .card-img img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   border-radius: 39.8187px !important;
   -webkit-border-radius: 39.8187px !important;
   -moz-border-radius: 39.8187px !important;
@@ -5330,9 +5441,9 @@ section.help-section .container-fluid .row .col-6 a .help-card .card-footer {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%) !important;
 }
 section.help-section .container-fluid .row .col-6 a .help-card .card-footer h6, section.help-section .container-fluid .row .col-6 a .help-card .card-footer svg {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 43px;
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 39px;
   color: #FFFFFF;
 }
 @media (max-width: 430px) {
@@ -5343,7 +5454,7 @@ section.help-section .container-fluid .row .col-6 a .help-card .card-footer h6, 
   }
 }
 section.connect-section {
-  padding-top: 170px;
+  padding-top: 100px;
   padding-bottom: 68px;
 }
 @media (max-width: 430px) {
@@ -5353,7 +5464,7 @@ section.connect-section {
 }
 section.connect-section .title {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 48px;
 }
 @media (max-width: 991px) {
@@ -5391,14 +5502,14 @@ section.connect-section .container-fluid .row .col-xl-6:last-child .connect-cont
 }
 section.connect-section .container-fluid .row .col-xl-6:last-child .connect-content h6 {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 29px;
   margin-top: 20px;
   color: #000000;
 }
-@media (max-width: 991px) {
+@media (max-width: 776px) {
   section.connect-section .container-fluid .row .col-xl-6:last-child .connect-content h6 {
-    line-height: 24px;
+    line-height: 29px;
     font-size: 26px;
   }
 }
@@ -5409,7 +5520,7 @@ section.connect-section .container-fluid .row .col-xl-6:last-child .connect-cont
   }
 }
 section.connect-section .container-fluid .row .col-xl-6:last-child .connect-content p {
-  margin-top: 27px;
+  margin-top: 15px;
   font-weight: 500;
   font-size: 22px;
   line-height: 27px;
@@ -5418,8 +5529,8 @@ section.connect-section .container-fluid .row .col-xl-6:last-child .connect-cont
 @media (max-width: 430px) {
   section.connect-section .container-fluid .row .col-xl-6:last-child .connect-content p {
     margin-top: 8px;
-    line-height: 17px;
-    font-size: 18px;
+    line-height: 19px;
+    font-size: 16px;
   }
 }
 
@@ -5542,13 +5653,19 @@ section.texts .container-fluid .row .col-12 p {
 }
 
 section.faq-section {
-  margin-top: 150px;
+  padding-top: 150px;
   margin-bottom: 150px;
 }
 section.faq-section .title {
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
+}
+@media (max-width: 576px) {
+  section.faq-section .title {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 section.faq-section .container-fluid .row .col-12 .section-title {
   margin-bottom: 30px;
@@ -6187,8 +6304,7 @@ section.vacancy-section .container-fluid .row .col-12 .vacancy-apply .row .col-1
 }
 
 section.term-section {
-  padding: 0 10px;
-  margin-top: 100px;
+  padding: 120px 10px;
 }
 section.term-section .container-fluid {
   padding-left: 1rem !important;
@@ -6347,7 +6463,7 @@ section.privacy-section .container-fluid .row h1 {
 
 section.address-section {
   padding-top: 70px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 @media (max-width: 430px) {
   section.address-section {
@@ -6368,20 +6484,30 @@ section.address-section svg {
 section.address-section .col-md-4 div {
   margin-bottom: 20px;
 }
-section.address-section .col-md-4 div p, section.address-section .col-md-4 div span {
+section.address-section .col-md-4 div p,
+section.address-section .col-md-4 div span {
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
   color: #000000;
 }
+@media (max-width: 776px) {
+  section.address-section .col-md-4 div p,
+section.address-section .col-md-4 div span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 430px) {
-  section.address-section .col-md-4 div p, section.address-section .col-md-4 div span {
+  section.address-section .col-md-4 div p,
+section.address-section .col-md-4 div span {
     font-size: 14px;
     line-height: 19px;
   }
 }
-section.address-section .col-md-4 div p a, section.address-section .col-md-4 div span a {
-  color: #DC303C;
+section.address-section .col-md-4 div p a,
+section.address-section .col-md-4 div span a {
+  color: #dc303c;
 }
 section.address-section .col-md-6 {
   display: flex;
@@ -6392,6 +6518,12 @@ section.address-section p {
   font-size: 20px;
   line-height: 24px;
   color: #484848;
+  margin-bottom: 10px;
+}
+@media (max-width: 776px) {
+  section.address-section p {
+    font-size: 18px;
+  }
 }
 @media (max-width: 430px) {
   section.address-section p {
@@ -6429,7 +6561,7 @@ section.form-section label {
   }
 }
 section.form-section input {
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: none !important;
   outline: none !important;
   border-radius: 4px;
@@ -6438,7 +6570,7 @@ section.form-section input {
 }
 section.form-section textarea {
   height: 240px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: none !important;
 }
 @media (max-width: 430px) {

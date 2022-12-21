@@ -334,6 +334,10 @@ section {
       line-height: 57px;
       text-align: center;
       color: $red-color;
+      @media (max-width: 776px) {
+        line-height: 40px;
+      font-size: 36px;
+      }
       @media (max-width: 430px) {
         line-height: 37px;
         @include font-size-20;
@@ -613,6 +617,10 @@ section {
       line-height: 57px;
       text-align: center;
       color: $red-color;
+      @media (max-width: 776px) {
+        line-height: 40px;
+        font-size: 36px;
+      }
       @media (max-width: 430px) {
         line-height: 24px;
         @include font-size-20;
@@ -646,6 +654,10 @@ section {
       line-height: 57px;
       text-align: center;
       color: $bg-color;
+      @media (max-width: 776px) {
+        line-height: 40px;
+        font-size: 36px;
+      }
       @media (max-width: 430px) {
         line-height: 24px;
         @include font-size-20;
@@ -762,6 +774,10 @@ section {
       text-align: center;
       color: $bg-color;
       @media (max-width: 776px) {
+        line-height: 40px;
+        font-size: 36px;
+      }
+      @media (max-width: 430px) {
         line-height: 24px;
         @include font-size-24;
       }
@@ -1012,7 +1028,7 @@ section {
                 height: 80%;
                 width: 80%;
                 @media (max-width: 430px) {
-                  font-size: 27px;
+                  font-size: 24px;
                 }
               }
             }

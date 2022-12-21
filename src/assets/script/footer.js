@@ -121,7 +121,7 @@ $(document).ready(function() {
 });
 
 $('.logo').on("click",function(){
-  localStorage.removeItem('activeLink');
+  sessionStorage.removeItem('activeLink');
   
 })
 

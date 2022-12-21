@@ -245,15 +245,15 @@ var arrLang = {
           "processing-nav":"Fərdi məlumatların işlənilməsinə dair razılıq",
           "privacy-application":"“Eattable” mobil tədbiqinin İstifadəçi Razılaşmasına Əlavə №1.Dərc olunma və qüvvəyə minmə tarixi :”09” Sentyabr 2022 -ci il .",
           "privacy-title": "KONFİDENSİALLIQ SİYASƏTİ",
-          "privacy-text":"“Konfidensiallıq Siyasəti” (bundan sonra “Siyasət” adlanacaq) “Eattable” internet servisini istifadə edən, Servisdə qeydiyyat prosedurundan keçən, servis səhifəsində Sifariş edən, İnternet şəbəkisinin istifadəçisi (bundan sonra –“İstifadəçi” adlanacaq) tərəfindən təqdim edilmiş fərdi məlumatının işlənməsi, sistemləşdirilməsi və açıqlanması qaydaları müəyyən edən sənəddir. Konfidensiallıq Siyasəti “Eattable” İstifadəçi Razılaşmasının (bunban sonra Razılaşma adlanacaq) ayrılmaz hissədir və Servis istifadəçilərinə məxsus fərdi məlumatın işlənməsinin tənzimləyən sənəddir.",
+          "privacy-text":"“Konfidensiallıq Siyasəti” (bundan sonra “Siyasət” adlanacaq) “Eattable” internet servisini istifadə edən, Servisdə qeydiyyat prosedurundan keçən, servis səhifəsində Sifariş edən, İnternet şəbəkisinin istifadəçisi (bundan sonra –“İstifadəçi” adlanacaq) tərəfindən təqdim edilmiş fərdi məlumatının işlənməsi, sistemləşdirilməsi və açıqlanması qaydaları müəyyən edən sənəddir. Konfidensiallıq Siyasəti “Eattable” İstifadəçi Razılaşmasının (bundan sonra Razılaşma adlanacaq) ayrılmaz hissədir və Servis istifadəçilərinə məxsus fərdi məlumatın işlənməsinin tənzimləyən sənəddir.",
           "privacy-definitions":"1.    ƏSAS ANLAYIŞLAR",
           "privacy-definitions-1-1":"1.1.    Fərdi məlumatın işlənməsi ilə əlaqədar tərəflər arasında yaranmış münasibətlərlə əlaqədar aşağıda qeyd olunan anlayışlar tədbiq olunur:",
           "privacy-definitions-1-1-1":"1.1.1.    Fərdi məlumat-",
           "privacy-definitions-1-1-1-text":"bir başa və ya dolayısı olaraq müəyyən  fiziki şəxsə- Servis istifadəçisi, Malı təhvil alan və digər şəxsə (bundan sonra Fədri məlumat subyekti  adlanacaq) aidiyyatı olan  hər hansı məlumatdır. ",
           "privacy-definitions-1-1-2":"1.1.2.    Fərdi məlumat operatoru (Operator)",
-          "privacy-definitions-1-1-2-text":"– any information relating to directly or indirectly to the certain, or defined natural person (subject of Personal data) – to the User of Service, the recipient of Goods.",
+          "privacy-definitions-1-1-2-text":"–  fərdi məlumatın işlənməsini  müstəqil şəkildə və ya digər şəxslərlə (işçilər və ya xüsusi razılaşmalar çərçivəsində digər üçüncü şəxslər ilə)  birgə təşkil edən və (və ya)  həyata keçirən, fərdi məlumatın işlənməsinin məqsədini, işlənməli fərdi məlumatın tərkibini, fərdi məlumat üzərində keçiriləcək hərəkətlərinin (əməliyyatlarının) növlərini  müəyyən edən şəxs. Siyasət çərçivəsində Operator qismində İnzibatçı çıxış edir. (Mətndə Operator ilə İnzibatçı eyniləşdirilir.)",
           "privacy-definitions-1-1-3":"1.1.3.  Fərdi məlumatın işlənməsi",
-          "privacy-definitions-1-1-3-text":"avtomatlaşdırma vasitələri və ya bu vasitələri istifadə etmədən Fərdi məlumat üzərində aparılan hər hansı hərəkət (əməliyyat) və ya bir neçə hərəkətin (əməliyyatların) məcmusu. Fərdi məlumatın işlənilməsi özündə aşağıdakıları ehtiva edir: ",
+          "privacy-definitions-1-1-3-text":" - avtomatlaşdırma vasitələri və ya bu vasitələri istifadə etmədən Fərdi məlumat üzərində aparılan hər hansı hərəkət (əməliyyat) və ya bir neçə hərəkətin (əməliyyatların) məcmusu. Fərdi məlumatın işlənilməsi özündə aşağıdakıları ehtiva edir: ",
           "privacy-definitions-collection":"-Məlumatın toplanması;",
           "privacy-definitions-record":"-Yazılması;",
           "privacy-definitions-systematization":"-Sistemləşdirilə",
@@ -289,7 +289,7 @@ var arrLang = {
           "privacy-final-general-1":"2.1  Servisdə qeydiyyata alınaraq, İstifadəçi Razılaşmanın və onun ayrılmaz hissəsi olan Siyasətin akseptini həyata keçirir. İstifadəçi Siyasətin müddəaları ilə tam və ya qismən razı olmadığı təqdirdə, o, Servisdən istifadəni bütün qurğularda dərhal dayandırmalıdır.",
           "privacy-final-general-2":"2.2  Fərdi məlumatın yığılması, ilk növbədə, Servisin bütün funksional imkanlarının istifadəsi üçün, əlavə olaraq, lakin bununla məhdudlaşdırılmayaraq,  Servis sayifələrində Satıcılardan Malların alınması, çatdırılma və rezerv etmə xidmətlərinin sifariş edilməsi üçün İstifadəçiyə fərdiləşdirilmiş girişin verilməsi məqsədi ilə həyata keçirilir.",
           "privacy-final-general-3":"2.3  Operatora öz məlumatını ötürərək, İstifadəçi özünə aid olan və özü tərəfindən  yüklədiyi  və Operator tərəfindən avtomatlaşdırılmış rejimdə İstifadəçinin Servisdə etdiyi hərəkətlər nəticəsində əldə etdiyi Fərdi məlumatın işlənməsinə, o cümlədən,fon rejimində İstifadəçinin geopozisiyası barədə məlumatları Servis tərəfindən istifadəsinə    qeyd-şərtsiz razılığılnı Operatora verir. Bu cür icazə, Servis İnzibatçısına Sifarişlərin işlənilmə sürətinin və dəqiqliyinin, habelə icrasının  yaxşılaşdırılması üçün tələb olunur.",
-          "privacy-final-general-4":"2.4  İstifadəçi Siyasət çərçivəsində, ona məxsus fərdi məlumatların işlənməsi ilə razı olmadığı təqdirdə, dərxal Servisdən istifadəni dayandırmalıdır.",
+          "privacy-final-general-4":"2.4  İstifadəçi Siyasət çərçivəsində, ona məxsus fərdi məlumatların işlənməsi ilə razı olmadığı təqdirdə, dərhal Servisdən istifadəni dayandırmalıdır.",
           "privacy-final-general-5":"2.5  Fərdi məlumat deyildikdə, İstifadəçi tərəfindən Servisə yüklənən və ya elektron kanalar vasitəsi ilə Operatora ötürülən, o cümlədən Servisdən istifadə nəticəsində əldə olunan və İstifadəçini, fiziki şəxs kimi - hüquq münasibətlərin subyekti kimi identifikasiya etməyə imkan verən fərdi məlumat başa düşülür.",
           "privacy-final-general-6":"2.6  Operatora hər hansı müraciət üçün, İstifadəçi, yalnız şəxsən özünə məxsus olan kommunikasiya vasitələrini (elektron poçt ünvanı, telefon nömrəsi və sair) istifadə etməlidir.",
           "privacy-final-general-7":"2.7  Konfidensiallıq Siyasəti çərçivəsində Operatora ötürülmüş İstifadəçinin fərdi məlumatı Operator tərəfindən “olduğu kimi” qəbul olunur və onun doğruğu öncədən yoxlanılmır. İstifadəçı Operatora təqdim etdiyi məlumatın doğruluğuna, həqiqiliyinə görə məsuliyyət bir başa İstifadəçinin üzərindədir. ",
@@ -442,9 +442,9 @@ var arrLang = {
           "account-text":"İstifadəçinin identifikasiyası və onun şəxsi məlumatına, etdiyi və edilən sifarişlərə, habelə Servisdə tənzimləmələrə girişin təmin edilməsi üçün lazım olan sistemdə saxlanılan İstifadəçinin Servisdəki uçot hesabı (Şəxsi kabinet).",
           "seller":"Satıcı",
           "seller-text":"Servis vasitəsi ilə Malların  satışını həyəta keçirən, Servisin səhifələrində mallar, və (və ya) öz restoranı və (və ya) təklif etdiyi rezerv xidməti barədə məlumatı yerləşdirən,  qanunvericilikdə nəzərdə tutulmuş  qaydada qeydiyyata alınmış hüquqi şəxs və ya fərdi sahibkar. ",
-          "restaurant":"Restorant",
+          "restaurant":"Restoran ",
           "restaurant-text":"geniş çeşidli mürəkkəb hazırlanma üsullu olan, sifarişli və firma yeməklər çeşidi,  təklif edən Satıcıya məxsus olan və barəsində məlumat Servisdə təqdim olunan iaşə obyekti. ",
-          "order":"Sifariş",
+          "order":"Sifariş ",
           "order-text":"nəticəsində, İstifadəçi tərəfindən, Satıcı ilə müəyyənləşdirilmiş və Servisdə yerləşdirilmiş şərtlər əsasında) Satıcı ilə Malın özgəninkiləşdirilməsi, və ya Restoranda masanın rezervi, Servisdə yerləşdirilmiş Malın və ya rezervin və ya yalnız Malın sifarişi.",
           "reservation":" Rezerv etmə ",
           "reservation-text":" Sifarişçinin, müəyyən vaxta və saatda Restoranda xidmətlərdən istifadə etmək məqsədi ilə gəlmək və ya qonaqların gəlməsini təmim etmək öhdəliyi  yaradan, Servis vasitəsi ilə Restoranda boş masaların müəyyən tarixə və vaxta öncədən rezerv edilməsi. ",
@@ -1019,7 +1019,7 @@ var arrLang = {
           "privacy-data-2-2":"Связанные с личностью Пользователя данные: ",
           "privacy-data-2-purchase":"Покупки;",
           "privacy-data-2-geo-location":"Геопозиция;",
-          "privacy-data-2-user":"İstifadəçi məzmunu;",
+          "privacy-data-2-user":"Пользовательский контент",
           "privacy-data-2-indetify":"Идентификаторы;",
           "privacy-data-2-confidential":"Конфиденциальные данные;",
           "privacy-data-2-finance":"Финансовая информация;",
@@ -2081,6 +2081,10 @@ var arrLang = {
     
     function translateLang(lang)
     {
+        $('title').each(function(index, item) {
+                $(this).text(arrLang[lang][$(this).attr('key')])
+        });
+
         $('meta').each(function(index, item) {
                 $(this).attr('content',arrLang[lang][$(this).attr('key')])
         });
@@ -2099,7 +2103,7 @@ var arrLang = {
     
     $(function() {
         //first check for stored language in localStorage i.e. fetch data from localStorage
-        let stored_lang = localStorage.getItem("stored_lang");
+        let stored_lang = sessionStorage.getItem("stored_lang");
         //if any then translate page accordingly
         if(stored_lang != null && stored_lang != undefined)
         {
@@ -2110,7 +2114,7 @@ var arrLang = {
         var lang = $(this).attr('id');
          //on click store language on click to localStorage
       
-        localStorage.setItem("stored_lang",lang);
+      sessionStorage.setItem("stored_lang",lang);
         translateLang(lang);
       });
       

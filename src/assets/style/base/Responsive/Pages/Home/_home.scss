@@ -6,6 +6,15 @@
             align-items: center;
             justify-content: center;
         }
+        .table-container {
+        
+            img {
+                width: 400px;
+                height: 400px;
+          
+                
+            }
+            }
         .info-text {
             width: 100% !important;
           
@@ -61,7 +70,7 @@
             }
         }
         &.payment-section {
-            height: 1400px !important;
+            height: 1200px !important;
             .container-fluid {
                 .row {
                     .col-12 {
@@ -318,7 +327,7 @@
                         height: 40px;
                     }
                     p {
-                        font-size: 20px !important;
+                        font-size: 18px !important;
                     }
                     svg {
                         width: 20px;
@@ -373,7 +382,7 @@
 @media screen and (max-width: 400px) {
     .wrapper {
         width: 300px !important;
-        height: 280px !important;
+        height: 260px !important;
         .outer {
             .card {
                 width: 250px !important;
