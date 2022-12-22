@@ -159,7 +159,7 @@ body{
                 color: $bg-color !important;
             }
         }
-        .privacy-section,.term-section,.coins-section,.address-section,.form-section,.guest-section{
+        .privacy-section,.term-section,.coins-section,.form-section,.guest-section,.info-word-size{
             h1,svg,p,a,span,h5{
                 color: $bg-color !important;
             }
@@ -330,6 +330,20 @@ body{
                 color: $red-color !important;
             }
         }
+        .locations-section{
+            .restaurant-img{
+                img{
+                    &.dark-mode{
+                        display: block;
+                    }
+                    &.light-mode{
+                        display: none;
+                    }
+                
+            }
+        }
+        }
+      
         .with-us-section{
             .card-content{
                 color: $placeholder !important;
@@ -342,6 +356,17 @@ body{
                     display: none;
                 }
             }
+        }
+        section.reservation-section .carousel .carousel-control-prev,  section.reservation-section .carousel .carousel-control-next{
+      
+                background-color: #51514F;
+                color:#fff;
+                span{
+                    svg{
+                    color:#fff;
+                    }
+                }
+            
         }
         .how-start-section,.apply-section {
             h1{

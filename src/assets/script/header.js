@@ -132,11 +132,6 @@ function darkmode() {
   document.body.classList.add("dark-mode"); //add a class to the body tag
   checkbox1.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
-  let img = document.querySelector('.mc-img');
-  if(img){
-    img.src = './src/assets/img/card.png';
-  }
- 
 
 }
 
@@ -150,10 +145,7 @@ function nodark() {
   document.body.classList.remove("dark-mode"); //remove added class from body tag
   checkbox1.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
-  let img = document.querySelector('.mc-img');
-  if(img){
-    img.src = './src/assets/img/mcd.png';
-  }
+
  
 }
 

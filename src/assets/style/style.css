@@ -696,14 +696,15 @@ body.dark-mode .captcha-light {
 body.dark-mode .captcha-dark {
   display: block !important;
 }
+
 body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
   color: #FFFFFF !important;
 }
-body.dark-mode .privacy-section h1, body.dark-mode .privacy-section svg, body.dark-mode .privacy-section p, body.dark-mode .privacy-section a, body.dark-mode .privacy-section span, body.dark-mode .privacy-section h5, body.dark-mode .term-section h1, body.dark-mode .term-section svg, body.dark-mode .term-section p, body.dark-mode .term-section a, body.dark-mode .term-section span, body.dark-mode .term-section h5, body.dark-mode .coins-section h1, body.dark-mode .coins-section svg, body.dark-mode .coins-section p, body.dark-mode .coins-section a, body.dark-mode .coins-section span, body.dark-mode .coins-section h5, body.dark-mode .address-section h1, body.dark-mode .address-section svg, body.dark-mode .address-section p, body.dark-mode .address-section a, body.dark-mode .address-section span, body.dark-mode .address-section h5, body.dark-mode .form-section h1, body.dark-mode .form-section svg, body.dark-mode .form-section p, body.dark-mode .form-section a, body.dark-mode .form-section span, body.dark-mode .form-section h5, body.dark-mode .guest-section h1, body.dark-mode .guest-section svg, body.dark-mode .guest-section p, body.dark-mode .guest-section a, body.dark-mode .guest-section span, body.dark-mode .guest-section h5 {
+body.dark-mode .privacy-section h1, body.dark-mode .privacy-section svg, body.dark-mode .privacy-section p, body.dark-mode .privacy-section a, body.dark-mode .privacy-section span, body.dark-mode .privacy-section h5, body.dark-mode .term-section h1, body.dark-mode .term-section svg, body.dark-mode .term-section p, body.dark-mode .term-section a, body.dark-mode .term-section span, body.dark-mode .term-section h5, body.dark-mode .coins-section h1, body.dark-mode .coins-section svg, body.dark-mode .coins-section p, body.dark-mode .coins-section a, body.dark-mode .coins-section span, body.dark-mode .coins-section h5, body.dark-mode .form-section h1, body.dark-mode .form-section svg, body.dark-mode .form-section p, body.dark-mode .form-section a, body.dark-mode .form-section span, body.dark-mode .form-section h5, body.dark-mode .guest-section h1, body.dark-mode .guest-section svg, body.dark-mode .guest-section p, body.dark-mode .guest-section a, body.dark-mode .guest-section span, body.dark-mode .guest-section h5, body.dark-mode .info-word-size h1, body.dark-mode .info-word-size svg, body.dark-mode .info-word-size p, body.dark-mode .info-word-size a, body.dark-mode .info-word-size span, body.dark-mode .info-word-size h5 {
   color: #FFFFFF !important;
 }
-body.dark-mode .privacy-section label, body.dark-mode .term-section label, body.dark-mode .coins-section label, body.dark-mode .address-section label, body.dark-mode .form-section label, body.dark-mode .guest-section label {
+body.dark-mode .privacy-section label, body.dark-mode .term-section label, body.dark-mode .coins-section label, body.dark-mode .form-section label, body.dark-mode .guest-section label, body.dark-mode .info-word-size label {
   color: #979797 !important;
 }
 body.dark-mode .form-control {
@@ -825,6 +826,12 @@ body.dark-mode footer p, body.dark-mode footer a, body.dark-mode footer h6 {
 body.dark-mode footer h1 {
   color: #DC303C !important;
 }
+body.dark-mode .locations-section .restaurant-img img.dark-mode {
+  display: block;
+}
+body.dark-mode .locations-section .restaurant-img img.light-mode {
+  display: none;
+}
 body.dark-mode .with-us-section .card-content {
   color: #51514F !important;
 }
@@ -833,6 +840,13 @@ body.dark-mode .with-us-section img.dark-mode {
 }
 body.dark-mode .with-us-section img.light-mode {
   display: none;
+}
+body.dark-mode section.reservation-section .carousel .carousel-control-prev, body.dark-mode section.reservation-section .carousel .carousel-control-next {
+  background-color: #51514F;
+  color: #fff;
+}
+body.dark-mode section.reservation-section .carousel .carousel-control-prev span svg, body.dark-mode section.reservation-section .carousel .carousel-control-next span svg {
+  color: #fff;
 }
 body.dark-mode .how-start-section h1, body.dark-mode .apply-section h1 {
   color: #FFFFFF !important;
@@ -2843,10 +2857,10 @@ body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
   color: #FFFFFF !important;
 }
-body.dark-mode .privacy-section h1, body.dark-mode .privacy-section svg, body.dark-mode .privacy-section p, body.dark-mode .privacy-section a, body.dark-mode .privacy-section span, body.dark-mode .privacy-section h5, body.dark-mode .term-section h1, body.dark-mode .term-section svg, body.dark-mode .term-section p, body.dark-mode .term-section a, body.dark-mode .term-section span, body.dark-mode .term-section h5, body.dark-mode .coins-section h1, body.dark-mode .coins-section svg, body.dark-mode .coins-section p, body.dark-mode .coins-section a, body.dark-mode .coins-section span, body.dark-mode .coins-section h5, body.dark-mode .address-section h1, body.dark-mode .address-section svg, body.dark-mode .address-section p, body.dark-mode .address-section a, body.dark-mode .address-section span, body.dark-mode .address-section h5, body.dark-mode .form-section h1, body.dark-mode .form-section svg, body.dark-mode .form-section p, body.dark-mode .form-section a, body.dark-mode .form-section span, body.dark-mode .form-section h5, body.dark-mode .guest-section h1, body.dark-mode .guest-section svg, body.dark-mode .guest-section p, body.dark-mode .guest-section a, body.dark-mode .guest-section span, body.dark-mode .guest-section h5 {
+body.dark-mode .privacy-section h1, body.dark-mode .privacy-section svg, body.dark-mode .privacy-section p, body.dark-mode .privacy-section a, body.dark-mode .privacy-section span, body.dark-mode .privacy-section h5, body.dark-mode .term-section h1, body.dark-mode .term-section svg, body.dark-mode .term-section p, body.dark-mode .term-section a, body.dark-mode .term-section span, body.dark-mode .term-section h5, body.dark-mode .coins-section h1, body.dark-mode .coins-section svg, body.dark-mode .coins-section p, body.dark-mode .coins-section a, body.dark-mode .coins-section span, body.dark-mode .coins-section h5, body.dark-mode .form-section h1, body.dark-mode .form-section svg, body.dark-mode .form-section p, body.dark-mode .form-section a, body.dark-mode .form-section span, body.dark-mode .form-section h5, body.dark-mode .guest-section h1, body.dark-mode .guest-section svg, body.dark-mode .guest-section p, body.dark-mode .guest-section a, body.dark-mode .guest-section span, body.dark-mode .guest-section h5, body.dark-mode .info-word-size h1, body.dark-mode .info-word-size svg, body.dark-mode .info-word-size p, body.dark-mode .info-word-size a, body.dark-mode .info-word-size span, body.dark-mode .info-word-size h5 {
   color: #FFFFFF !important;
 }
-body.dark-mode .privacy-section label, body.dark-mode .term-section label, body.dark-mode .coins-section label, body.dark-mode .address-section label, body.dark-mode .form-section label, body.dark-mode .guest-section label {
+body.dark-mode .privacy-section label, body.dark-mode .term-section label, body.dark-mode .coins-section label, body.dark-mode .form-section label, body.dark-mode .guest-section label, body.dark-mode .info-word-size label {
   color: #979797 !important;
 }
 body.dark-mode .form-control {
@@ -2968,6 +2982,12 @@ body.dark-mode footer p, body.dark-mode footer a, body.dark-mode footer h6 {
 body.dark-mode footer h1 {
   color: #DC303C !important;
 }
+body.dark-mode .locations-section .restaurant-img img.dark-mode {
+  display: block;
+}
+body.dark-mode .locations-section .restaurant-img img.light-mode {
+  display: none;
+}
 body.dark-mode .with-us-section .card-content {
   color: #51514F !important;
 }
@@ -2976,6 +2996,13 @@ body.dark-mode .with-us-section img.dark-mode {
 }
 body.dark-mode .with-us-section img.light-mode {
   display: none;
+}
+body.dark-mode section.reservation-section .carousel .carousel-control-prev, body.dark-mode section.reservation-section .carousel .carousel-control-next {
+  background-color: #51514F;
+  color: #fff;
+}
+body.dark-mode section.reservation-section .carousel .carousel-control-prev span svg, body.dark-mode section.reservation-section .carousel .carousel-control-next span svg {
+  color: #fff;
 }
 body.dark-mode .how-start-section h1, body.dark-mode .apply-section h1 {
   color: #FFFFFF !important;
@@ -4761,7 +4788,7 @@ section.reservation-section .carousel .carousel-control-next .carousel-control-p
 section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon svg {
   width: 20px;
   height: 30px;
-  color: #000000 !important;
+  color: #000000;
 }
 section.reservation-section .carousel .carousel-control-prev {
   left: 2%;
@@ -5076,7 +5103,7 @@ section.commerce-section .container-fluid .row .col-12 .row.commerce-card .col-4
   color: #000000;
   line-height: 24px;
 }
-@media (max-width: 776px) {
+@media (max-width: 430px) {
   section.commerce-section .container-fluid .row .col-12 .row.commerce-card .col-4 .commerce-content h5,
 section.commerce-section .container-fluid .row .col-12 .row.commerce-card .col-4 .commerce-content p {
     line-height: 19px;
@@ -5152,7 +5179,7 @@ section.info-section .container-fluid .row .col-12 .info-list li p {
   line-height: 29px;
   color: #000000;
 }
-@media (max-width: 776px) {
+@media (max-width: 430px) {
   section.info-section .container-fluid .row .col-12 .info-list li p {
     font-size: 16px;
     line-height: 20px;
@@ -5209,7 +5236,7 @@ section.how-start-section .container-fluid .row .col-6 .how-start-content ul li 
   line-height: 29px;
   color: #000000;
 }
-@media (max-width: 776px) {
+@media (max-width: 430px) {
   section.how-start-section .container-fluid .row .col-6 .how-start-content ul li p {
     line-height: 17px;
     font-size: 14px;
@@ -5480,7 +5507,7 @@ section.connect-section .title {
   }
 }
 section.connect-section a.support-mail {
-  color: #DC303C;
+  color: #DC303C !important;
 }
 section.connect-section .info {
   word-break: break-word;
@@ -5544,7 +5571,7 @@ section.connect-section .container-fluid .row .col-xl-6:last-child .connect-cont
   }
 }
 section.career-top-section {
-  margin-top: 92px;
+  margin-top: 90px;
   height: 566px;
 }
 @media (max-width: 991px) {
@@ -6465,6 +6492,9 @@ section.address-section {
   padding-top: 70px;
   padding-bottom: 20px;
 }
+section.address-section .support-email {
+  color: #DC303C !important;
+}
 @media (max-width: 430px) {
   section.address-section {
     padding-bottom: 0;
@@ -6474,7 +6504,7 @@ section.address-section {
 section.address-section svg {
   font-size: 20px;
   color: #DC303C;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 @media (max-width: 430px) {
   section.address-section svg {
@@ -6511,7 +6541,6 @@ section.address-section .col-md-4 div span a {
 }
 section.address-section .col-md-6 {
   display: flex;
-  justify-content: flex-end;
 }
 section.address-section p {
   font-weight: 500;
