@@ -132,6 +132,7 @@ footer {
                     @media(max-width:576px){
                         @include font-size-18;
                         line-height: 19px;
+                        font-weight: 500;
                     }
                 }
 

@@ -146,6 +146,11 @@ body{
         //         }
         //     }
         // }
+        .faq-section{
+            .faq-title{
+                color: $bg-color !important;
+            }
+        } 
         .captcha-light{
             display: none !important;
         }

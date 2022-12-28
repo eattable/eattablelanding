@@ -690,13 +690,15 @@ body .dark-mode-toggle svg.fa-moon {
 body.dark-mode {
   background-color: #080708 !important;
 }
+body.dark-mode .faq-section .faq-title {
+  color: #FFFFFF !important;
+}
 body.dark-mode .captcha-light {
   display: none !important;
 }
 body.dark-mode .captcha-dark {
   display: block !important;
 }
-
 body.dark-mode .tab-container .nav-link {
   background-color: #282828 !important;
   color: #FFFFFF !important;
@@ -1028,7 +1030,7 @@ body::-moz-selection {
   background: rgba(0, 0, 0, 0) !important;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 575px) {
   section h1, section .title {
     font-size: 16px;
   }
@@ -1036,32 +1038,41 @@ body::-moz-selection {
     font-size: 20px;
   }
 }
-@media (max-width: 430px) and (max-width: 430px) {
+@media (max-width: 575px) and (max-width: 430px) {
   section.info-section .title {
     font-size: 16px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 575px) {
   section.info-section .title {
     line-height: 25px;
   }
 }
-@media (max-width: 430px) and (max-width: 430px) {
+@media (max-width: 575px) and (max-width: 430px) {
   section.info-section .title {
     line-height: 19px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 575px) {
   .g-recaptcha div, .g-recaptcha iframe {
     width: 100% !important;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 575px) {
   .rc-anchor-normal {
     width: auto !important;
+    height: 74px !important;
   }
-  .rc-anchor-normal.rc-anchor-dark {
-    background-color: #f9f9f9 !important;
+  .rc-anchor-normal .rc-anchor-content {
+    width: auto !important;
+  }
+  .rc-anchor-normal .rc-anchor-checkbox-label {
+    width: auto !important;
+  }
+}
+@media (max-width: 575px) {
+  .rc-anchor-normal-footer {
+    width: auto !important;
   }
 }
 @media (max-width: 1199px) {
@@ -1128,10 +1139,6 @@ i {
 .x {
   color: rgb(240, 90, 92);
   text-shadow: 0px 5px 10px rgba(240, 90, 92, 0.3);
-}
-
-.rc-anchor-normal {
-  width: 100% !important;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -1470,7 +1477,7 @@ input[type=text], input[type=number], input[type=email], textarea {
   .language-dropdown-responsive {
     display: none !important;
     position: absolute;
-    top: 157%;
+    top: 227%;
     right: -24%;
     z-index: 9999;
     width: 75px;
@@ -1709,11 +1716,11 @@ input[type=text], input[type=number], input[type=email], textarea {
     width: 100% !important;
   }
   section.payment-section {
-    height: 800px !important;
+    height: 700px !important;
   }
   section.payment-section .container-fluid .row .col-12 .digital-cards img {
     width: 100% !important;
-    height: 250px !important;
+    height: 220px !important;
   }
   section.section-1 .container-fluid .row .col-6 .aos-init {
     width: 100%;
@@ -1745,7 +1752,7 @@ input[type=text], input[type=number], input[type=email], textarea {
   }
   .wrapper .outer .card {
     padding: 5px !important;
-    width: 350px !important;
+    width: 300px !important;
   }
   .wrapper .outer .card .content {
     padding: 5px !important;
@@ -1787,7 +1794,7 @@ input[type=text], input[type=number], input[type=email], textarea {
 @media screen and (max-width: 400px) {
   .wrapper {
     width: 300px !important;
-    height: 260px !important;
+    height: 280px !important;
   }
   .wrapper .outer .card {
     width: 250px !important;
@@ -1814,7 +1821,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     position: absolute;
   }
   .bank-card.bank-1 {
-    top: -200px !important;
+    top: -180px !important;
   }
   .bank-card.bank-2 {
     top: -150px !important;
@@ -2185,10 +2192,9 @@ section.commerce-section .commerce-content {
     top: -30px !important;
   }
   .how-start-section .content {
-    top: 15px !important;
     left: 30px !important;
     width: 80% !important;
-    height: 90% !important;
+    height: 80% !important;
   }
 }
 @media screen and (max-width: 1210px) {
@@ -2256,9 +2262,6 @@ section.commerce-section .commerce-content {
   }
 }
 @media (max-width: 575px) {
-  .mt-sm-5 {
-    margin-top: 3rem !important;
-  }
   .upload-file label {
     width: auto !important;
   }
@@ -2476,6 +2479,7 @@ footer .container-fluid .grid .grid-item-1 h3 {
   footer .container-fluid .grid .grid-item-1 h3 {
     font-size: 18px;
     line-height: 19px;
+    font-weight: 500;
   }
 }
 footer .container-fluid .grid .grid-item-1 ul li {
@@ -2846,6 +2850,9 @@ body .dark-mode-toggle svg.fa-moon {
 }
 body.dark-mode {
   background-color: #080708 !important;
+}
+body.dark-mode .faq-section .faq-title {
+  color: #FFFFFF !important;
 }
 body.dark-mode .captcha-light {
   display: none !important;
@@ -4332,11 +4339,23 @@ section .swiper-wrapper img {
     transform: translateY(-100%) scale(0.5);
   }
 }
+section .rc-anchor-normal {
+  width: 250px !important;
+}
+section .g-recaptcha .rc-anchor-normal .rc-anchor-content {
+  width: 136px !important;
+}
+section .g-recaptcha div {
+  width: 250px !important;
+}
+section .rc-anchor-error-message {
+  font-size: 12px !important;
+}
 section.apply-section {
   background-image: url("../../img/section/business/apply.png");
   height: 850px;
   padding-top: 100px;
-  margin-top: 33px;
+  margin-top: 90px;
 }
 section.apply-section .title {
   font-weight: 500;
@@ -4367,7 +4386,7 @@ section.apply-section .section-title p {
 }
 @media (max-width: 430px) {
   section.apply-section {
-    height: 190px;
+    height: 170px;
     padding-top: 0;
   }
 }
@@ -4756,31 +4775,27 @@ section.reservation-section .carousel .carousel-inner .carousel-item.item-2 .car
 }
 section.reservation-section .carousel .carousel-control-prev,
 section.reservation-section .carousel .carousel-control-next {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #f1f1f1;
   opacity: 1;
-  top: 20%;
+  top: 25%;
   color: #000;
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   section.reservation-section .carousel .carousel-control-prev,
 section.reservation-section .carousel .carousel-control-next {
-    background: none !important;
+    top: 25% !important;
+    width: 50px;
+    height: 50px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 776px) {
   section.reservation-section .carousel .carousel-control-prev,
 section.reservation-section .carousel .carousel-control-next {
-    top: 3% !important;
+    display: none !important;
   }
-}
-section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon,
-section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon,
-section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon,
-section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon {
-  background: none !important;
 }
 section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon svg,
 section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon svg,
@@ -4789,6 +4804,19 @@ section.reservation-section .carousel .carousel-control-next .carousel-control-n
   width: 20px;
   height: 30px;
   color: #000000;
+}
+@media (max-width: 776px) {
+  section.reservation-section .carousel .carousel-control-prev .carousel-control-prev-icon svg,
+section.reservation-section .carousel .carousel-control-prev .carousel-control-next-icon svg,
+section.reservation-section .carousel .carousel-control-next .carousel-control-prev-icon svg,
+section.reservation-section .carousel .carousel-control-next .carousel-control-next-icon svg {
+    top: 10% !important;
+    width: 15px;
+    height: 20px;
+  }
+}
+section.reservation-section .carousel .carousel-control-prev-icon {
+  display: none;
 }
 section.reservation-section .carousel .carousel-control-prev {
   left: 2%;
@@ -6330,6 +6358,9 @@ section.vacancy-section .container-fluid .row .col-12 .vacancy-apply .row .col-1
   color: #FFFFFF;
 }
 
+section p strong {
+  font-size: 18px;
+}
 section.term-section {
   padding: 120px 10px;
 }
@@ -6346,6 +6377,7 @@ section.term-section .container-fluid .row > * {
 section.term-section .container-fluid .row p {
   font-size: 16px;
   font-weight: 500;
+  text-align: justify;
   line-height: 30px;
   word-break: normal;
   color: #000000;
@@ -6369,12 +6401,22 @@ section.term-section .container-fluid .row .col-12 ul li p {
   line-height: 30px;
   color: #000000;
 }
+@media (max-width: 576px) {
+  section.term-section .container-fluid .row .col-12 ul li p {
+    font-size: 16px;
+  }
+}
 section.term-section .container-fluid .row h1 {
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
   color: #000000;
   margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  section.term-section .container-fluid .row h1 {
+    font-size: 18px;
+  }
 }
 section.term-section .container-fluid a {
   color: #DC303C !important;
@@ -6391,7 +6433,16 @@ section.privacy-section .container-fluid .row p {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+  text-align: justify;
   color: #000000;
+}
+@media (max-width: 576px) {
+  section.privacy-section .container-fluid .row p {
+    font-size: 16px;
+  }
+}
+section.privacy-section .container-fluid .row p strong {
+  text-align: left;
 }
 section.privacy-section .container-fluid .row .col-12 .tab-container .nav {
   padding: 20px 0 20px 0;
@@ -6469,6 +6520,12 @@ section.privacy-section .container-fluid .row .col-12 .sign-container p {
   line-height: 30px;
   color: #000000;
 }
+@media (max-width: 576px) {
+  section.privacy-section .container-fluid .row .col-12 .sign-container p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 section.privacy-section .container-fluid .row .col-12 ul li {
   position: relative;
   padding-left: 15px;
@@ -6480,12 +6537,23 @@ section.privacy-section .container-fluid .row .col-12 ul li p {
   line-height: 30px;
   color: #000000;
 }
+@media (max-width: 576px) {
+  section.privacy-section .container-fluid .row .col-12 ul li p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 section.privacy-section .container-fluid .row h1 {
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
   color: #000000;
   margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  section.privacy-section .container-fluid .row h1 {
+    font-size: 18px;
+  }
 }
 
 section.address-section {

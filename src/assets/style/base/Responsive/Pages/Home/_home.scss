@@ -255,14 +255,14 @@
         //     max-height: 600px !important;
         // }
         &.payment-section {
-            height: 800px !important;
+            height: 700px !important;
             .container-fluid {
                 .row {
                     .col-12 {
                         .digital-cards {
                             img {
                                 width: 100% !important;
-                                height: 250px !important;
+                                height: 220px !important;
                             }
                         }
                         // .bank-cards{
@@ -319,7 +319,7 @@
         .outer {
             .card {
                 padding: 5px !important;
-                width: 350px !important;
+                width: 300px !important;
                 .content {
                     padding: 5px !important;
                     img {
@@ -382,7 +382,7 @@
 @media screen and (max-width: 400px) {
     .wrapper {
         width: 300px !important;
-        height: 260px !important;
+        height: 280px !important;
         .outer {
             .card {
                 width: 250px !important;
@@ -420,7 +420,7 @@
     .bank-card {
         position: absolute;
         &.bank-1 {
-            top: -200px !important;
+            top: -180px !important;
         }
         &.bank-2 {
             top: -150px !important;
