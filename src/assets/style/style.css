@@ -1030,7 +1030,7 @@ body::-moz-selection {
   background: rgba(0, 0, 0, 0) !important;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 430px) {
   section h1, section .title {
     font-size: 16px;
   }
@@ -1038,43 +1038,43 @@ body::-moz-selection {
     font-size: 20px;
   }
 }
-@media (max-width: 575px) and (max-width: 430px) {
+@media (max-width: 430px) and (max-width: 430px) {
   section.info-section .title {
     font-size: 16px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 430px) {
   section.info-section .title {
     line-height: 25px;
   }
 }
-@media (max-width: 575px) and (max-width: 430px) {
+@media (max-width: 430px) and (max-width: 430px) {
   section.info-section .title {
     line-height: 19px;
   }
 }
-@media (max-width: 575px) {
-  .g-recaptcha div, .g-recaptcha iframe {
-    width: 100% !important;
+@media (max-width: 991px) {
+  .g-recaptcha {
+    transform: scale(1.2);
+    transform-origin: 0 0;
   }
 }
-@media (max-width: 575px) {
-  .rc-anchor-normal {
-    width: auto !important;
-    height: 74px !important;
-  }
-  .rc-anchor-normal .rc-anchor-content {
-    width: auto !important;
-  }
-  .rc-anchor-normal .rc-anchor-checkbox-label {
-    width: auto !important;
+@media (max-width: 576px) {
+  .g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: 0 0;
   }
 }
-@media (max-width: 575px) {
-  .rc-anchor-normal-footer {
-    width: auto !important;
+@media (max-width: 400px) {
+  .g-recaptcha {
+    transform: scale(0.72);
+    transform-origin: 0 0;
   }
 }
+.rc-anchor-error-message {
+  font-size: 12px !important;
+}
+
 @media (max-width: 1199px) {
   video {
     width: 100% !important;
@@ -1139,6 +1139,10 @@ i {
 .x {
   color: rgb(240, 90, 92);
   text-shadow: 0px 5px 10px rgba(240, 90, 92, 0.3);
+}
+
+.rc-anchor-normal {
+  width: 100% !important;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -4345,9 +4349,6 @@ section .rc-anchor-normal {
 section .g-recaptcha .rc-anchor-normal .rc-anchor-content {
   width: 136px !important;
 }
-section .g-recaptcha div {
-  width: 250px !important;
-}
 section .rc-anchor-error-message {
   font-size: 12px !important;
 }
@@ -4404,7 +4405,7 @@ section.apply-section .container-fluid .input-box {
 section.apply-section .container-fluid .prefix-select {
   border: none !important;
   background-color: transparent !important;
-  border-right: 1px solid #000 !important;
+  border-right: 1px solid #d3d3d3 !important;
   border-radius: 0 !important;
   width: 40% !important;
 }
@@ -4468,7 +4469,7 @@ section.apply-section-responsive .container-fluid .res-prefix-select {
   background-color: transparent;
   border-radius: 0;
   border: none !important;
-  border-right: 1px solid #000 !important;
+  border-right: 1px solid #d3d3d3 !important;
 }
 section.apply-section-responsive .container-fluid .input-box input {
   flex-grow: 1;

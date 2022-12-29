@@ -131,7 +131,7 @@
                 required
                 type="text"
                 class="form-control lang-input"
-                key="full-name"
+                key="fullname"
                 placeholder="Full Name"
               />
               <input
@@ -213,6 +213,7 @@
               </div>
               <div
                 class="g-recaptcha my-2"
+   
                 data-theme="light"
                 class="captcha-light"
                 data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
@@ -262,7 +263,8 @@
                 id="res-fullName"
                 required
                 type="text"
-                class="form-control"
+                key="fullname"
+                class="form-control lang-input"
                 placeholder="Full Name"
               />
               <input
@@ -341,6 +343,7 @@
               </div>
               <div
                 class="g-recaptcha my-2"
+          
                 data-theme="light"
                 class="captcha-light"
                 data-sitekey="6LdgrwQjAAAAAJ19BbmmY3-56Y6qxzJZ5gwRV_yc"
@@ -1060,7 +1063,14 @@ async function postData(e){
   note:  note.value,
 
 }
-
+var width = $('.g-recaptcha').parent().width();
+if (width < 302) {
+	var scale = width / 302;
+	$('.g-recaptcha').css('transform', 'scale(' + scale + ')');
+	$('.g-recaptcha').css('-webkit-transform', 'scale(' + scale + ')');
+	$('.g-recaptcha').css('transform-origin', '0 0');
+	$('.g-recaptcha').css('-webkit-transform-origin', '0 0');
+}
 
   const response = await fetch("https://api-management.eattable.com/api/v1/partnerships",{
      method:"POST",
@@ -1183,7 +1193,7 @@ $('#note').keyup(function() {
     
         
   });
-  
+
   $('#res-note').keyup(function() {
     console.log('ds')
     var characterCount = $(this).val().length,

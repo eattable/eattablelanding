@@ -197,7 +197,7 @@ $(".lang-item").click(function(){
 });
 //set Local Storage selected lang when page load
 $(document).ready(function() {
- let lang = localStorage.getItem('stored_lang');
+ let lang = sessionStorage.getItem('stored_lang');
  $(`#${lang}`).parent().addClass('selected')
   let activeLink = sessionStorage.getItem('activeLink')
   $(`#${activeLink}`).parent().addClass('active');
